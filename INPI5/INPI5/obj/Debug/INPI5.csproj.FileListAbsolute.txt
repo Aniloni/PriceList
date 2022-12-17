@@ -1,0 +1,11 @@
+C:\Users\1080\source\repos\PriceList\INPI5\INPI5\bin\Debug\INPI5.exe.config
+C:\Users\1080\source\repos\PriceList\INPI5\INPI5\bin\Debug\INPI5.exe
+C:\Users\1080\source\repos\PriceList\INPI5\INPI5\bin\Debug\INPI5.pdb
+C:\Users\1080\source\repos\PriceList\INPI5\INPI5\obj\Debug\INPI5.csproj.AssemblyReference.cache
+C:\Users\1080\source\repos\PriceList\INPI5\INPI5\obj\Debug\INPI5.Form1.resources
+C:\Users\1080\source\repos\PriceList\INPI5\INPI5\obj\Debug\INPI5.Properties.Resources.resources
+C:\Users\1080\source\repos\PriceList\INPI5\INPI5\obj\Debug\INPI5.csproj.GenerateResource.cache
+C:\Users\1080\source\repos\PriceList\INPI5\INPI5\obj\Debug\INPI5.csproj.CoreCompileInputs.cache
+C:\Users\1080\source\repos\PriceList\INPI5\INPI5\obj\Debug\INPI5.exe
+C:\Users\1080\source\repos\PriceList\INPI5\INPI5\obj\Debug\INPI5.pdb
+C:\Users\1080\source\repos\PriceList\INPI5\INPI5\obj\Debug\INPI5.Form2.resources
