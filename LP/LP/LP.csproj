@@ -52,6 +52,18 @@
     <Compile Include="Enterance.Designer.cs">
       <DependentUpon>Enterance.cs</DependentUpon>
     </Compile>
+    <Compile Include="FurtitureType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FurtitureType.Designer.cs">
+      <DependentUpon>FurtitureType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewPosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewPosition.Designer.cs">
+      <DependentUpon>NewPosition.cs</DependentUpon>
+    </Compile>
     <Compile Include="StartPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +78,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FurtitureType.resx">
+      <DependentUpon>FurtitureType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewPosition.resx">
+      <DependentUpon>NewPosition.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
     </EmbeddedResource>

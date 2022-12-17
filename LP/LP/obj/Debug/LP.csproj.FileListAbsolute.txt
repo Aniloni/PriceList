@@ -11,3 +11,5 @@ C:\Users\kanek\source\repos\PriceList\LP\LP\obj\Debug\LP.pdb
 C:\Users\kanek\source\repos\PriceList\LP\LP\obj\Debug\LP.StartPage.resources
 C:\Users\kanek\source\repos\PriceList\LP\LP\obj\Debug\LP.Registration.resources
 C:\Users\kanek\source\repos\PriceList\LP\LP\obj\Debug\LP.Enterance.resources
+C:\Users\kanek\source\repos\PriceList\LP\LP\obj\Debug\LP.FurtitureType.resources
+C:\Users\kanek\source\repos\PriceList\LP\LP\obj\Debug\LP.NewPosition.resources
