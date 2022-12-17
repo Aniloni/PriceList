@@ -1,0 +1,13 @@
+C:\Users\kanek\source\repos\PriceList\LP\LP\bin\Debug\LP.exe.config
+C:\Users\kanek\source\repos\PriceList\LP\LP\bin\Debug\LP.exe
+C:\Users\kanek\source\repos\PriceList\LP\LP\bin\Debug\LP.pdb
+C:\Users\kanek\source\repos\PriceList\LP\LP\obj\Debug\LP.csproj.AssemblyReference.cache
+C:\Users\kanek\source\repos\PriceList\LP\LP\obj\Debug\LP.csproj.SuggestedBindingRedirects.cache
+C:\Users\kanek\source\repos\PriceList\LP\LP\obj\Debug\LP.Properties.Resources.resources
+C:\Users\kanek\source\repos\PriceList\LP\LP\obj\Debug\LP.csproj.GenerateResource.cache
+C:\Users\kanek\source\repos\PriceList\LP\LP\obj\Debug\LP.csproj.CoreCompileInputs.cache
+C:\Users\kanek\source\repos\PriceList\LP\LP\obj\Debug\LP.exe
+C:\Users\kanek\source\repos\PriceList\LP\LP\obj\Debug\LP.pdb
+C:\Users\kanek\source\repos\PriceList\LP\LP\obj\Debug\LP.StartPage.resources
+C:\Users\kanek\source\repos\PriceList\LP\LP\obj\Debug\LP.Registration.resources
+C:\Users\kanek\source\repos\PriceList\LP\LP\obj\Debug\LP.Enterance.resources
