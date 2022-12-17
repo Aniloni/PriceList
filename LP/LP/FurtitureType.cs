@@ -10,35 +10,33 @@ using System.Windows.Forms;
 
 namespace LP
 {
-    public partial class Registration : Form
+    public partial class FurtitureType : Form
     {
-        public Registration()
+        public FurtitureType()
         {
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void label7_Click(object sender, EventArgs e)
         {
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            StartPage f = new StartPage();
+            NewPosition f = new NewPosition();
             f.Show();
             this.Hide();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonExit_Click(object sender, EventArgs e)
         {
-            NewPosition f = new NewPosition();
-            f.Show();
-            this.Hide();
+            Application.Exit();
         }
     }
 }
