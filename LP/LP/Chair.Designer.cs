@@ -1,7 +1,7 @@
 ﻿
 namespace LP
 {
-    partial class Form1
+    partial class Chair
     {
         /// <summary>
         /// Required designer variable.

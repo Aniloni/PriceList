@@ -38,19 +38,19 @@ namespace LP
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.databaseDataSet = new LP.DatabaseDataSet();
-            this.pricelistBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pricelistTableAdapter = new LP.DatabaseDataSetTableAdapters.PricelistTableAdapter();
             this.типМебелиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.артикулDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.названиеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.наличиеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ценаВРозницуDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ценаОптомDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pricelistBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.databaseDataSet = new LP.DatabaseDataSet();
+            this.pricelistTableAdapter = new LP.DatabaseDataSetTableAdapters.PricelistTableAdapter();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pricelistBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // label8
@@ -74,7 +74,7 @@ namespace LP
             this.buttonExit2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExit2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonExit2.ForeColor = System.Drawing.Color.Azure;
-            this.buttonExit2.Location = new System.Drawing.Point(1267, 135);
+            this.buttonExit2.Location = new System.Drawing.Point(1232, 145);
             this.buttonExit2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonExit2.Name = "buttonExit2";
             this.buttonExit2.Size = new System.Drawing.Size(135, 46);
@@ -90,7 +90,7 @@ namespace LP
             this.panel8.Location = new System.Drawing.Point(63, 135);
             this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(728, 74);
+            this.panel8.Size = new System.Drawing.Size(500, 74);
             this.panel8.TabIndex = 19;
             // 
             // buttonBack
@@ -101,7 +101,7 @@ namespace LP
             this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBack.ForeColor = System.Drawing.Color.Azure;
-            this.buttonBack.Location = new System.Drawing.Point(1267, 634);
+            this.buttonBack.Location = new System.Drawing.Point(1232, 207);
             this.buttonBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(135, 46);
@@ -114,10 +114,10 @@ namespace LP
             // 
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(80)))), ((int)(((byte)(110)))));
             this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel9.Location = new System.Drawing.Point(0, 697);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel9.Location = new System.Drawing.Point(0, 685);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1469, 158);
+            this.panel9.Size = new System.Drawing.Size(1474, 170);
             this.panel9.TabIndex = 26;
             // 
             // panel10
@@ -125,9 +125,9 @@ namespace LP
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(80)))), ((int)(((byte)(110)))));
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
-            this.panel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1469, 74);
+            this.panel10.Size = new System.Drawing.Size(1474, 70);
             this.panel10.TabIndex = 27;
             // 
             // dataGridView1
@@ -148,20 +148,6 @@ namespace LP
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(800, 150);
             this.dataGridView1.TabIndex = 28;
-            // 
-            // databaseDataSet
-            // 
-            this.databaseDataSet.DataSetName = "DatabaseDataSet";
-            this.databaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // pricelistBindingSource
-            // 
-            this.pricelistBindingSource.DataMember = "Pricelist";
-            this.pricelistBindingSource.DataSource = this.databaseDataSet;
-            // 
-            // pricelistTableAdapter
-            // 
-            this.pricelistTableAdapter.ClearBeforeFill = true;
             // 
             // типМебелиDataGridViewTextBoxColumn
             // 
@@ -211,6 +197,20 @@ namespace LP
             this.ценаОптомDataGridViewTextBoxColumn.Name = "ценаОптомDataGridViewTextBoxColumn";
             this.ценаОптомDataGridViewTextBoxColumn.Width = 125;
             // 
+            // pricelistBindingSource
+            // 
+            this.pricelistBindingSource.DataMember = "Pricelist";
+            this.pricelistBindingSource.DataSource = this.databaseDataSet;
+            // 
+            // databaseDataSet
+            // 
+            this.databaseDataSet.DataSetName = "DatabaseDataSet";
+            this.databaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pricelistTableAdapter
+            // 
+            this.pricelistTableAdapter.ClearBeforeFill = true;
+            // 
             // NewPosition
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -218,7 +218,7 @@ namespace LP
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(161)))), ((int)(((byte)(201)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1469, 855);
+            this.ClientSize = new System.Drawing.Size(1474, 855);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel9);
@@ -233,8 +233,8 @@ namespace LP
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pricelistBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }

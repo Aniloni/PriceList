@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LP
 {
-    public partial class Form1 : Form
+    public partial class Chair : Form
     {
-        public Form1()
+        public Chair()
         {
             InitializeComponent();
         }
