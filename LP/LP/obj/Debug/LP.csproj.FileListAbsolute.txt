@@ -30,3 +30,6 @@ C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\obj\Debug\
 C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\obj\Debug\LP.csproj.CoreCompileInputs.cache
 C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\obj\Debug\LP.exe
 C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\obj\Debug\LP.pdb
+C:\Users\1080\source\repos\PriceList\LP\LP\obj\Debug\LP.csproj.AssemblyReference.cache
+C:\Users\1080\source\repos\PriceList\LP\LP\obj\Debug\LP.exe
+C:\Users\1080\source\repos\PriceList\LP\LP\obj\Debug\LP.pdb
