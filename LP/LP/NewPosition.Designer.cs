@@ -48,14 +48,13 @@ namespace LP
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -153,7 +152,7 @@ namespace LP
             this.textBox7.Font = new System.Drawing.Font("Dubai", 15.75F);
             this.textBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(80)))), ((int)(((byte)(110)))));
             this.textBox7.Location = new System.Drawing.Point(767, 269);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(2);
             this.textBox7.Multiline = true;
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(140, 231);
@@ -170,7 +169,7 @@ namespace LP
             this.buttonExit2.Font = new System.Drawing.Font("Dubai Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonExit2.ForeColor = System.Drawing.Color.Azure;
             this.buttonExit2.Location = new System.Drawing.Point(950, 110);
-            this.buttonExit2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonExit2.Margin = new System.Windows.Forms.Padding(2);
             this.buttonExit2.Name = "buttonExit2";
             this.buttonExit2.Size = new System.Drawing.Size(101, 37);
             this.buttonExit2.TabIndex = 15;
@@ -183,7 +182,7 @@ namespace LP
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(80)))), ((int)(((byte)(110)))));
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(479, 198);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(140, 49);
             this.panel1.TabIndex = 17;
@@ -193,7 +192,7 @@ namespace LP
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(80)))), ((int)(((byte)(110)))));
             this.panel4.Controls.Add(this.label7);
             this.panel4.Location = new System.Drawing.Point(191, 198);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(140, 49);
             this.panel4.TabIndex = 18;
@@ -203,7 +202,7 @@ namespace LP
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(80)))), ((int)(((byte)(110)))));
             this.panel5.Controls.Add(this.label4);
             this.panel5.Location = new System.Drawing.Point(623, 198);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(140, 49);
             this.panel5.TabIndex = 18;
@@ -213,7 +212,7 @@ namespace LP
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(80)))), ((int)(((byte)(110)))));
             this.panel6.Controls.Add(this.label5);
             this.panel6.Location = new System.Drawing.Point(767, 198);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(140, 49);
             this.panel6.TabIndex = 18;
@@ -223,7 +222,7 @@ namespace LP
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(80)))), ((int)(((byte)(110)))));
             this.panel7.Controls.Add(this.label6);
             this.panel7.Location = new System.Drawing.Point(911, 198);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(140, 49);
             this.panel7.TabIndex = 18;
@@ -233,7 +232,7 @@ namespace LP
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(80)))), ((int)(((byte)(110)))));
             this.panel8.Controls.Add(this.label8);
             this.panel8.Location = new System.Drawing.Point(47, 110);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(546, 60);
             this.panel8.TabIndex = 19;
@@ -247,7 +246,7 @@ namespace LP
             this.buttonBack.Font = new System.Drawing.Font("Dubai Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBack.ForeColor = System.Drawing.Color.Azure;
             this.buttonBack.Location = new System.Drawing.Point(950, 515);
-            this.buttonBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonBack.Margin = new System.Windows.Forms.Padding(2);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(101, 37);
             this.buttonBack.TabIndex = 16;
@@ -287,6 +286,18 @@ namespace LP
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(140, 49);
             this.panel3.TabIndex = 20;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Dubai", 13F);
+            this.label9.ForeColor = System.Drawing.Color.Azure;
+            this.label9.Location = new System.Drawing.Point(8, 9);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(124, 30);
+            this.label9.TabIndex = 7;
+            this.label9.Text = "Тип мебели";
             // 
             // label1
             // 
@@ -352,30 +363,10 @@ namespace LP
             // 
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(80)))), ((int)(((byte)(110)))));
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel10.Location = new System.Drawing.Point(0, 24);
+            this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(1102, 60);
             this.panel10.TabIndex = 27;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Dubai", 13F);
-            this.label9.ForeColor = System.Drawing.Color.Azure;
-            this.label9.Location = new System.Drawing.Point(8, 9);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(124, 30);
-            this.label9.TabIndex = 7;
-            this.label9.Text = "Тип мебели";
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1102, 24);
-            this.menuStrip1.TabIndex = 28;
-            this.menuStrip1.Text = "menuStrip1";
             // 
             // pictureBox1
             // 
@@ -439,10 +430,8 @@ namespace LP
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "NewPosition";
             this.Text = "Form2";
             this.panel1.ResumeLayout(false);
@@ -492,7 +481,6 @@ namespace LP
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
