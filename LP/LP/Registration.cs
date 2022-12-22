@@ -36,7 +36,7 @@ namespace LP
 
         private void button2_Click(object sender, EventArgs e)
         {
-            NewPosition f = new NewPosition();
+            FurtitureType f = new FurtitureType();
             f.Show();
             this.Hide();
         }

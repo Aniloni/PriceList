@@ -20,11 +20,11 @@ namespace LP
         private void Form1_Load(object sender, EventArgs e)
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "databaseDataSet.Pricelist". При необходимости она может быть перемещена или удалена.
-            this.pricelistTableAdapter.Fill(this.databaseDataSet.Pricelist);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "databaseDataSet.Pricelist". При необходимости она может быть перемещена или удалена.
-            this.pricelistTableAdapter.Fill(this.databaseDataSet.Pricelist);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "databaseDataSet.Pricelist". При необходимости она может быть перемещена или удалена.
-            this.pricelistTableAdapter.Fill(this.databaseDataSet.Pricelist);
+            //this.pricelistTableAdapter.Fill(this.databaseDataSet.Pricelist);
+            //// TODO: данная строка кода позволяет загрузить данные в таблицу "databaseDataSet.Pricelist". При необходимости она может быть перемещена или удалена.
+            //this.pricelistTableAdapter.Fill(this.databaseDataSet.Pricelist);
+            //// TODO: данная строка кода позволяет загрузить данные в таблицу "databaseDataSet.Pricelist". При необходимости она может быть перемещена или удалена.
+            //this.pricelistTableAdapter.Fill(this.databaseDataSet.Pricelist);
 
         }
 
