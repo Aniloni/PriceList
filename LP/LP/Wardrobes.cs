@@ -16,5 +16,14 @@ namespace LP
         {
             InitializeComponent();
         }
+
+        private void Wardrobes_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "databaseDataSet.Pricelist". При необходимости она может быть перемещена или удалена.
+            this.pricelistTableAdapter.FillByWardrobe(this.databaseDataSet.Pricelist);
+
+        }
+
+        
     }
 }

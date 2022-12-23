@@ -48,7 +48,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -61,6 +63,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AllPositions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllPositions.Designer.cs">
+      <DependentUpon>AllPositions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Armchairs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +148,18 @@
     <Compile Include="Wardrobes.Designer.cs">
       <DependentUpon>Wardrobes.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AllPositions.resx">
+      <DependentUpon>AllPositions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Armchairs.resx">
+      <DependentUpon>Armchairs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Beds.resx">
+      <DependentUpon>Beds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chair.resx">
+      <DependentUpon>Chair.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FurtitureType.resx">
       <DependentUpon>FurtitureType.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,6 +171,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Enterance.resx">
       <DependentUpon>Enterance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shelves.resx">
+      <DependentUpon>Shelves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sofas.resx">
+      <DependentUpon>Sofas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StartPage.resx">
       <DependentUpon>StartPage.cs</DependentUpon>
@@ -164,6 +190,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Tables.resx">
+      <DependentUpon>Tables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wardrobes.resx">
+      <DependentUpon>Wardrobes.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="DatabaseDataSet.xsc">
       <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
     </None>

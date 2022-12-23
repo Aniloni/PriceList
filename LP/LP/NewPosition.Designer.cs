@@ -29,7 +29,6 @@ namespace LP
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewPosition));
             this.label8 = new System.Windows.Forms.Label();
             this.buttonExit2 = new System.Windows.Forms.Button();
@@ -37,20 +36,14 @@ namespace LP
             this.buttonBack = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.типМебелиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.артикулDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.названиеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.наличиеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ценаВРозницуDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ценаОптомDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pricelistBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.databaseDataSet = new LP.DatabaseDataSet();
-            this.pricelistTableAdapter = new LP.DatabaseDataSetTableAdapters.PricelistTableAdapter();
+            this.Type = new System.Windows.Forms.TextBox();
+            this.Articule = new System.Windows.Forms.TextBox();
+            this.Nalichie = new System.Windows.Forms.TextBox();
+            this.Price = new System.Windows.Forms.TextBox();
+            this.PriceO = new System.Windows.Forms.TextBox();
+            this.NameP = new System.Windows.Forms.TextBox();
+            this.Add = new System.Windows.Forms.Button();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pricelistBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // label8
@@ -59,9 +52,10 @@ namespace LP
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(80)))), ((int)(((byte)(110)))));
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Azure;
-            this.label8.Location = new System.Drawing.Point(15, 14);
+            this.label8.Location = new System.Drawing.Point(11, 11);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(466, 31);
+            this.label8.Size = new System.Drawing.Size(378, 25);
             this.label8.TabIndex = 7;
             this.label8.Text = "Введите данные о новой позиции";
             this.label8.Click += new System.EventHandler(this.label8_Click);
@@ -74,10 +68,10 @@ namespace LP
             this.buttonExit2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExit2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonExit2.ForeColor = System.Drawing.Color.Azure;
-            this.buttonExit2.Location = new System.Drawing.Point(1232, 145);
-            this.buttonExit2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonExit2.Location = new System.Drawing.Point(924, 118);
+            this.buttonExit2.Margin = new System.Windows.Forms.Padding(2);
             this.buttonExit2.Name = "buttonExit2";
-            this.buttonExit2.Size = new System.Drawing.Size(135, 46);
+            this.buttonExit2.Size = new System.Drawing.Size(101, 37);
             this.buttonExit2.TabIndex = 15;
             this.buttonExit2.Text = "Выход";
             this.buttonExit2.UseVisualStyleBackColor = false;
@@ -87,10 +81,10 @@ namespace LP
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(80)))), ((int)(((byte)(110)))));
             this.panel8.Controls.Add(this.label8);
-            this.panel8.Location = new System.Drawing.Point(63, 135);
-            this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel8.Location = new System.Drawing.Point(47, 110);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(500, 74);
+            this.panel8.Size = new System.Drawing.Size(375, 60);
             this.panel8.TabIndex = 19;
             // 
             // buttonBack
@@ -101,10 +95,10 @@ namespace LP
             this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBack.ForeColor = System.Drawing.Color.Azure;
-            this.buttonBack.Location = new System.Drawing.Point(1232, 207);
-            this.buttonBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonBack.Location = new System.Drawing.Point(924, 168);
+            this.buttonBack.Margin = new System.Windows.Forms.Padding(2);
             this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(135, 46);
+            this.buttonBack.Size = new System.Drawing.Size(101, 37);
             this.buttonBack.TabIndex = 16;
             this.buttonBack.Text = "Назад";
             this.buttonBack.UseVisualStyleBackColor = false;
@@ -114,10 +108,9 @@ namespace LP
             // 
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(80)))), ((int)(((byte)(110)))));
             this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel9.Location = new System.Drawing.Point(0, 685);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4);
+            this.panel9.Location = new System.Drawing.Point(0, 557);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1474, 170);
+            this.panel9.Size = new System.Drawing.Size(1106, 138);
             this.panel9.TabIndex = 26;
             // 
             // panel10
@@ -125,117 +118,92 @@ namespace LP
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(80)))), ((int)(((byte)(110)))));
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
-            this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1474, 70);
+            this.panel10.Size = new System.Drawing.Size(1106, 57);
             this.panel10.TabIndex = 27;
             // 
-            // dataGridView1
+            // Type
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.типМебелиDataGridViewTextBoxColumn,
-            this.артикулDataGridViewTextBoxColumn,
-            this.названиеDataGridViewTextBoxColumn,
-            this.наличиеDataGridViewTextBoxColumn,
-            this.ценаВРозницуDataGridViewTextBoxColumn,
-            this.ценаОптомDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.pricelistBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(75, 272);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(800, 150);
-            this.dataGridView1.TabIndex = 28;
+            this.Type.Location = new System.Drawing.Point(105, 205);
+            this.Type.Name = "Type";
+            this.Type.Size = new System.Drawing.Size(100, 20);
+            this.Type.TabIndex = 28;
             // 
-            // типМебелиDataGridViewTextBoxColumn
+            // Articule
             // 
-            this.типМебелиDataGridViewTextBoxColumn.DataPropertyName = "Тип мебели";
-            this.типМебелиDataGridViewTextBoxColumn.HeaderText = "Тип мебели";
-            this.типМебелиDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.типМебелиDataGridViewTextBoxColumn.Name = "типМебелиDataGridViewTextBoxColumn";
-            this.типМебелиDataGridViewTextBoxColumn.Width = 125;
+            this.Articule.Location = new System.Drawing.Point(105, 236);
+            this.Articule.Name = "Articule";
+            this.Articule.Size = new System.Drawing.Size(100, 20);
+            this.Articule.TabIndex = 29;
+            this.Articule.TextChanged += new System.EventHandler(this.Articule_TextChanged);
             // 
-            // артикулDataGridViewTextBoxColumn
+            // Nalichie
             // 
-            this.артикулDataGridViewTextBoxColumn.DataPropertyName = "Артикул";
-            this.артикулDataGridViewTextBoxColumn.HeaderText = "Артикул";
-            this.артикулDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.артикулDataGridViewTextBoxColumn.Name = "артикулDataGridViewTextBoxColumn";
-            this.артикулDataGridViewTextBoxColumn.Width = 125;
+            this.Nalichie.Location = new System.Drawing.Point(105, 292);
+            this.Nalichie.Name = "Nalichie";
+            this.Nalichie.Size = new System.Drawing.Size(100, 20);
+            this.Nalichie.TabIndex = 31;
             // 
-            // названиеDataGridViewTextBoxColumn
+            // Price
             // 
-            this.названиеDataGridViewTextBoxColumn.DataPropertyName = "Название";
-            this.названиеDataGridViewTextBoxColumn.HeaderText = "Название";
-            this.названиеDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.названиеDataGridViewTextBoxColumn.Name = "названиеDataGridViewTextBoxColumn";
-            this.названиеDataGridViewTextBoxColumn.Width = 125;
+            this.Price.Location = new System.Drawing.Point(105, 318);
+            this.Price.Name = "Price";
+            this.Price.Size = new System.Drawing.Size(100, 20);
+            this.Price.TabIndex = 32;
             // 
-            // наличиеDataGridViewTextBoxColumn
+            // PriceO
             // 
-            this.наличиеDataGridViewTextBoxColumn.DataPropertyName = "Наличие";
-            this.наличиеDataGridViewTextBoxColumn.HeaderText = "Наличие";
-            this.наличиеDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.наличиеDataGridViewTextBoxColumn.Name = "наличиеDataGridViewTextBoxColumn";
-            this.наличиеDataGridViewTextBoxColumn.Width = 125;
+            this.PriceO.Location = new System.Drawing.Point(105, 344);
+            this.PriceO.Name = "PriceO";
+            this.PriceO.Size = new System.Drawing.Size(100, 20);
+            this.PriceO.TabIndex = 33;
             // 
-            // ценаВРозницуDataGridViewTextBoxColumn
+            // NameP
             // 
-            this.ценаВРозницуDataGridViewTextBoxColumn.DataPropertyName = "Цена в розницу";
-            this.ценаВРозницуDataGridViewTextBoxColumn.HeaderText = "Цена в розницу";
-            this.ценаВРозницуDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ценаВРозницуDataGridViewTextBoxColumn.Name = "ценаВРозницуDataGridViewTextBoxColumn";
-            this.ценаВРозницуDataGridViewTextBoxColumn.Width = 125;
+            this.NameP.Location = new System.Drawing.Point(105, 262);
+            this.NameP.Name = "NameP";
+            this.NameP.Size = new System.Drawing.Size(100, 20);
+            this.NameP.TabIndex = 34;
             // 
-            // ценаОптомDataGridViewTextBoxColumn
+            // Add
             // 
-            this.ценаОптомDataGridViewTextBoxColumn.DataPropertyName = "Цена оптом";
-            this.ценаОптомDataGridViewTextBoxColumn.HeaderText = "Цена оптом";
-            this.ценаОптомDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ценаОптомDataGridViewTextBoxColumn.Name = "ценаОптомDataGridViewTextBoxColumn";
-            this.ценаОптомDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // pricelistBindingSource
-            // 
-            this.pricelistBindingSource.DataMember = "Pricelist";
-            this.pricelistBindingSource.DataSource = this.databaseDataSet;
-            // 
-            // databaseDataSet
-            // 
-            this.databaseDataSet.DataSetName = "DatabaseDataSet";
-            this.databaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // pricelistTableAdapter
-            // 
-            this.pricelistTableAdapter.ClearBeforeFill = true;
+            this.Add.Location = new System.Drawing.Point(514, 354);
+            this.Add.Name = "Add";
+            this.Add.Size = new System.Drawing.Size(75, 23);
+            this.Add.TabIndex = 35;
+            this.Add.Text = "Добавить";
+            this.Add.UseVisualStyleBackColor = true;
+            this.Add.Click += new System.EventHandler(this.Add_Click);
             // 
             // NewPosition
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(161)))), ((int)(((byte)(201)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1474, 855);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(1106, 695);
+            this.Controls.Add(this.Add);
+            this.Controls.Add(this.NameP);
+            this.Controls.Add(this.PriceO);
+            this.Controls.Add(this.Price);
+            this.Controls.Add(this.Nalichie);
+            this.Controls.Add(this.Articule);
+            this.Controls.Add(this.Type);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.buttonExit2);
             this.Controls.Add(this.panel8);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "NewPosition";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.NewPosition_Load);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pricelistBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -246,15 +214,12 @@ namespace LP
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private DatabaseDataSet databaseDataSet;
-        private System.Windows.Forms.BindingSource pricelistBindingSource;
-        private DatabaseDataSetTableAdapters.PricelistTableAdapter pricelistTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn типМебелиDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn артикулDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn названиеDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn наличиеDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ценаВРозницуDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ценаОптомDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TextBox Type;
+        private System.Windows.Forms.TextBox Articule;
+        private System.Windows.Forms.TextBox Nalichie;
+        private System.Windows.Forms.TextBox Price;
+        private System.Windows.Forms.TextBox PriceO;
+        private System.Windows.Forms.TextBox NameP;
+        private System.Windows.Forms.Button Add;
     }
 }

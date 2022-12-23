@@ -33,3 +33,11 @@ C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\obj\Debug\
 C:\Users\1080\source\repos\PriceList\LP\LP\obj\Debug\LP.csproj.AssemblyReference.cache
 C:\Users\1080\source\repos\PriceList\LP\LP\obj\Debug\LP.exe
 C:\Users\1080\source\repos\PriceList\LP\LP\obj\Debug\LP.pdb
+C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\obj\Debug\LP.Beds.resources
+C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\obj\Debug\LP.Chair.resources
+C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\obj\Debug\LP.Tables.resources
+C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\obj\Debug\LP.AllPositions.resources
+C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\obj\Debug\LP.Armchairs.resources
+C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\obj\Debug\LP.Shelves.resources
+C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\obj\Debug\LP.Sofas.resources
+C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\obj\Debug\LP.Wardrobes.resources

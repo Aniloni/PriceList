@@ -70,6 +70,7 @@ namespace LP
                 FurtitureType f = new FurtitureType();
                 f.Show();
                 this.Hide();
+                db.Close();
             }
             else
             {

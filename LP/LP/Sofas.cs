@@ -16,5 +16,14 @@ namespace LP
         {
             InitializeComponent();
         }
+
+        private void Sofas_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "databaseDataSet.Pricelist". При необходимости она может быть перемещена или удалена.
+            this.pricelistTableAdapter.FillBySofa(this.databaseDataSet.Pricelist);
+
+        }
+
+        
     }
 }

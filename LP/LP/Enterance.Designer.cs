@@ -158,7 +158,7 @@
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Enterance";
-            this.Text = "Registration";
+            this.Text = "Enterance";
             this.Load += new System.EventHandler(this.Enterance_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

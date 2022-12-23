@@ -73,7 +73,78 @@ SELECT [Тип мебели], Артикул, Название, Наличие, 
               <Mapping SourceColumn="Цена в розницу" DataSetColumn="Цена в розницу" />
               <Mapping SourceColumn="Цена оптом" DataSetColumn="Цена оптом" />
             </Mappings>
-            <Sources />
+            <Sources>
+              <DbSource ConnectionRef="DatabaseConnectionString (Settings)" DbObjectName="dbo.Pricelist" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByArmchair" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillByArmchair" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="FillByArmchair">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        [Тип мебели], Артикул, Название, Наличие, [Цена в розницу], [Цена оптом]
+FROM            Pricelist
+WHERE        ([Тип мебели] = N'Кресло')</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="DatabaseConnectionString (Settings)" DbObjectName="dbo.Pricelist" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByBed" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillByBed" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillByBed">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        [Тип мебели], Артикул, Название, Наличие, [Цена в розницу], [Цена оптом]
+FROM            Pricelist
+WHERE        ([Тип мебели] = N'Кровать')</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="DatabaseConnectionString (Settings)" DbObjectName="dbo.Pricelist" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByChair" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillByChair" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="FillByChair">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        [Тип мебели], Артикул, Название, Наличие, [Цена в розницу], [Цена оптом]
+FROM            Pricelist
+WHERE        ([Тип мебели] = N'Стул')</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="DatabaseConnectionString (Settings)" DbObjectName="dbo.Pricelist" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByShelve" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillByShelve" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="FillByShelve">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        [Тип мебели], Артикул, Название, Наличие, [Цена в розницу], [Цена оптом]
+FROM            Pricelist
+WHERE        ([Тип мебели] = N'Полка')</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="DatabaseConnectionString (Settings)" DbObjectName="dbo.Pricelist" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBySofa" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBySofa" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="FillBySofa">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        [Тип мебели], Артикул, Название, Наличие, [Цена в розницу], [Цена оптом]
+FROM            Pricelist
+WHERE        ([Тип мебели] = N'Диван')</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="DatabaseConnectionString (Settings)" DbObjectName="dbo.Pricelist" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByTable" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillByTable" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy5" UserSourceName="FillByTable">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        [Тип мебели], Артикул, Название, Наличие, [Цена в розницу], [Цена оптом]
+FROM            Pricelist
+WHERE        ([Тип мебели] = N'Стол')</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="DatabaseConnectionString (Settings)" DbObjectName="dbo.Pricelist" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByWardrobe" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillByWardrobe" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy6" UserSourceName="FillByWardrobe">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        [Тип мебели], Артикул, Название, Наличие, [Цена в розницу], [Цена оптом]
+FROM            Pricelist
+WHERE        ([Тип мебели] = N'Шкаф')</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="UsersTableAdapter" GeneratorDataComponentClassName="UsersTableAdapter" Name="Users" UserDataComponentName="UsersTableAdapter">
             <MainSource>
@@ -128,44 +199,44 @@ SELECT UserId, UserPassword FROM Users WHERE (UserId = @UserId)</CommandText>
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="DatabaseDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="DatabaseDataSet" msprop:Generator_DataSetName="DatabaseDataSet">
+  <xs:element name="DatabaseDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DatabaseDataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DatabaseDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Pricelist" msprop:Generator_RowEvHandlerName="PricelistRowChangeEventHandler" msprop:Generator_RowDeletedName="PricelistRowDeleted" msprop:Generator_RowDeletingName="PricelistRowDeleting" msprop:Generator_RowEvArgName="PricelistRowChangeEvent" msprop:Generator_TablePropName="Pricelist" msprop:Generator_RowChangedName="PricelistRowChanged" msprop:Generator_RowChangingName="PricelistRowChanging" msprop:Generator_TableClassName="PricelistDataTable" msprop:Generator_RowClassName="PricelistRow" msprop:Generator_TableVarName="tablePricelist" msprop:Generator_UserTableName="Pricelist">
+        <xs:element name="Pricelist" msprop:Generator_RowEvHandlerName="PricelistRowChangeEventHandler" msprop:Generator_RowDeletedName="PricelistRowDeleted" msprop:Generator_RowDeletingName="PricelistRowDeleting" msprop:Generator_RowEvArgName="PricelistRowChangeEvent" msprop:Generator_TablePropName="Pricelist" msprop:Generator_RowChangedName="PricelistRowChanged" msprop:Generator_UserTableName="Pricelist" msprop:Generator_RowChangingName="PricelistRowChanging" msprop:Generator_RowClassName="PricelistRow" msprop:Generator_TableClassName="PricelistDataTable" msprop:Generator_TableVarName="tablePricelist">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Тип_x0020_мебели" msprop:Generator_ColumnPropNameInRow="Тип_мебели" msprop:Generator_ColumnPropNameInTable="Тип_мебелиColumn" msprop:Generator_ColumnVarNameInTable="columnТип_мебели" msprop:Generator_UserColumnName="Тип мебели">
+              <xs:element name="Тип_x0020_мебели" msprop:Generator_ColumnPropNameInTable="Тип_мебелиColumn" msprop:Generator_ColumnPropNameInRow="Тип_мебели" msprop:Generator_UserColumnName="Тип мебели" msprop:Generator_ColumnVarNameInTable="columnТип_мебели">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Артикул" msprop:Generator_ColumnPropNameInRow="Артикул" msprop:Generator_ColumnPropNameInTable="АртикулColumn" msprop:Generator_ColumnVarNameInTable="columnАртикул" msprop:Generator_UserColumnName="Артикул" type="xs:int" />
-              <xs:element name="Название" msprop:Generator_ColumnPropNameInRow="Название" msprop:Generator_ColumnPropNameInTable="НазваниеColumn" msprop:Generator_ColumnVarNameInTable="columnНазвание" msprop:Generator_UserColumnName="Название">
+              <xs:element name="Артикул" msprop:Generator_ColumnPropNameInTable="АртикулColumn" msprop:Generator_ColumnPropNameInRow="Артикул" msprop:Generator_UserColumnName="Артикул" msprop:Generator_ColumnVarNameInTable="columnАртикул" type="xs:int" />
+              <xs:element name="Название" msprop:Generator_ColumnPropNameInTable="НазваниеColumn" msprop:Generator_ColumnPropNameInRow="Название" msprop:Generator_UserColumnName="Название" msprop:Generator_ColumnVarNameInTable="columnНазвание">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Наличие" msprop:Generator_ColumnPropNameInRow="Наличие" msprop:Generator_ColumnPropNameInTable="НаличиеColumn" msprop:Generator_ColumnVarNameInTable="columnНаличие" msprop:Generator_UserColumnName="Наличие" type="xs:int" />
-              <xs:element name="Цена_x0020_в_x0020_розницу" msprop:Generator_ColumnPropNameInRow="Цена_в_розницу" msprop:Generator_ColumnPropNameInTable="Цена_в_розницуColumn" msprop:Generator_ColumnVarNameInTable="columnЦена_в_розницу" msprop:Generator_UserColumnName="Цена в розницу" type="xs:int" />
-              <xs:element name="Цена_x0020_оптом" msprop:Generator_ColumnPropNameInRow="Цена_оптом" msprop:Generator_ColumnPropNameInTable="Цена_оптомColumn" msprop:Generator_ColumnVarNameInTable="columnЦена_оптом" msprop:Generator_UserColumnName="Цена оптом" type="xs:int" />
+              <xs:element name="Наличие" msprop:Generator_ColumnPropNameInTable="НаличиеColumn" msprop:Generator_ColumnPropNameInRow="Наличие" msprop:Generator_UserColumnName="Наличие" msprop:Generator_ColumnVarNameInTable="columnНаличие" type="xs:int" />
+              <xs:element name="Цена_x0020_в_x0020_розницу" msprop:Generator_ColumnPropNameInTable="Цена_в_розницуColumn" msprop:Generator_ColumnPropNameInRow="Цена_в_розницу" msprop:Generator_UserColumnName="Цена в розницу" msprop:Generator_ColumnVarNameInTable="columnЦена_в_розницу" type="xs:int" />
+              <xs:element name="Цена_x0020_оптом" msprop:Generator_ColumnPropNameInTable="Цена_оптомColumn" msprop:Generator_ColumnPropNameInRow="Цена_оптом" msprop:Generator_UserColumnName="Цена оптом" msprop:Generator_ColumnVarNameInTable="columnЦена_оптом" type="xs:int" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Users" msprop:Generator_RowEvHandlerName="UsersRowChangeEventHandler" msprop:Generator_RowDeletedName="UsersRowDeleted" msprop:Generator_RowDeletingName="UsersRowDeleting" msprop:Generator_RowEvArgName="UsersRowChangeEvent" msprop:Generator_TablePropName="Users" msprop:Generator_RowChangedName="UsersRowChanged" msprop:Generator_RowChangingName="UsersRowChanging" msprop:Generator_TableClassName="UsersDataTable" msprop:Generator_RowClassName="UsersRow" msprop:Generator_TableVarName="tableUsers" msprop:Generator_UserTableName="Users">
+        <xs:element name="Users" msprop:Generator_RowEvHandlerName="UsersRowChangeEventHandler" msprop:Generator_RowDeletedName="UsersRowDeleted" msprop:Generator_RowDeletingName="UsersRowDeleting" msprop:Generator_RowEvArgName="UsersRowChangeEvent" msprop:Generator_TablePropName="Users" msprop:Generator_RowChangedName="UsersRowChanged" msprop:Generator_UserTableName="Users" msprop:Generator_RowChangingName="UsersRowChanging" msprop:Generator_RowClassName="UsersRow" msprop:Generator_TableClassName="UsersDataTable" msprop:Generator_TableVarName="tableUsers">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="UserId" msprop:Generator_ColumnPropNameInRow="UserId" msprop:Generator_ColumnPropNameInTable="UserIdColumn" msprop:Generator_ColumnVarNameInTable="columnUserId" msprop:Generator_UserColumnName="UserId">
+              <xs:element name="UserId" msprop:Generator_ColumnPropNameInTable="UserIdColumn" msprop:Generator_ColumnPropNameInRow="UserId" msprop:Generator_UserColumnName="UserId" msprop:Generator_ColumnVarNameInTable="columnUserId">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="25" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="UserPassword" msprop:Generator_ColumnPropNameInRow="UserPassword" msprop:Generator_ColumnPropNameInTable="UserPasswordColumn" msprop:Generator_ColumnVarNameInTable="columnUserPassword" msprop:Generator_UserColumnName="UserPassword">
+              <xs:element name="UserPassword" msprop:Generator_ColumnPropNameInTable="UserPasswordColumn" msprop:Generator_ColumnPropNameInRow="UserPassword" msprop:Generator_UserColumnName="UserPassword" msprop:Generator_ColumnVarNameInTable="columnUserPassword">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />

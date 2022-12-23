@@ -59,5 +59,61 @@ namespace LP
         {
 
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Beds f = new Beds();
+            f.Show();
+            this.Hide();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Chair f = new Chair();
+            f.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Tables f = new Tables();
+            f.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Wardrobes f = new Wardrobes();
+            f.Show();
+            this.Hide();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Armchairs f = new Armchairs();
+            f.Show();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Sofas f = new Sofas();
+            f.Show();
+            this.Hide();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            Shelves f = new Shelves();
+            f.Show();
+            this.Hide();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            AllPositions f = new AllPositions();
+            f.Show();
+            this.Hide();
+        }
     }
 }
