@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,29 @@ namespace LP
 
         private void Armchairs_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "databaseDataSet.Pricelist". При необходимости она может быть перемещена или удалена.
-            this.pricelistTableAdapter.FillByArmchair(this.databaseDataSet.Pricelist);
+            Connection con = new Connection();
+            con.OpenConnection();
 
+            DataTable table = new DataTable();
+
+            SqlDataAdapter adapter = new SqlDataAdapter();
+
+            SqlCommand command = new SqlCommand("SELECT * FROM [dbo].[Pricelist] WHERE [Тип мебели] = N'Кресло'", con.connection);
+
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+
+            dataGridView1.DataSource = table;
+
+            con.CloseConnection();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FurtitureType f = new FurtitureType();
+            f.Show();
+            this.Hide();
         }
     }
 }

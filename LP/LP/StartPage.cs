@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
@@ -11,6 +12,9 @@ using System.Windows.Forms;
 
 namespace LP
 {
+    
+    
+
     public partial class StartPage : Form
     {
 

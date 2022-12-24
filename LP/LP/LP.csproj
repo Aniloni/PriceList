@@ -81,6 +81,7 @@
     <Compile Include="Beds.Designer.cs">
       <DependentUpon>Beds.cs</DependentUpon>
     </Compile>
+    <Compile Include="Connection.cs" />
     <Compile Include="DatabaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

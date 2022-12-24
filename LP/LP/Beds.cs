@@ -20,7 +20,28 @@ namespace LP
 
         private void Beds_Load(object sender, EventArgs e)
         {
-            this.pricelistTableAdapter.FillByBed(this.databaseDataSet.Pricelist);
-        }     
+            Connection con = new Connection();
+            con.OpenConnection();
+
+            DataTable table = new DataTable();
+
+            SqlDataAdapter adapter = new SqlDataAdapter();
+
+            SqlCommand command = new SqlCommand("SELECT * FROM [dbo].[Pricelist] WHERE [Тип мебели] = N'Кровать'", con.connection);
+
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+
+            dataGridView1.DataSource = table;
+
+            con.CloseConnection();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FurtitureType f = new FurtitureType();
+            f.Show();
+            this.Hide();
+        }
     }
 }

@@ -22,7 +22,7 @@ namespace LP
         private void buttonExit2_Click(object sender, EventArgs e)
         {
             Application.Exit(); // Выход из программы
-            db.Close();
+            
         }
 
         private void buttonBack_Click(object sender, EventArgs e)
@@ -30,7 +30,7 @@ namespace LP
             FurtitureType back = new FurtitureType();
             back.Show(); //Кнопка назад
             this.Hide();
-            db.Close();            
+            con.CloseConnection();
         }
 
         private void label7_Click(object sender, EventArgs e)
@@ -69,13 +69,11 @@ namespace LP
 
         }
 
-        SqlConnection db;
+        Connection con = new Connection();
 
         private void NewPosition_Load(object sender, EventArgs e)
         {
-            db = new SqlConnection();
-            db.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\Database.mdf";
-            db.Open();
+            con.OpenConnection();
         }
 
         private void Add_Click(object sender, EventArgs e)
@@ -126,25 +124,18 @@ namespace LP
             if (IsPosExists())
                 return;
 
-            DataTable table = new DataTable();
+            SqlCommand command = new SqlCommand("INSERT INTO [dbo].[Pricelist] ([Тип мебели], [Артикул], [Название], [Наличие], [Цена в розницу], [Цена оптом]) VALUES (@uT, @uA, @uN, @uNal, @uP, @uPo)", con.connection);
 
-            SqlDataAdapter adapter = new SqlDataAdapter();
-
-            SqlCommand command = new SqlCommand("INSERT INTO [dbo].[Pricelist] ([Тип мебели], [Артикул], [Название], [Наличие], [Цена в розницу], [Цена оптом]) VALUES (@uT, @uA, @uN, @uNal, @uP, @uPo)", db);
-
-            command.Parameters.Add("uT", SqlDbType.VarChar).Value = type;
-            command.Parameters.Add("uA", SqlDbType.VarChar).Value = articule;
-            command.Parameters.Add("uN", SqlDbType.VarChar).Value = nameP;
-            command.Parameters.Add("uNal", SqlDbType.VarChar).Value = nalichie;
-            command.Parameters.Add("uP", SqlDbType.VarChar).Value = price;
-            command.Parameters.Add("uPo", SqlDbType.VarChar).Value = priceO;
-
-            adapter.SelectCommand = command;
-            adapter.Fill(table);
+            command.Parameters.AddWithValue("uT", Type.Text);
+            command.Parameters.AddWithValue("uA", Articule.Text);
+            command.Parameters.AddWithValue("uN", NameP.Text);
+            command.Parameters.AddWithValue("uNal", Nalichie.Text);
+            command.Parameters.AddWithValue("uP", Price.Text);
+            command.Parameters.AddWithValue("uPo", PriceO.Text);
 
             if (command.ExecuteNonQuery() == 1)
             {
-                MessageBox.Show("Позиция добавлена");
+                MessageBox.Show("Позиция добавлена");                
             }
             else
                 MessageBox.Show("Позиция не добавлена");
@@ -157,7 +148,7 @@ namespace LP
 
             SqlDataAdapter adapter = new SqlDataAdapter();
 
-            SqlCommand command = new SqlCommand("SELECT * FROM Pricelist WHERE [Артикул] = @uA", db);
+            SqlCommand command = new SqlCommand("SELECT * FROM Pricelist WHERE [Артикул] = @uA", con.connection);
 
             command.Parameters.Add("uA", SqlDbType.VarChar).Value = articule;
 
@@ -173,6 +164,10 @@ namespace LP
             {
                 return false;
             }
+        }
+
+        private void Type_TextChanged(object sender, EventArgs e)
+        {
         }
     }
 }

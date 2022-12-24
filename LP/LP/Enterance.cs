@@ -38,39 +38,34 @@ namespace LP
             this.Hide();
         }
 
-        SqlConnection db;
+        Connection con;
 
         private void Enterance_Load(object sender, EventArgs e)
         {
-            db = new SqlConnection();
-            db.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\Database.mdf";
-            db.Open();
+            con = new Connection();
+            con.OpenConnection();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string userId = textBox1.Text;
-            string userPassword = textBox2.Text;
-
             DataTable table = new DataTable();
 
             SqlDataAdapter adapter = new SqlDataAdapter();
 
-            SqlCommand command = new SqlCommand("SELECT * FROM Users WHERE UserId = @uI AND UserPassword = @uP", db);
+            SqlCommand command = new SqlCommand("SELECT * FROM Users WHERE UserId = @uI AND UserPassword = @uP", con.connection);
 
-            command.Parameters.Add("uI", SqlDbType.VarChar).Value = userId;
-            command.Parameters.Add("uP", SqlDbType.VarChar).Value = userPassword;
+            command.Parameters.AddWithValue("uI", textBox1.Text);
+            command.Parameters.AddWithValue("uP", textBox2.Text);
 
             adapter.SelectCommand = command;
             adapter.Fill(table);
 
             if (table.Rows.Count > 0)
             {
-                MessageBox.Show("Авторизация прошла успешнo");
                 FurtitureType f = new FurtitureType();
                 f.Show();
                 this.Hide();
-                db.Close();
+                con.CloseConnection();
             }
             else
             {

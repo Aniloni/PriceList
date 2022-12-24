@@ -35,13 +35,12 @@ namespace LP
             this.Hide();
         }
 
-        SqlConnection db;
+        Connection con;
 
         private void Registration_Load(object sender, EventArgs e)
         {
-            db = new SqlConnection();
-            db.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\Database.mdf";
-            db.Open();
+            con = new Connection();
+            con.OpenConnection();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -64,10 +63,10 @@ namespace LP
             if (IsIdExists())
                 return;
 
-            SqlCommand command = new SqlCommand("INSERT INTO[dbo].[Users]([UserId], [UserPassword]) VALUES(@uI, @uP)", db);
+            SqlCommand command = new SqlCommand("INSERT INTO[dbo].[Users]([UserId], [UserPassword]) VALUES(@uI, @uP)", con.connection);
 
-            command.Parameters.Add("uI", SqlDbType.VarChar).Value = userId;
-            command.Parameters.Add("uP", SqlDbType.VarChar).Value = userPassword;
+            command.Parameters.AddWithValue("uI", textBox1.Text);
+            command.Parameters.AddWithValue("uP", textBox2.Text);
 
             if (command.ExecuteNonQuery() == 1) 
             {
@@ -75,7 +74,7 @@ namespace LP
                 Enterance f = new Enterance();
                 f.Show();
                 this.Hide();
-                db.Close();
+                con.CloseConnection();
             }
             else
                 MessageBox.Show("Аккаунт не был создан");
@@ -88,7 +87,7 @@ namespace LP
 
             SqlDataAdapter adapter = new SqlDataAdapter();
 
-            SqlCommand command = new SqlCommand("SELECT * FROM Users WHERE UserId = @uI", db);
+            SqlCommand command = new SqlCommand("SELECT * FROM Users WHERE UserId = @uI", con.connection);
 
             command.Parameters.Add("uI", SqlDbType.VarChar).Value = userId;
 

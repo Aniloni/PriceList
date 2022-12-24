@@ -29,74 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.типМебелиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.артикулDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.названиеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.наличиеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ценаВРозницуDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ценаОптомDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pricelistBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.databaseDataSet = new LP.DatabaseDataSet();
             this.pricelistTableAdapter = new LP.DatabaseDataSetTableAdapters.PricelistTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.pricelistBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pricelistBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pricelistBindingSource1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.типМебелиDataGridViewTextBoxColumn,
-            this.артикулDataGridViewTextBoxColumn,
-            this.названиеDataGridViewTextBoxColumn,
-            this.наличиеDataGridViewTextBoxColumn,
-            this.ценаВРозницуDataGridViewTextBoxColumn,
-            this.ценаОптомDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.pricelistBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(118, 75);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // типМебелиDataGridViewTextBoxColumn
-            // 
-            this.типМебелиDataGridViewTextBoxColumn.DataPropertyName = "Тип мебели";
-            this.типМебелиDataGridViewTextBoxColumn.HeaderText = "Тип мебели";
-            this.типМебелиDataGridViewTextBoxColumn.Name = "типМебелиDataGridViewTextBoxColumn";
-            // 
-            // артикулDataGridViewTextBoxColumn
-            // 
-            this.артикулDataGridViewTextBoxColumn.DataPropertyName = "Артикул";
-            this.артикулDataGridViewTextBoxColumn.HeaderText = "Артикул";
-            this.артикулDataGridViewTextBoxColumn.Name = "артикулDataGridViewTextBoxColumn";
-            // 
-            // названиеDataGridViewTextBoxColumn
-            // 
-            this.названиеDataGridViewTextBoxColumn.DataPropertyName = "Название";
-            this.названиеDataGridViewTextBoxColumn.HeaderText = "Название";
-            this.названиеDataGridViewTextBoxColumn.Name = "названиеDataGridViewTextBoxColumn";
-            // 
-            // наличиеDataGridViewTextBoxColumn
-            // 
-            this.наличиеDataGridViewTextBoxColumn.DataPropertyName = "Наличие";
-            this.наличиеDataGridViewTextBoxColumn.HeaderText = "Наличие";
-            this.наличиеDataGridViewTextBoxColumn.Name = "наличиеDataGridViewTextBoxColumn";
-            // 
-            // ценаВРозницуDataGridViewTextBoxColumn
-            // 
-            this.ценаВРозницуDataGridViewTextBoxColumn.DataPropertyName = "Цена в розницу";
-            this.ценаВРозницуDataGridViewTextBoxColumn.HeaderText = "Цена в розницу";
-            this.ценаВРозницуDataGridViewTextBoxColumn.Name = "ценаВРозницуDataGridViewTextBoxColumn";
-            // 
-            // ценаОптомDataGridViewTextBoxColumn
-            // 
-            this.ценаОптомDataGridViewTextBoxColumn.DataPropertyName = "Цена оптом";
-            this.ценаОптомDataGridViewTextBoxColumn.HeaderText = "Цена оптом";
-            this.ценаОптомDataGridViewTextBoxColumn.Name = "ценаОптомDataGridViewTextBoxColumn";
             // 
             // pricelistBindingSource
             // 
@@ -112,33 +55,57 @@
             // 
             this.pricelistTableAdapter.ClearBeforeFill = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1816, 100);
+            this.button1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(200, 55);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Назад";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(72, 85);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 102;
+            this.dataGridView1.RowTemplate.Height = 40;
+            this.dataGridView1.Size = new System.Drawing.Size(1646, 761);
+            this.dataGridView1.TabIndex = 2;
+            // 
+            // pricelistBindingSource1
+            // 
+            this.pricelistBindingSource1.DataMember = "Pricelist";
+            this.pricelistBindingSource1.DataSource = this.databaseDataSet;
+            // 
             // AllPositions
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(2133, 1073);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "AllPositions";
             this.Text = "AllPositions";
             this.Load += new System.EventHandler(this.AllPositions_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pricelistBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pricelistBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private DatabaseDataSet databaseDataSet;
         private System.Windows.Forms.BindingSource pricelistBindingSource;
         private DatabaseDataSetTableAdapters.PricelistTableAdapter pricelistTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn типМебелиDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn артикулDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn названиеDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn наличиеDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ценаВРозницуDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ценаОптомDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.BindingSource pricelistBindingSource1;
     }
 }
