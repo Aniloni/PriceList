@@ -10,7 +10,7 @@ namespace LP
 {
     public class Connection
     {
-        public SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\Database.mdf");
+        public SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kanek\source\repos\PriceList\LP\LP\Database.mdf");
         
         public void OpenConnection()
         {

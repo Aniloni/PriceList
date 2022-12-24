@@ -122,5 +122,12 @@ namespace LP
             f.Show();
             this.Hide();
         }
+
+        private void Change_Click(object sender, EventArgs e)
+        {
+            ChangePosition f = new ChangePosition();
+            f.Show();
+            this.Hide();
+        }
     }
 }

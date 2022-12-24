@@ -85,37 +85,37 @@ namespace LP
             string price = Price.Text;
             string priceO = PriceO.Text;
 
-            if (type == "")
+            if (type == "Тип мебели")
             {
                 MessageBox.Show("Введите тип мебели");
                 return;
             }
 
-            if (articule == "")
+            if (articule == "Артикул")
             {
                 MessageBox.Show("Введите артикул");
                 return;
             }
 
-            if (nameP == "")
+            if (nameP == "Название")
             {
                 MessageBox.Show("Введите название позиции");
                 return;
             }
 
-            if (nalichie == "")
+            if (nalichie == "Количество позиций")
             {
                 MessageBox.Show("Введите количество в наличии");
                 return;
             }
 
-            if (price == "")
+            if (price == "Цена в розницу")
             {
                 MessageBox.Show("Введите цену в розницу");
                 return;
             }
 
-            if (priceO == "")
+            if (priceO == "Цена оптом")
             {
                 MessageBox.Show("Введите цену оптом");
                 return;
@@ -204,6 +204,82 @@ namespace LP
             {
                 e.Handled = true;
             }
+        }
+
+        private void Nalichie_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void Type_Enter(object sender, EventArgs e)
+        {
+            if (Type.Text == "Тип мебели")
+                Type.Text = "";
+        }
+
+        private void Articule_Enter(object sender, EventArgs e)
+        {
+            if (Articule.Text == "Артикул")
+                Articule.Text = "";
+        }
+
+        private void NameP_Enter(object sender, EventArgs e)
+        {
+            if (NameP.Text == "Название")
+                NameP.Text = "";
+        }
+
+        private void Nalichie_Enter(object sender, EventArgs e)
+        {
+            if (Nalichie.Text == "Количество позиций")
+                Nalichie.Text = "";
+        }
+
+        private void Price_Enter(object sender, EventArgs e)
+        {
+            if (Price.Text == "Цена в розницу")
+                Price.Text = "";
+        }
+
+        private void PriceO_Enter(object sender, EventArgs e)
+        {
+            if (PriceO.Text == "Цена оптом")
+                PriceO.Text = "";
+        }
+
+        private void Type_Leave(object sender, EventArgs e)
+        {
+            if (Type.Text == "")
+                Type.Text = "Тип мебели";
+        }
+
+        private void Articule_Leave(object sender, EventArgs e)
+        {
+            if (Articule.Text == "")
+                Articule.Text = "Артикул";
+        }
+
+        private void NameP_Leave(object sender, EventArgs e)
+        {
+            if (NameP.Text == "")
+                NameP.Text = "Название";
+        }
+
+        private void Nalichie_Leave(object sender, EventArgs e)
+        {
+            if (Nalichie.Text == "")
+                Nalichie.Text = "Количество позиций";
+        }
+
+        private void Price_Leave(object sender, EventArgs e)
+        {
+            if (Price.Text == "")
+                Price.Text = "Цена в розницу";
+        }
+
+        private void PriceO_Leave(object sender, EventArgs e)
+        {
+            if (PriceO.Text == "")
+                PriceO.Text = "Цена оптом";
         }
     }
 }

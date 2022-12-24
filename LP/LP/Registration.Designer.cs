@@ -93,7 +93,7 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.textBox2.ForeColor = System.Drawing.Color.Azure;
-            this.textBox2.Location = new System.Drawing.Point(0, 14);
+            this.textBox2.Location = new System.Drawing.Point(0, 21);
             this.textBox2.MaxLength = 10;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(395, 25);
@@ -101,6 +101,8 @@
             this.textBox2.Text = "Пароль";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
+            this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave);
             // 
             // panel2
             // 
@@ -124,6 +126,8 @@
             this.textBox1.Text = "Логин";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
+            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
             // button2
             // 
@@ -133,11 +137,11 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button2.ForeColor = System.Drawing.Color.Azure;
-            this.button2.Location = new System.Drawing.Point(487, 416);
+            this.button2.Location = new System.Drawing.Point(495, 416);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(154, 31);
+            this.button2.Size = new System.Drawing.Size(136, 31);
             this.button2.TabIndex = 9;
-            this.button2.Text = "Зарегистрироваться";
+            this.button2.Text = "Регистрация";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 

@@ -37,7 +37,7 @@ namespace LP
         {
             string articule = Articule.Text;
 
-            if (articule == "")
+            if (articule == "Введите артикул удаляемой позиции")
             {
                 MessageBox.Show("Введите артикул");
                 return;
@@ -94,6 +94,18 @@ namespace LP
             {
                 e.Handled = true;
             }
+        }
+
+        private void Articule_Enter(object sender, EventArgs e)
+        {
+            if (Articule.Text == "Введите артикул удаляемой позиции")
+                Articule.Text = "";
+        }
+
+        private void Articule_Leave(object sender, EventArgs e)
+        {
+            if (Articule.Text == "")
+                Articule.Text = "Введите артикул удаляемой позиции";
         }
     }
 }

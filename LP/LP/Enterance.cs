@@ -71,6 +71,30 @@ namespace LP
             {
                 MessageBox.Show("Нет такого логина или пароля");
             }
-        }        
+        }
+
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "Логин")
+                textBox1.Text = "";
+        }
+
+        private void textBox2_Enter(object sender, EventArgs e)
+        {
+            if (textBox2.Text == "Пароль")
+                textBox2.Text = "";
+        }
+
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "")
+                textBox1.Text = "Логин";
+        }
+
+        private void textBox2_Leave(object sender, EventArgs e)
+        {
+            if (textBox2.Text == "")
+                textBox2.Text = "Пароль";
+        }
     }
 }
