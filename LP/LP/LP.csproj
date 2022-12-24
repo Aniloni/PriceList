@@ -87,6 +87,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DeletePosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeletePosition.Designer.cs">
+      <DependentUpon>DeletePosition.cs</DependentUpon>
+    </Compile>
     <Compile Include="Enterance.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Chair.resx">
       <DependentUpon>Chair.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeletePosition.resx">
+      <DependentUpon>DeletePosition.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FurtitureType.resx">
       <DependentUpon>FurtitureType.cs</DependentUpon>

@@ -115,5 +115,12 @@ namespace LP
             f.Show();
             this.Hide();
         }
+
+        private void delete_Click(object sender, EventArgs e)
+        {
+            DeletePosition f = new DeletePosition();
+            f.Show();
+            this.Hide();
+        }
     }
 }

@@ -41,3 +41,4 @@ C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\obj\Debug\
 C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\obj\Debug\LP.Shelves.resources
 C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\obj\Debug\LP.Sofas.resources
 C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\obj\Debug\LP.Wardrobes.resources
+C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\obj\Debug\LP.DeletePosition.resources

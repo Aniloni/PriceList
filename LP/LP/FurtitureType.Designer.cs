@@ -43,6 +43,7 @@ namespace LP
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.delete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label6
@@ -72,7 +73,7 @@ namespace LP
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(105, 35);
             this.button1.TabIndex = 12;
-            this.button1.Text = "Изменить";
+            this.button1.Text = "Добавить";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -239,6 +240,16 @@ namespace LP
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // delete
+            // 
+            this.delete.Location = new System.Drawing.Point(937, 196);
+            this.delete.Name = "delete";
+            this.delete.Size = new System.Drawing.Size(75, 23);
+            this.delete.TabIndex = 42;
+            this.delete.Text = "Удалить";
+            this.delete.UseVisualStyleBackColor = true;
+            this.delete.Click += new System.EventHandler(this.delete_Click);
+            // 
             // FurtitureType
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -247,6 +258,7 @@ namespace LP
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1106, 695);
+            this.Controls.Add(this.delete);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button12);
@@ -284,6 +296,7 @@ namespace LP
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button delete;
     }
 }
 
