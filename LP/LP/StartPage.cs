@@ -12,18 +12,14 @@ using System.Windows.Forms;
 
 namespace LP
 {
-    
-    
-
-    public partial class StartPage : Form
+    public partial class StartPage : Form //Класс формы начальной страницы
     {
-
-        public StartPage()
+        public StartPage() //Конструктор класса
         {
             InitializeComponent();
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e) //Метод, запускающийся при нажатии кнопки назад и открывающий форму Enterance
         {
             Enterance frm = new Enterance();
             frm.Show();
@@ -31,33 +27,11 @@ namespace LP
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) //Метод, запускающийся при нажатии кнопки назад и открывающий форму Registration
         {
             Registration frm = new Registration();
             frm.Show();
             this.Hide();
         }
-
-        private void AnotherPage(object sender, MouseEventArgs e)
-        {
-
-        }
-    }
-    public static class Drawer
-    {
-        public static GraphicsPath RoundedRectangle(Rectangle rect, float RoundSize)
-        {
-            GraphicsPath gp = new GraphicsPath();
-
-            gp.AddArc(rect.X, rect.Y, RoundSize, RoundSize, 180, 90);
-            gp.AddArc(rect.X + rect.Width - RoundSize, rect.Y, RoundSize, RoundSize, 270, 90);
-            gp.AddArc(rect.X + rect.Width - RoundSize, rect.Y + rect.Height - RoundSize, RoundSize, RoundSize, 0, 90);
-            gp.AddArc(rect.X, rect.Y + rect.Height - RoundSize, RoundSize, RoundSize, 90, 90);
-
-            gp.CloseFigure();
-
-            return gp;
-        }
-
     }
 }

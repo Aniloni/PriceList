@@ -25,7 +25,7 @@ namespace LP
 
         private void buttonBack_Click(object sender, EventArgs e)
         {
-            FurtitureType back = new FurtitureType();
+            FurnitureType back = new FurnitureType();
             back.Show(); //Кнопка назад
             this.Hide();
             con.CloseConnection();
@@ -38,18 +38,11 @@ namespace LP
 
         private void Add_Click(object sender, EventArgs e)
         {
-            string type = Type.Text;
             string articule = Articule.Text;
             string nameP = NameP.Text;
             string nalichie = Nalichie.Text;
             string price = Price.Text;
             string priceO = PriceO.Text;
-
-            if (type == "Тип мебели")
-            {
-                MessageBox.Show("Введите тип мебели");
-                return;
-            }
 
             if (articule == "Артикул")
             {
@@ -84,9 +77,8 @@ namespace LP
             if (!IsPosExists())
                 return;
 
-            SqlCommand command = new SqlCommand("UPDATE Pricelist SET [Тип мебели] = @uT, [Название] = @uN, [Наличие] = @uNal, [Цена в розницу] = @uP, [Цена оптом] = @uPo WHERE [Артикул] = @uA", con.connection);
+            SqlCommand command = new SqlCommand("UPDATE Pricelist SET [Название] = @uN, [Наличие] = @uNal, [Цена в розницу] = @uP, [Цена оптом] = @uPo WHERE [Артикул] = @uA", con.connection);
 
-            command.Parameters.AddWithValue("uT", Type.Text);
             command.Parameters.AddWithValue("uA", Articule.Text);
             command.Parameters.AddWithValue("uN", NameP.Text);
             command.Parameters.AddWithValue("uNal", Nalichie.Text);
@@ -161,15 +153,6 @@ namespace LP
             }
         }
 
-        private void Nalichie_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        private void Type_Enter(object sender, EventArgs e)
-        {
-            if (Type.Text == "Тип мебели")
-                Type.Text = "";
-        }
 
         private void Articule_Enter(object sender, EventArgs e)
         {
@@ -200,11 +183,6 @@ namespace LP
                 PriceO.Text = "";
         }
 
-        private void Type_Leave(object sender, EventArgs e)
-        {
-            if (Type.Text == "")
-                Type.Text = "Тип мебели";
-        }
 
         private void Articule_Leave(object sender, EventArgs e)
         {
@@ -236,14 +214,5 @@ namespace LP
                 PriceO.Text = "Цена оптом";
         }
 
-        private void Type_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

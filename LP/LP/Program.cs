@@ -19,7 +19,7 @@ namespace LP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ChangePosition());
+            Application.Run(new StartPage());
         }
     }
 }

@@ -62,7 +62,7 @@ namespace LP
 
             if (table.Rows.Count > 0)
             {
-                FurtitureType f = new FurtitureType();
+                FurnitureType f = new FurnitureType();
                 f.Show();
                 this.Hide();
                 con.CloseConnection();

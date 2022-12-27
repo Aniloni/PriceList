@@ -110,7 +110,6 @@ namespace LP
             this.Type.TabIndex = 28;
             this.Type.Text = "Тип мебели";
             this.Type.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.Type.TextChanged += new System.EventHandler(this.Type_TextChanged);
             this.Type.Enter += new System.EventHandler(this.Type_Enter);
             this.Type.Leave += new System.EventHandler(this.Type_Leave);
             // 
@@ -126,7 +125,6 @@ namespace LP
             this.Articule.TabIndex = 29;
             this.Articule.Text = "Артикул";
             this.Articule.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.Articule.TextChanged += new System.EventHandler(this.Articule_TextChanged);
             this.Articule.Enter += new System.EventHandler(this.Articule_Enter);
             this.Articule.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Articule_KeyPress);
             this.Articule.Leave += new System.EventHandler(this.Articule_Leave);
@@ -143,7 +141,6 @@ namespace LP
             this.Nalichie.TabIndex = 31;
             this.Nalichie.Text = "Количество позиций";
             this.Nalichie.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.Nalichie.TextChanged += new System.EventHandler(this.Nalichie_TextChanged);
             this.Nalichie.Enter += new System.EventHandler(this.Nalichie_Enter);
             this.Nalichie.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Nalichie_KeyPress);
             this.Nalichie.Leave += new System.EventHandler(this.Nalichie_Leave);
@@ -310,7 +307,7 @@ namespace LP
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "NewPosition";
-            this.Text = "Form2";
+            this.Text = "NewPosition";
             this.Load += new System.EventHandler(this.NewPosition_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

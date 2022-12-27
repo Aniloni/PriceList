@@ -11,39 +11,29 @@ using System.Windows.Forms;
 
 namespace LP
 {
-    public partial class Registration : Form
+    public partial class Registration : Form // Класс формы для регистрации нового пользователя в системе
     {
-        public Registration()
+        public Registration() //Конструктор класса
         {
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) //Метод, запускающийся при нажатии кнопки назад и открывающий форму StartPage
         {
             StartPage f = new StartPage();
             f.Show();
             this.Hide();
         }
 
-        Connection con;
+        Connection con; //Поле, использующееся для подключения к базе данных
 
-        private void Registration_Load(object sender, EventArgs e)
+        private void Registration_Load(object sender, EventArgs e)  //Метод, запускающийся при загрузке страницы
         {
             con = new Connection();
             con.OpenConnection();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) //Метод, запускающийся при нажатии кнопки "Регистрация", добавляет нового пользователя в базу данных
         {
             string userId = textBox1.Text;
             string userPassword = textBox2.Text;
@@ -79,7 +69,7 @@ namespace LP
             else
                 MessageBox.Show("Аккаунт не был создан");
         }    
-        public bool IsIdExists()
+        public bool IsIdExists() //Метод, проверяющий существование id пользователя
         {
             string userId = textBox1.Text;
 
@@ -105,25 +95,25 @@ namespace LP
             }
         }
 
-        private void textBox1_Enter(object sender, EventArgs e)
+        private void textBox1_Enter(object sender, EventArgs e) //Метод, запускающийся при нажатии на текстбокс textBox1
         {
             if (textBox1.Text == "Логин")
                 textBox1.Text = "";
         }
 
-        private void textBox2_Enter(object sender, EventArgs e)
+        private void textBox2_Enter(object sender, EventArgs e) //Метод, запускающийся при нажатии на текстбокс textBox2
         {
             if (textBox2.Text == "Пароль")
                 textBox2.Text = "";
         }
 
-        private void textBox1_Leave(object sender, EventArgs e)
+        private void textBox1_Leave(object sender, EventArgs e) //Метод, запускающийся при выходе из поля текстбокса textBox1
         {
             if (textBox1.Text == "")
                 textBox1.Text = "Логин";
         }
 
-        private void textBox2_Leave(object sender, EventArgs e)
+        private void textBox2_Leave(object sender, EventArgs e) //Метод, запускающийся при выходе из поля текстбокса textBox2
         {
             if (textBox2.Text == "")
                 textBox2.Text = "Пароль";

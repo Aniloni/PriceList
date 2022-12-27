@@ -44,7 +44,7 @@ namespace LP
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FurtitureType f = new FurtitureType();
+            FurnitureType f = new FurnitureType();
             f.Show();
             this.Hide();
         }

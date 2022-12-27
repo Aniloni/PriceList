@@ -11,14 +11,14 @@ using System.Windows.Forms;
 
 namespace LP
 {
-    public partial class Tables : Form
+    public partial class Tables : Form // Класс формы для добавления новой позиции типа "Стол" в прайс-лист
     {
-        public Tables()
+        public Tables() //Конструктор класса
         {
             InitializeComponent();
         }
 
-        private void Tables_Load(object sender, EventArgs e)
+        private void Tables_Load(object sender, EventArgs e) //Метод, запускающийся при загрузке страницы
         {
             Connection con = new Connection();
             con.OpenConnection();
@@ -38,9 +38,9 @@ namespace LP
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) //Метод, запускающийся при нажатии кнопки назад и открывающий форму FurnitureType
         {
-            FurtitureType f = new FurtitureType();
+            FurnitureType f = new FurnitureType();
             f.Show();
             this.Hide();
         }

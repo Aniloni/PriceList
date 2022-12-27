@@ -22,7 +22,7 @@ namespace LP
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FurtitureType back = new FurtitureType();
+            FurnitureType back = new FurnitureType();
             back.Show(); //Кнопка назад
             this.Hide();
             con.CloseConnection();

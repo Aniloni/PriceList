@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NUnit.Framework;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,74 +10,40 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using NUnit.Framework.Internal.Execution;
+using System.Reflection.Emit;
 
 namespace LP
 {
-    public partial class NewPosition : Form
+    public partial class NewPosition : Form // Класс формы для добавления новой позиции в прайс-лист
     {
-        public NewPosition()
+
+        public NewPosition() //Конструктор класса
         {
             InitializeComponent();
         }
 
-        private void buttonExit2_Click(object sender, EventArgs e)
+        private void buttonExit2_Click(object sender, EventArgs e) //Метод, запускающийся при нажатии кнопки выход и завершающий работу программы
         {
-            Application.Exit(); // Выход из программы
-            
+            Application.Exit(); 
         }
 
-        private void buttonBack_Click(object sender, EventArgs e)
+        private void buttonBack_Click(object sender, EventArgs e) //Метод, запускающийся при нажатии кнопки назад и открывающий форму FurnitureType
         {
-            FurtitureType back = new FurtitureType();
-            back.Show(); //Кнопка назад
+            FurnitureType back = new FurnitureType();
+            back.Show(); 
             this.Hide();
             con.CloseConnection();
         }
 
-        private void label7_Click(object sender, EventArgs e)
-        {
+        Connection con = new Connection(); //Поле, использующееся для подключения к базе данных
 
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void toolStripComboBox1_Click(object sender, EventArgs e)
-        {
-
-        }       
-
-        private void fillByChairToolStripButton_Click(object sender, EventArgs e)
-        {
-      
-
-        }
-
-        private void Articule_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        Connection con = new Connection();
-
-        private void NewPosition_Load(object sender, EventArgs e)
+        private void NewPosition_Load(object sender, EventArgs e) //Метод, запускающийся при загрузке страницы
         {
             con.OpenConnection();
         }
 
-        private void Add_Click(object sender, EventArgs e)
+        private void Add_Click(object sender, EventArgs e) //Метод,запускающийся при нажатии на кнопку добавления позиции
         {
             string type = Type.Text;
             string articule = Articule.Text;
@@ -140,7 +107,7 @@ namespace LP
             else
                 MessageBox.Show("Позиция не добавлена");
         }
-        public bool IsPosExists()
+        public bool IsPosExists() //Метод, проверяющий существование позиции
         {
             string articule = Articule.Text;
 
@@ -166,11 +133,7 @@ namespace LP
             }
         }
 
-        private void Type_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void Articule_KeyPress(object sender, KeyPressEventArgs e)
+        private void Articule_KeyPress(object sender, KeyPressEventArgs e) // Метод, накладывающий условия на вводимые значения в текстбокс Articule
         {
             char number = e.KeyChar;
             if (!Char.IsDigit(number) && number != 8) // цифры и клавиша BackSpace
@@ -179,7 +142,7 @@ namespace LP
             }
         }
 
-        private void Nalichie_KeyPress(object sender, KeyPressEventArgs e)
+        private void Nalichie_KeyPress(object sender, KeyPressEventArgs e) // Метод, накладывающий условия на вводимые значения в текстбокс Nalichie
         {
             char number = e.KeyChar;
             if (!Char.IsDigit(number) && number != 8) // цифры и клавиша BackSpace
@@ -188,7 +151,7 @@ namespace LP
             }
         }
 
-        private void Price_KeyPress(object sender, KeyPressEventArgs e)
+        private void Price_KeyPress(object sender, KeyPressEventArgs e) // Метод, накладывающий условия на вводимые значения в текстбокс Price
         {
             char number = e.KeyChar;
             if (!Char.IsDigit(number) && number != 8) // цифры и клавиша BackSpace
@@ -197,7 +160,7 @@ namespace LP
             }
         }
 
-        private void PriceO_KeyPress(object sender, KeyPressEventArgs e)
+        private void PriceO_KeyPress(object sender, KeyPressEventArgs e) // Метод, накладывающий условия на вводимые значения в текстбокс PriceO
         {
             char number = e.KeyChar;
             if (!Char.IsDigit(number) && number != 8) // цифры и клавиша BackSpace
@@ -206,77 +169,73 @@ namespace LP
             }
         }
 
-        private void Nalichie_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        private void Type_Enter(object sender, EventArgs e)
+        private void Type_Enter(object sender, EventArgs e) //Метод, запускающийся при нажатии на текстбокс Type
         {
             if (Type.Text == "Тип мебели")
                 Type.Text = "";
         }
 
-        private void Articule_Enter(object sender, EventArgs e)
+        private void Articule_Enter(object sender, EventArgs e)//Метод, запускающийся при нажатии на текстбокс Articule
         {
             if (Articule.Text == "Артикул")
                 Articule.Text = "";
         }
 
-        private void NameP_Enter(object sender, EventArgs e)
+        private void NameP_Enter(object sender, EventArgs e)//Метод, запускающийся при нажатии на текстбокс NameP
         {
             if (NameP.Text == "Название")
                 NameP.Text = "";
         }
 
-        private void Nalichie_Enter(object sender, EventArgs e)
+        private void Nalichie_Enter(object sender, EventArgs e)//Метод, запускающийся при нажатии на текстбокс Nalichie
         {
             if (Nalichie.Text == "Количество позиций")
                 Nalichie.Text = "";
         }
 
-        private void Price_Enter(object sender, EventArgs e)
+        private void Price_Enter(object sender, EventArgs e)//Метод, запускающийся при нажатии на текстбокс Price
         {
             if (Price.Text == "Цена в розницу")
                 Price.Text = "";
         }
 
-        private void PriceO_Enter(object sender, EventArgs e)
+        private void PriceO_Enter(object sender, EventArgs e)//Метод, запускающийся при нажатии на текстбокс PriceO
         {
             if (PriceO.Text == "Цена оптом")
                 PriceO.Text = "";
         }
 
-        private void Type_Leave(object sender, EventArgs e)
+        private void Type_Leave(object sender, EventArgs e) //Метод, запускающийся при выходе из поля текстбокса Type
         {
             if (Type.Text == "")
                 Type.Text = "Тип мебели";
         }
 
-        private void Articule_Leave(object sender, EventArgs e)
+        private void Articule_Leave(object sender, EventArgs e) //Метод, запускающийся при выходе из поля текстбокса Articule
         {
             if (Articule.Text == "")
                 Articule.Text = "Артикул";
         }
 
-        private void NameP_Leave(object sender, EventArgs e)
+        private void NameP_Leave(object sender, EventArgs e) //Метод, запускающийся при выходе из поля текстбокса NameP
         {
             if (NameP.Text == "")
                 NameP.Text = "Название";
         }
 
-        private void Nalichie_Leave(object sender, EventArgs e)
+        private void Nalichie_Leave(object sender, EventArgs e) //Метод, запускающийся при выходе из поля текстбокса Nalichie
         {
             if (Nalichie.Text == "")
                 Nalichie.Text = "Количество позиций";
         }
 
-        private void Price_Leave(object sender, EventArgs e)
+        private void Price_Leave(object sender, EventArgs e) //Метод, запускающийся при выходе из поля текстбокса Price
         {
             if (Price.Text == "")
                 Price.Text = "Цена в розницу";
         }
 
-        private void PriceO_Leave(object sender, EventArgs e)
+        private void PriceO_Leave(object sender, EventArgs e) //Метод, запускающийся при выходе из поля текстбокса PriceO
         {
             if (PriceO.Text == "")
                 PriceO.Text = "Цена оптом";

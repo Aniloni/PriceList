@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NUnit.Framework;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,14 +12,14 @@ using System.Windows.Forms;
 
 namespace LP
 {
-    public partial class Sofas : Form
+    public partial class Sofas : Form // Класс формы для добавления новой позиции типа "Диван" в прайс-лист
     {
-        public Sofas()
+        public Sofas() //Конструктор класса
         {
             InitializeComponent();
         }
 
-        private void Sofas_Load(object sender, EventArgs e)
+        private void Sofas_Load(object sender, EventArgs e) //Метод, запускающийся при загрузке страницы
         {
             Connection con = new Connection();
             con.OpenConnection();
@@ -38,9 +39,9 @@ namespace LP
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) //Метод, запускающийся при нажатии кнопки назад и открывающий форму FurnitureType
         {
-            FurtitureType f = new FurtitureType();
+            FurnitureType f = new FurnitureType();
             f.Show();
             this.Hide();
         }

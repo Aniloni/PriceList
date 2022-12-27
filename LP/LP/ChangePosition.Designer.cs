@@ -67,7 +67,6 @@
             this.label1.Size = new System.Drawing.Size(964, 31);
             this.label1.TabIndex = 53;
             this.label1.Text = "Введите артикул изменяемой позиции и новую инфомацию о позиции";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // PriceO
             // 
@@ -144,9 +143,6 @@
             this.Type.TabIndex = 28;
             this.Type.Text = "Тип мебели";
             this.Type.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.Type.Enter += new System.EventHandler(this.Type_Enter);
-            this.Type.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Type_KeyPress);
-            this.Type.Leave += new System.EventHandler(this.Type_Leave);
             // 
             // panel7
             // 
