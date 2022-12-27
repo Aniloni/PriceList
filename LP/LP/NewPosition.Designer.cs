@@ -63,7 +63,7 @@ namespace LP
             this.buttonExit2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExit2.Font = new System.Drawing.Font("Dubai", 10F);
             this.buttonExit2.ForeColor = System.Drawing.Color.Azure;
-            this.buttonExit2.Location = new System.Drawing.Point(943, 78);
+            this.buttonExit2.Location = new System.Drawing.Point(502, 512);
             this.buttonExit2.Margin = new System.Windows.Forms.Padding(2);
             this.buttonExit2.Name = "buttonExit2";
             this.buttonExit2.Size = new System.Drawing.Size(136, 31);
@@ -80,7 +80,7 @@ namespace LP
             this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBack.Font = new System.Drawing.Font("Dubai", 10F);
             this.buttonBack.ForeColor = System.Drawing.Color.Azure;
-            this.buttonBack.Location = new System.Drawing.Point(502, 487);
+            this.buttonBack.Location = new System.Drawing.Point(502, 477);
             this.buttonBack.Margin = new System.Windows.Forms.Padding(2);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(136, 31);
@@ -200,7 +200,7 @@ namespace LP
             this.Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Add.Font = new System.Drawing.Font("Dubai", 10F);
             this.Add.ForeColor = System.Drawing.Color.Azure;
-            this.Add.Location = new System.Drawing.Point(502, 451);
+            this.Add.Location = new System.Drawing.Point(502, 441);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(136, 31);
             this.Add.TabIndex = 35;

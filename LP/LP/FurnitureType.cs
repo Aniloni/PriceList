@@ -1,20 +1,39 @@
 ﻿using NUnit.Framework;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml.Linq;
 
 namespace LP
 {
     public partial class FurnitureType : Form // Класс формы для всех типов позиций в прайс-лист
     {
-        
+        [TestFixture]
+        public class FurnitureTypeTest : FurnitureType // Тесты для класса FurtitureType
+        {
+            [Test] // Тест на проверку цвета элемента button1
+            [TestCase("Color [A=255, R=80, G=111, B=154]")]
+            public void Testbutton12Color(string actual)
+            {
+                Assert.AreEqual(button12.BackColor.ToString(), actual);
+            }
+            [Test] // Тест на проверку надписи на элементе button4
+            [TestCase("Диваны")]
+            public void Testbutton4Color(string actual)
+            {
+                Assert.AreEqual(button4.Text, actual);
+            }
+            [Test] // Тест на проверку надписи на элементе button8
+            [TestCase("Кресла")]
+            public void Testbutton8Color(string actual)
+            {
+                Assert.AreEqual(button8.Text, actual);
+            }
+            [Test] // Тест на проверку цвета элемента Change
+            [TestCase("Color [A=255, R=50, G=80, B=110]")]
+            public void TestChangeColor(string actual)
+            {
+                Assert.AreEqual(Change.BackColor.ToString(), actual);
+            }
+        }
         public FurnitureType() //Конструктор класса
         {
             InitializeComponent();

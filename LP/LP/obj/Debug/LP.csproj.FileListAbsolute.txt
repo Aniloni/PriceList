@@ -19,7 +19,6 @@ C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\bin\Debug\
 C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\bin\Debug\LP.pdb
 C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\obj\Debug\LP.csproj.AssemblyReference.cache
 C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\obj\Debug\LP.csproj.SuggestedBindingRedirects.cache
-C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\obj\Debug\LP.FurtitureType.resources
 C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\obj\Debug\LP.NewPosition.resources
 C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\obj\Debug\LP.Registration.resources
 C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\obj\Debug\LP.Enterance.resources
@@ -64,3 +63,15 @@ C:\Users\kanek\source\repos\PriceList\LP\LP\bin\Debug\nunit.framework.dll
 C:\Users\kanek\source\repos\PriceList\LP\LP\bin\Debug\nunit.framework.xml
 C:\Users\kanek\source\repos\PriceList\LP\LP\obj\Debug\LP.csproj.CopyComplete
 C:\Users\kanek\source\repos\PriceList\LP\LP\obj\Debug\LP.FurnitureType.resources
+C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\bin\Debug\NUnit3.TestAdapter.dll
+C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\bin\Debug\NUnit3.TestAdapter.pdb
+C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\bin\Debug\nunit.engine.dll
+C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\bin\Debug\nunit.engine.api.dll
+C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\bin\Debug\nunit.engine.core.dll
+C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\bin\Debug\testcentric.engine.metadata.dll
+C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\bin\Debug\Microsoft.VisualStudio.CodeCoverage.Shim.dll
+C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\bin\Debug\nunit.framework.dll
+C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\bin\Debug\nunit.framework.xml
+C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\obj\Debug\LP.ChangePosition.resources
+C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\obj\Debug\LP.FurnitureType.resources
+C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\obj\Debug\LP.csproj.CopyComplete

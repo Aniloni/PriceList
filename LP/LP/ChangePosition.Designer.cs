@@ -235,7 +235,7 @@
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(162, 31);
             this.Add.TabIndex = 45;
-            this.Add.Text = "Добавить";
+            this.Add.Text = "Изменить";
             this.Add.UseVisualStyleBackColor = false;
             this.Add.Click += new System.EventHandler(this.Add_Click);
             // 
@@ -301,6 +301,7 @@
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.buttonExit2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ChangePosition";
             this.Text = "ChangePosition";
             this.Load += new System.EventHandler(this.ChangePosition_Load);

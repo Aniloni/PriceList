@@ -35,6 +35,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.buttonExit2 = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,7 +52,6 @@
             this.Articule.TabIndex = 0;
             this.Articule.Text = "Введите артикул удаляемой позиции";
             this.Articule.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.Articule.TextChanged += new System.EventHandler(this.Articule_TextChanged);
             this.Articule.Enter += new System.EventHandler(this.Articule_Enter);
             this.Articule.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Articule_KeyPress);
             this.Articule.Leave += new System.EventHandler(this.Articule_Leave);
@@ -115,6 +115,23 @@
             this.panel3.Size = new System.Drawing.Size(584, 58);
             this.panel3.TabIndex = 35;
             // 
+            // buttonExit2
+            // 
+            this.buttonExit2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(80)))), ((int)(((byte)(110)))));
+            this.buttonExit2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonExit2.FlatAppearance.BorderSize = 0;
+            this.buttonExit2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonExit2.Font = new System.Drawing.Font("Dubai", 10F);
+            this.buttonExit2.ForeColor = System.Drawing.Color.Azure;
+            this.buttonExit2.Location = new System.Drawing.Point(488, 377);
+            this.buttonExit2.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonExit2.Name = "buttonExit2";
+            this.buttonExit2.Size = new System.Drawing.Size(136, 31);
+            this.buttonExit2.TabIndex = 36;
+            this.buttonExit2.Text = "Выход";
+            this.buttonExit2.UseVisualStyleBackColor = false;
+            this.buttonExit2.Click += new System.EventHandler(this.buttonExit2_Click);
+            // 
             // DeletePosition
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -122,11 +139,13 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1106, 695);
+            this.Controls.Add(this.buttonExit2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.delete);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DeletePosition";
             this.Text = "DeletePosition";
             this.Load += new System.EventHandler(this.DeletePosition_Load);
@@ -144,5 +163,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button buttonExit2;
     }
 }
