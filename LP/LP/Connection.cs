@@ -8,11 +8,11 @@ using System.Runtime.CompilerServices;
 
 namespace LP
 {
-    public class Connection
+    public class Connection //Класс для подключения к базе данных
     {
-        public SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kanek\source\repos\PriceList\LP\LP\Database.mdf");
-        
-        public void OpenConnection()
+        public SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\Database.mdf"); //Поле типа SqlConnection, использующееся для подключения к базе данных
+
+        public void OpenConnection() //Метод, открывающий подключение к базе данных
         {
             if (connection.State == System.Data.ConnectionState.Closed) 
             {
@@ -20,7 +20,7 @@ namespace LP
             }
         }
 
-        public void CloseConnection()
+        public void CloseConnection() //Метод, закрывающий подключение к базе данных
         {
             if (connection.State == System.Data.ConnectionState.Open)
             {

@@ -1,23 +1,40 @@
 ﻿using NUnit.Framework;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using NUnit.Framework.Internal.Execution;
-using System.Reflection.Emit;
-
 namespace LP
 {
     public partial class NewPosition : Form // Класс формы для добавления новой позиции в прайс-лист
     {
-
+        [TestFixture]
+        public class NewPositionTest : NewPosition // Тесты для класса NewPosition
+        {
+            [Test] // Тест на проверку цвета текстбокса Type
+            [TestCase("Color [A=255, R=80, G=111, B=154]")]
+            public void TestTypeColor(string actual)
+            {
+                Assert.AreEqual(Type.BackColor.ToString(), actual);
+            }
+            [Test] // Тест на проверку цвета текстбокса Color
+            [TestCase("Color [A=255, R=50, G=80, B=110]")]
+            public void TestbuttonBackColor(string actual)
+            {
+                Assert.AreEqual(buttonBack.BackColor.ToString(), actual);
+            }
+            [Test] // Тест на проверку цвета текстбокса Articule
+            [TestCase("Color [A=255, R=80, G=111, B=154]")]
+            public void TestArticuleColor(string actual)
+            {
+                Assert.AreEqual(Articule.BackColor.ToString(), actual);
+            }
+            [Test] // Тест на проверку цвета текстбокса NameP
+            [TestCase("Color [A=255, R=80, G=111, B=154]")]
+            public void TestNamePColor(string actual)
+            {
+                Assert.AreEqual(NameP.BackColor.ToString(), actual);
+            }
+        }
         public NewPosition() //Конструктор класса
         {
             InitializeComponent();

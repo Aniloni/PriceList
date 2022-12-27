@@ -1,26 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LP
 {
-    public partial class DeletePosition : Form
+    public partial class DeletePosition : Form //Класс формы для удаления позиции в прайс-листе
     {
-        public DeletePosition()
+        public DeletePosition() //Конструктор класса
         {
             InitializeComponent();
         }
 
-        Connection con = new Connection();
+        Connection con = new Connection(); //Поле типа Connection, использующееся для подключения к базе данных
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) //Метод, запускающийся при нажатии кнопки назад и открывающий форму FurnitureType
         {
             FurnitureType back = new FurnitureType();
             back.Show(); //Кнопка назад
@@ -28,12 +22,12 @@ namespace LP
             con.CloseConnection();
         }
 
-        private void DeletePosition_Load(object sender, EventArgs e)
+        private void DeletePosition_Load(object sender, EventArgs e) //Метод, запускающийся при загрузке формы DeletePosition
         {
             con.OpenConnection();
         }
 
-        private void delete_Click(object sender, EventArgs e)
+        private void delete_Click(object sender, EventArgs e) //Метод, запускающийся при нажатии кнопки удалить и удаляющий позицую в прайс-листе
         {
             string articule = Articule.Text;
 
@@ -41,7 +35,7 @@ namespace LP
             {
                 MessageBox.Show("Введите артикул");
                 return;
-            }            
+            }
 
             if (!IsPosExists())
                 return;
@@ -56,7 +50,7 @@ namespace LP
             }
         }
 
-        public bool IsPosExists()
+        public bool IsPosExists() //Метод, проверяющий наличие данной позиции в прайслисте
         {
             string articule = Articule.Text;
 
@@ -82,30 +76,30 @@ namespace LP
             }
         }
 
-        private void Articule_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Articule_KeyPress(object sender, KeyPressEventArgs e)
+        private void Articule_KeyPress(object sender, KeyPressEventArgs e) //Метод, накладывающий условия на вводимые значения в текстбокс Аrticule
         {
             char number = e.KeyChar;
-            if (!Char.IsDigit(number) && number != 8) // цифры и клавиша BackSpace
+            if (!Char.IsDigit(number) && number != 8)
             {
                 e.Handled = true;
             }
         }
 
-        private void Articule_Enter(object sender, EventArgs e)
+        private void Articule_Enter(object sender, EventArgs e) //Метод, запускающийся при нажатии на текстбокс Articule
         {
             if (Articule.Text == "Введите артикул удаляемой позиции")
                 Articule.Text = "";
         }
 
-        private void Articule_Leave(object sender, EventArgs e)
+        private void Articule_Leave(object sender, EventArgs e) //Метод, запускающийся при выходе из поля текстбокса Articule
         {
             if (Articule.Text == "")
                 Articule.Text = "Введите артикул удаляемой позиции";
+        }
+
+        private void buttonExit2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

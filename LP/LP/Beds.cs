@@ -1,24 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LP
 {
-    public partial class Beds : Form
+    public partial class Beds : Form //Класс формы для просмотра позиций типа кровать в прайс-листе
     {
-        public Beds()
+        public Beds() //Конструктор класса
         {
             InitializeComponent();
         }
 
-        private void Beds_Load(object sender, EventArgs e)
+        private void Beds_Load(object sender, EventArgs e) //Метод, запускающийся при загрузке формы Beds
         {
             Connection con = new Connection();
             con.OpenConnection();
@@ -37,7 +31,7 @@ namespace LP
             con.CloseConnection();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) //Метод, запускающийся при нажатии кнопки назад и открывающий форму FurnitureType
         {
             FurnitureType f = new FurnitureType();
             f.Show();

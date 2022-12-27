@@ -284,7 +284,7 @@ namespace LP
             this.Change.UseVisualStyleBackColor = false;
             this.Change.Click += new System.EventHandler(this.Change_Click);
             // 
-            // FurtitureType
+            // FurnitureType
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -307,10 +307,11 @@ namespace LP
             this.Controls.Add(this.button10);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "FurtitureType";
+            this.Name = "FurnitureType";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "FurnitureType";
             this.ResumeLayout(false);
             this.PerformLayout();
 

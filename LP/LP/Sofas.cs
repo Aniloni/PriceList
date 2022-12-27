@@ -1,19 +1,43 @@
 ﻿using NUnit.Framework;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LP
 {
     public partial class Sofas : Form // Класс формы для добавления новой позиции типа "Диван" в прайс-лист
     {
+        [TestFixture]
+        public class SofasTest : Sofas // Тесты для класса Sofas
+        {
+            [Test]// Тест на проверку размеров элемента panel1
+            [TestCase(160, 1106)]
+            public void TestPanel1Params(int actualH, int actualW)
+            {
+                Assert.AreEqual(panel1.Height, actualH);
+                Assert.AreEqual(panel1.Width, actualW);
+            }
+            [Test] // Тест на проверку цвета формы Sofas
+            [TestCase("Color [Control]")]
+            public void SofasLoadColor(string actual)
+            {
+                Assert.AreEqual(BackColor.ToString(), actual);
+            }
+            [Test]// Тест на проверку надписи на элементе button1
+            [TestCase("Назад")]
+            public void Testbutton1Color(string actual)
+            {
+                Assert.AreEqual(button1.Text, actual);
+            }
+            [Test]// Тест на проверку размеров элемента button1
+            [TestCase(35, 136)]
+            public void Testbutton1Params(int actualH, int actualW)
+            {
+                Assert.AreEqual(button1.Height, actualH);
+                Assert.AreEqual(button1.Width, actualW);
+            }
+        }
         public Sofas() //Конструктор класса
         {
             InitializeComponent();

@@ -1,52 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Data.Common;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LP
 {
-    public partial class Enterance : Form
+    public partial class Enterance : Form //Класс формы для авторизации
     {
-
-
-        public Enterance()
+        public Enterance() //Конструктор класса
         {
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) //Метод, запускающийся при нажатии кнопки назад и открывающий форму StartPage
         {
             StartPage f = new StartPage();
             f.Show();
             this.Hide();
         }
 
-        Connection con;
+        Connection con; //Поле типа Connection, использующееся для подключения к базе данных
 
-        private void Enterance_Load(object sender, EventArgs e)
+        private void Enterance_Load(object sender, EventArgs e) //Метод, запускающийся при загрузке формы Enterance
         {
             con = new Connection();
             con.OpenConnection();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) //Метод, запускающийся при нажатии кнопки вход
         {
             DataTable table = new DataTable();
 
@@ -73,25 +54,25 @@ namespace LP
             }
         }
 
-        private void textBox1_Enter(object sender, EventArgs e)
+        private void textBox1_Enter(object sender, EventArgs e) //Метод, запускающийся при нажатии на textBox1
         {
             if (textBox1.Text == "Логин")
                 textBox1.Text = "";
         }
 
-        private void textBox2_Enter(object sender, EventArgs e)
+        private void textBox2_Enter(object sender, EventArgs e) //Метод, запускающийся при нажатии на textBox2
         {
             if (textBox2.Text == "Пароль")
                 textBox2.Text = "";
         }
 
-        private void textBox1_Leave(object sender, EventArgs e)
+        private void textBox1_Leave(object sender, EventArgs e) //Метод, запускающийся при выходе из поля textBox1
         {
             if (textBox1.Text == "")
                 textBox1.Text = "Логин";
         }
 
-        private void textBox2_Leave(object sender, EventArgs e)
+        private void textBox2_Leave(object sender, EventArgs e) //Метод, запускающийся при выходе из поля textBox2
         {
             if (textBox2.Text == "")
                 textBox2.Text = "Пароль";
