@@ -5,14 +5,25 @@ using System.Windows.Forms;
 
 namespace LP
 {
-    public partial class Beds : Form //Класс формы для просмотра позиций типа кровать в прайс-листе
+    /// <summary>
+    /// Класс формы для просмотра позиций типа кровать в прайс-листе
+    /// </summary>
+    public partial class Beds : Form 
     {
-        public Beds() //Конструктор класса
+        /// <summary>
+        /// Конструктор класса
+        /// </summary>
+        public Beds() 
         {
             InitializeComponent();
         }
 
-        private void Beds_Load(object sender, EventArgs e) //Метод, запускающийся при загрузке формы Beds
+        /// <summary>
+        /// Метод, запускающийся при загрузке формы Beds
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Beds_Load(object sender, EventArgs e) 
         {
             Connection con = new Connection();
             con.OpenConnection();
@@ -31,7 +42,12 @@ namespace LP
             con.CloseConnection();
         }
 
-        private void button1_Click(object sender, EventArgs e) //Метод, запускающийся при нажатии кнопки назад и открывающий форму FurnitureType
+        /// <summary>
+        /// Метод, запускающийся при нажатии кнопки назад и открывающий форму FurnitureType
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void button1_Click(object sender, EventArgs e) 
         {
             FurnitureType f = new FurnitureType();
             f.Show();

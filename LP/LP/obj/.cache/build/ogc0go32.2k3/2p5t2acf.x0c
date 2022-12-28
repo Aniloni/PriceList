@@ -1,0 +1,1147 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PricelistTableAdapter
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PricelistTableAdapter
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter">
+  
+  
+  <h1 id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter" class="text-break">Class PricelistTableAdapter
+  </h1>
+  <div class="markdown level0 summary"><p>Represents the connection and commands used to retrieve and save data.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">System.MarshalByRefObject</span></div>
+    <div class="level2"><span class="xref">System.ComponentModel.Component</span></div>
+    <div class="level3"><span class="xref">PricelistTableAdapter</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.IComponent</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.ComponentModel.Component.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.Component.Dispose(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.Component.GetService(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.Component.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.Component.CanRaiseEvents</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.Component.Events</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.Component.Site</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.Component.Container</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.Component.DesignMode</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.Component.Disposed</span>
+    </div>
+    <div>
+      <span class="xref">System.MarshalByRefObject.MemberwiseClone(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.MarshalByRefObject.GetLifetimeService()</span>
+    </div>
+    <div>
+      <span class="xref">System.MarshalByRefObject.InitializeLifetimeService()</span>
+    </div>
+    <div>
+      <span class="xref">System.MarshalByRefObject.CreateObjRef(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="LP.DatabaseDataSetTableAdapters.html">LP.DatabaseDataSetTableAdapters</a></h6>
+  <h6><strong>Assembly</strong>: LP.dll</h6>
+  <h5 id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataObject(true)]
+public class PricelistTableAdapter : Component, IComponent, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter__ctor_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.#ctor*"></a>
+  <h4 id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter__ctor" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.#ctor">PricelistTableAdapter()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PricelistTableAdapter()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_Adapter_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.Adapter*"></a>
+  <h4 id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_Adapter" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.Adapter">Adapter</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SqlDataAdapter Adapter { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlDataAdapter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_ClearBeforeFill_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.ClearBeforeFill*"></a>
+  <h4 id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_ClearBeforeFill" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.ClearBeforeFill">ClearBeforeFill</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ClearBeforeFill { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_CommandCollection_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.CommandCollection*"></a>
+  <h4 id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_CommandCollection" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.CommandCollection">CommandCollection</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SqlCommand[] CommandCollection { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.SqlClient.SqlCommand</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_Delete_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.Delete*"></a>
+  <h4 id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_Delete_System_String_System_Int32_System_String_System_Int32_System_Int32_System_Int32_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.Delete(System.String,System.Int32,System.String,System.Int32,System.Int32,System.Int32)">Delete(String, Int32, String, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Delete(string Original_&#1058;&#1080;&#1087;_&#1084;&#1077;&#1073;&#1077;&#1083;&#1080;, int Original_&#1040;&#1088;&#1090;&#1080;&#1082;&#1091;&#1083;, string Original_&#1053;&#1072;&#1079;&#1074;&#1072;&#1085;&#1080;&#1077;, int Original_&#1053;&#1072;&#1083;&#1080;&#1095;&#1080;&#1077;, int Original_&#1062;&#1077;&#1085;&#1072;_&#1074;_&#1088;&#1086;&#1079;&#1085;&#1080;&#1094;&#1091;, int Original_&#1062;&#1077;&#1085;&#1072;_&#1086;&#1087;&#1090;&#1086;&#1084;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Original_Тип_мебели</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Original_Артикул</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Original_Название</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Original_Наличие</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Original_Цена_в_розницу</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Original_Цена_оптом</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_Fill_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.Fill*"></a>
+  <h4 id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_Fill_LP_DatabaseDataSet_PricelistDataTable_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.Fill(LP.DatabaseDataSet.PricelistDataTable)">Fill(DatabaseDataSet.PricelistDataTable)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Fill(DatabaseDataSet.PricelistDataTable dataTable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LP.DatabaseDataSet.PricelistDataTable.html">DatabaseDataSet.PricelistDataTable</a></td>
+        <td><span class="parametername">dataTable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_FillByArmchair_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.FillByArmchair*"></a>
+  <h4 id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_FillByArmchair_LP_DatabaseDataSet_PricelistDataTable_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.FillByArmchair(LP.DatabaseDataSet.PricelistDataTable)">FillByArmchair(DatabaseDataSet.PricelistDataTable)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int FillByArmchair(DatabaseDataSet.PricelistDataTable dataTable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LP.DatabaseDataSet.PricelistDataTable.html">DatabaseDataSet.PricelistDataTable</a></td>
+        <td><span class="parametername">dataTable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_FillByBed_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.FillByBed*"></a>
+  <h4 id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_FillByBed_LP_DatabaseDataSet_PricelistDataTable_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.FillByBed(LP.DatabaseDataSet.PricelistDataTable)">FillByBed(DatabaseDataSet.PricelistDataTable)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int FillByBed(DatabaseDataSet.PricelistDataTable dataTable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LP.DatabaseDataSet.PricelistDataTable.html">DatabaseDataSet.PricelistDataTable</a></td>
+        <td><span class="parametername">dataTable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_FillByChair_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.FillByChair*"></a>
+  <h4 id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_FillByChair_LP_DatabaseDataSet_PricelistDataTable_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.FillByChair(LP.DatabaseDataSet.PricelistDataTable)">FillByChair(DatabaseDataSet.PricelistDataTable)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int FillByChair(DatabaseDataSet.PricelistDataTable dataTable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LP.DatabaseDataSet.PricelistDataTable.html">DatabaseDataSet.PricelistDataTable</a></td>
+        <td><span class="parametername">dataTable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_FillByShelve_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.FillByShelve*"></a>
+  <h4 id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_FillByShelve_LP_DatabaseDataSet_PricelistDataTable_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.FillByShelve(LP.DatabaseDataSet.PricelistDataTable)">FillByShelve(DatabaseDataSet.PricelistDataTable)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int FillByShelve(DatabaseDataSet.PricelistDataTable dataTable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LP.DatabaseDataSet.PricelistDataTable.html">DatabaseDataSet.PricelistDataTable</a></td>
+        <td><span class="parametername">dataTable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_FillBySofa_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.FillBySofa*"></a>
+  <h4 id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_FillBySofa_LP_DatabaseDataSet_PricelistDataTable_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.FillBySofa(LP.DatabaseDataSet.PricelistDataTable)">FillBySofa(DatabaseDataSet.PricelistDataTable)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int FillBySofa(DatabaseDataSet.PricelistDataTable dataTable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LP.DatabaseDataSet.PricelistDataTable.html">DatabaseDataSet.PricelistDataTable</a></td>
+        <td><span class="parametername">dataTable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_FillByTable_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.FillByTable*"></a>
+  <h4 id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_FillByTable_LP_DatabaseDataSet_PricelistDataTable_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.FillByTable(LP.DatabaseDataSet.PricelistDataTable)">FillByTable(DatabaseDataSet.PricelistDataTable)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int FillByTable(DatabaseDataSet.PricelistDataTable dataTable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LP.DatabaseDataSet.PricelistDataTable.html">DatabaseDataSet.PricelistDataTable</a></td>
+        <td><span class="parametername">dataTable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_FillByWardrobe_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.FillByWardrobe*"></a>
+  <h4 id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_FillByWardrobe_LP_DatabaseDataSet_PricelistDataTable_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.FillByWardrobe(LP.DatabaseDataSet.PricelistDataTable)">FillByWardrobe(DatabaseDataSet.PricelistDataTable)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int FillByWardrobe(DatabaseDataSet.PricelistDataTable dataTable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LP.DatabaseDataSet.PricelistDataTable.html">DatabaseDataSet.PricelistDataTable</a></td>
+        <td><span class="parametername">dataTable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_GetData_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.GetData*"></a>
+  <h4 id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_GetData" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.GetData">GetData()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DatabaseDataSet.PricelistDataTable GetData()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LP.DatabaseDataSet.PricelistDataTable.html">DatabaseDataSet.PricelistDataTable</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_Insert_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.Insert*"></a>
+  <h4 id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_Insert_System_String_System_Int32_System_String_System_Int32_System_Int32_System_Int32_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.Insert(System.String,System.Int32,System.String,System.Int32,System.Int32,System.Int32)">Insert(String, Int32, String, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Insert(string &#1058;&#1080;&#1087;_&#1084;&#1077;&#1073;&#1077;&#1083;&#1080;, int &#1040;&#1088;&#1090;&#1080;&#1082;&#1091;&#1083;, string &#1053;&#1072;&#1079;&#1074;&#1072;&#1085;&#1080;&#1077;, int &#1053;&#1072;&#1083;&#1080;&#1095;&#1080;&#1077;, int &#1062;&#1077;&#1085;&#1072;_&#1074;_&#1088;&#1086;&#1079;&#1085;&#1080;&#1094;&#1091;, int &#1062;&#1077;&#1085;&#1072;_&#1086;&#1087;&#1090;&#1086;&#1084;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Тип_мебели</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Артикул</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Название</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Наличие</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Цена_в_розницу</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Цена_оптом</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_Update_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.Update*"></a>
+  <h4 id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_Update_LP_DatabaseDataSet_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.Update(LP.DatabaseDataSet)">Update(DatabaseDataSet)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Update(DatabaseDataSet dataSet)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LP.DatabaseDataSet.html">DatabaseDataSet</a></td>
+        <td><span class="parametername">dataSet</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_Update_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.Update*"></a>
+  <h4 id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_Update_LP_DatabaseDataSet_PricelistDataTable_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.Update(LP.DatabaseDataSet.PricelistDataTable)">Update(DatabaseDataSet.PricelistDataTable)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Update(DatabaseDataSet.PricelistDataTable dataTable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LP.DatabaseDataSet.PricelistDataTable.html">DatabaseDataSet.PricelistDataTable</a></td>
+        <td><span class="parametername">dataTable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_Update_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.Update*"></a>
+  <h4 id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_Update_System_Data_DataRow_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.Update(System.Data.DataRow)">Update(DataRow)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Update(DataRow dataRow)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.DataRow</span></td>
+        <td><span class="parametername">dataRow</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_Update_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.Update*"></a>
+  <h4 id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_Update_System_Data_DataRow___" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.Update(System.Data.DataRow[])">Update(DataRow[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Update(DataRow[] dataRows)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.DataRow</span>[]</td>
+        <td><span class="parametername">dataRows</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_Update_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.Update*"></a>
+  <h4 id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_Update_System_String_System_Int32_System_String_System_Int32_System_Int32_System_Int32_System_String_System_Int32_System_String_System_Int32_System_Int32_System_Int32_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.Update(System.String,System.Int32,System.String,System.Int32,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Int32,System.Int32)">Update(String, Int32, String, Int32, Int32, Int32, String, Int32, String, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Update(string &#1058;&#1080;&#1087;_&#1084;&#1077;&#1073;&#1077;&#1083;&#1080;, int &#1040;&#1088;&#1090;&#1080;&#1082;&#1091;&#1083;, string &#1053;&#1072;&#1079;&#1074;&#1072;&#1085;&#1080;&#1077;, int &#1053;&#1072;&#1083;&#1080;&#1095;&#1080;&#1077;, int &#1062;&#1077;&#1085;&#1072;_&#1074;_&#1088;&#1086;&#1079;&#1085;&#1080;&#1094;&#1091;, int &#1062;&#1077;&#1085;&#1072;_&#1086;&#1087;&#1090;&#1086;&#1084;, string Original_&#1058;&#1080;&#1087;_&#1084;&#1077;&#1073;&#1077;&#1083;&#1080;, int Original_&#1040;&#1088;&#1090;&#1080;&#1082;&#1091;&#1083;, string Original_&#1053;&#1072;&#1079;&#1074;&#1072;&#1085;&#1080;&#1077;, int Original_&#1053;&#1072;&#1083;&#1080;&#1095;&#1080;&#1077;, int Original_&#1062;&#1077;&#1085;&#1072;_&#1074;_&#1088;&#1086;&#1079;&#1085;&#1080;&#1094;&#1091;, int Original_&#1062;&#1077;&#1085;&#1072;_&#1086;&#1087;&#1090;&#1086;&#1084;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Тип_мебели</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Артикул</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Название</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Наличие</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Цена_в_розницу</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Цена_оптом</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Original_Тип_мебели</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Original_Артикул</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Original_Название</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Original_Наличие</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Original_Цена_в_розницу</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Original_Цена_оптом</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_Update_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.Update*"></a>
+  <h4 id="LP_DatabaseDataSetTableAdapters_PricelistTableAdapter_Update_System_String_System_String_System_Int32_System_Int32_System_Int32_System_String_System_Int32_System_String_System_Int32_System_Int32_System_Int32_" data-uid="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.Update(System.String,System.String,System.Int32,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Int32,System.Int32)">Update(String, String, Int32, Int32, Int32, String, Int32, String, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Update(string &#1058;&#1080;&#1087;_&#1084;&#1077;&#1073;&#1077;&#1083;&#1080;, string &#1053;&#1072;&#1079;&#1074;&#1072;&#1085;&#1080;&#1077;, int &#1053;&#1072;&#1083;&#1080;&#1095;&#1080;&#1077;, int &#1062;&#1077;&#1085;&#1072;_&#1074;_&#1088;&#1086;&#1079;&#1085;&#1080;&#1094;&#1091;, int &#1062;&#1077;&#1085;&#1072;_&#1086;&#1087;&#1090;&#1086;&#1084;, string Original_&#1058;&#1080;&#1087;_&#1084;&#1077;&#1073;&#1077;&#1083;&#1080;, int Original_&#1040;&#1088;&#1090;&#1080;&#1082;&#1091;&#1083;, string Original_&#1053;&#1072;&#1079;&#1074;&#1072;&#1085;&#1080;&#1077;, int Original_&#1053;&#1072;&#1083;&#1080;&#1095;&#1080;&#1077;, int Original_&#1062;&#1077;&#1085;&#1072;_&#1074;_&#1088;&#1086;&#1079;&#1085;&#1080;&#1094;&#1091;, int Original_&#1062;&#1077;&#1085;&#1072;_&#1086;&#1087;&#1090;&#1086;&#1084;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Тип_мебели</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Название</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Наличие</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Цена_в_розницу</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Цена_оптом</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Original_Тип_мебели</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Original_Артикул</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Original_Название</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Original_Наличие</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Original_Цена_в_розницу</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Original_Цена_оптом</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.IComponent</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

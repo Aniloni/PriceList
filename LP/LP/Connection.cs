@@ -1,18 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.SqlClient;
-using System.Runtime.CompilerServices;
+﻿using System.Data.SqlClient;
 
 namespace LP
 {
-    public class Connection //Класс для подключения к базе данных
+    /// <summary>
+    /// Класс для подключения к базе данных
+    /// </summary>
+    public class Connection 
     {
-        public SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\Database.mdf"); //Поле типа SqlConnection, использующееся для подключения к базе данных
+        /// <summary>
+        /// Поле типа SqlConnection, использующееся для подключения к базе данных
+        /// </summary>
+        public SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\Database.mdf"); 
 
-        public void OpenConnection() //Метод, открывающий подключение к базе данных
+        /// <summary>
+        /// Метод, открывающий подключение к базе данных
+        /// </summary>
+        public void OpenConnection() 
         {
             if (connection.State == System.Data.ConnectionState.Closed) 
             {
@@ -20,7 +23,10 @@ namespace LP
             }
         }
 
-        public void CloseConnection() //Метод, закрывающий подключение к базе данных
+        /// <summary>
+        /// Метод, закрывающий подключение к базе данных
+        /// </summary>
+        public void CloseConnection() 
         {
             if (connection.State == System.Data.ConnectionState.Open)
             {

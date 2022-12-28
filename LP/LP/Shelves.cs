@@ -5,14 +5,24 @@ using System.Windows.Forms;
 
 namespace LP
 {
-    public partial class Shelves : Form // Класс формы для добавления новой позиции типа "Полка" в прайс-лист
+    /// <summary>
+    /// Класс формы для добавления новой позиции типа "Полка" в прайс-лист
+    /// </summary>
+    public partial class Shelves : Form 
     {
-        public Shelves() //Конструктор класса
+        /// <summary>
+        /// Конструктор класса
+        /// </summary>
+        public Shelves() 
         {
             InitializeComponent();
         }
-
-        private void Shelves_Load(object sender, EventArgs e) //Метод, запускающийся при загрузке страницы
+        /// <summary>
+        /// Метод, запускающийся при загрузке страницы
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Shelves_Load(object sender, EventArgs e) 
         {
             Connection con = new Connection();
             con.OpenConnection();
@@ -31,8 +41,12 @@ namespace LP
             con.CloseConnection();
 
         }
-
-        private void button1_Click(object sender, EventArgs e) //Метод, запускающийся при нажатии кнопки назад и открывающий форму FurnitureType
+        /// <summary>
+        /// Метод, запускающийся при нажатии кнопки назад и открывающий форму FurnitureType
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void button1_Click(object sender, EventArgs e) 
         {
             FurnitureType f = new FurnitureType();
             f.Show();

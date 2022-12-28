@@ -1,0 +1,114 @@
+### YamlMime:ManagedReference
+items:
+- uid: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption
+  commentId: T:LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption
+  id: TableAdapterManager.UpdateOrderOption
+  parent: LP.DatabaseDataSetTableAdapters
+  children:
+  - LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+  - LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.UpdateInsertDelete
+  langs:
+  - csharp
+  - vb
+  name: TableAdapterManager.UpdateOrderOption
+  nameWithType: TableAdapterManager.UpdateOrderOption
+  fullName: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption
+  type: Enum
+  source:
+    remote:
+      path: LP/LP/DatabaseDataSet.Designer.cs
+      branch: develop
+      repo: https://github.com/Aniloni/PriceList.git
+    id: UpdateOrderOption
+    path: DatabaseDataSet.Designer.cs
+    startLine: 2338
+  assemblies:
+  - LP
+  namespace: LP.DatabaseDataSetTableAdapters
+  summary: "\nUpdate Order Option\n"
+  example: []
+  syntax:
+    content: public enum UpdateOrderOption
+    content.vb: Public Enum UpdateOrderOption
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+  commentId: F:LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+  id: InsertUpdateDelete
+  parent: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption
+  langs:
+  - csharp
+  - vb
+  name: InsertUpdateDelete
+  nameWithType: TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+  fullName: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+  type: Field
+  source:
+    remote:
+      path: LP/LP/DatabaseDataSet.Designer.cs
+      branch: develop
+      repo: https://github.com/Aniloni/PriceList.git
+    id: InsertUpdateDelete
+    path: DatabaseDataSet.Designer.cs
+    startLine: 2341
+  assemblies:
+  - LP
+  namespace: LP.DatabaseDataSetTableAdapters
+  syntax:
+    content: InsertUpdateDelete = 0
+    return:
+      type: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.UpdateInsertDelete
+  commentId: F:LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.UpdateInsertDelete
+  id: UpdateInsertDelete
+  parent: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption
+  langs:
+  - csharp
+  - vb
+  name: UpdateInsertDelete
+  nameWithType: TableAdapterManager.UpdateOrderOption.UpdateInsertDelete
+  fullName: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.UpdateInsertDelete
+  type: Field
+  source:
+    remote:
+      path: LP/LP/DatabaseDataSet.Designer.cs
+      branch: develop
+      repo: https://github.com/Aniloni/PriceList.git
+    id: UpdateInsertDelete
+    path: DatabaseDataSet.Designer.cs
+    startLine: 2343
+  assemblies:
+  - LP
+  namespace: LP.DatabaseDataSetTableAdapters
+  syntax:
+    content: UpdateInsertDelete = 1
+    return:
+      type: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: LP.DatabaseDataSetTableAdapters
+  commentId: N:LP.DatabaseDataSetTableAdapters
+  name: LP.DatabaseDataSetTableAdapters
+  nameWithType: LP.DatabaseDataSetTableAdapters
+  fullName: LP.DatabaseDataSetTableAdapters
+- uid: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption
+  commentId: T:LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption
+  parent: LP.DatabaseDataSetTableAdapters
+  name: TableAdapterManager.UpdateOrderOption
+  nameWithType: TableAdapterManager.UpdateOrderOption
+  fullName: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption

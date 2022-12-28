@@ -5,29 +5,49 @@ using System.Windows.Forms;
 
 namespace LP
 {
-    public partial class Registration : Form // Класс формы для регистрации нового пользователя в системе
+    /// <summary>
+    /// Класс формы для регистрации нового пользователя в системе
+    /// </summary>
+    public partial class Registration : Form 
     {
-        public Registration() //Конструктор класса
+        /// <summary>
+        /// Конструктор класса
+        /// </summary>
+        public Registration() 
         {
             InitializeComponent();
         }
-
-        private void button1_Click(object sender, EventArgs e) //Метод, запускающийся при нажатии кнопки назад и открывающий форму StartPage
+        /// <summary>
+        /// Метод, запускающийся при нажатии кнопки назад и открывающий форму StartPage
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void button1_Click(object sender, EventArgs e) 
         {
             StartPage f = new StartPage();
             f.Show();
             this.Hide();
         }
-
-        Connection con; //Поле, использующееся для подключения к базе данных
-
-        private void Registration_Load(object sender, EventArgs e)  //Метод, запускающийся при загрузке страницы
+        /// <summary>
+        /// Поле, использующееся для подключения к базе данных
+        /// </summary>
+        Connection con;
+        /// <summary>
+        /// Метод, запускающийся при загрузке страницы
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Registration_Load(object sender, EventArgs e)  
         {
             con = new Connection();
             con.OpenConnection();
         }
-
-        private void button2_Click(object sender, EventArgs e) //Метод, запускающийся при нажатии кнопки "Регистрация", добавляет нового пользователя в базу данных
+        /// <summary>
+        /// Метод, запускающийся при нажатии кнопки "Регистрация", добавляет нового пользователя в базу данных
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void button2_Click(object sender, EventArgs e) 
         {
             string userId = textBox1.Text;
             string userPassword = textBox2.Text;
@@ -62,8 +82,12 @@ namespace LP
             }
             else
                 MessageBox.Show("Аккаунт не был создан");
-        }    
-        public bool IsIdExists() //Метод, проверяющий существование id пользователя
+        }
+        /// <summary>
+        /// Метод, проверяющий существование id пользователя
+        /// </summary>
+        /// <returns></returns>
+        public bool IsIdExists() 
         {
             string userId = textBox1.Text;
 
@@ -88,26 +112,42 @@ namespace LP
                 return false;
             }
         }
-
-        private void textBox1_Enter(object sender, EventArgs e) //Метод, запускающийся при нажатии на текстбокс textBox1
+        /// <summary>
+        /// Метод, запускающийся при нажатии на текстбокс textBox1
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void textBox1_Enter(object sender, EventArgs e) 
         {
             if (textBox1.Text == "Логин")
                 textBox1.Text = "";
         }
-
-        private void textBox2_Enter(object sender, EventArgs e) //Метод, запускающийся при нажатии на текстбокс textBox2
+        /// <summary>
+        /// Метод, запускающийся при нажатии на текстбокс textBox2
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void textBox2_Enter(object sender, EventArgs e) 
         {
             if (textBox2.Text == "Пароль")
                 textBox2.Text = "";
         }
-
-        private void textBox1_Leave(object sender, EventArgs e) //Метод, запускающийся при выходе из поля текстбокса textBox1
+        /// <summary>
+        /// Метод, запускающийся при выходе из поля текстбокса textBox1
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void textBox1_Leave(object sender, EventArgs e) 
         {
             if (textBox1.Text == "")
                 textBox1.Text = "Логин";
         }
-
-        private void textBox2_Leave(object sender, EventArgs e) //Метод, запускающийся при выходе из поля текстбокса textBox2
+        /// <summary>
+        /// Метод, запускающийся при выходе из поля текстбокса textBox2
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void textBox2_Leave(object sender, EventArgs e) 
         {
             if (textBox2.Text == "")
                 textBox2.Text = "Пароль";

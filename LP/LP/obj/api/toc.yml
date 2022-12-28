@@ -1,0 +1,71 @@
+### YamlMime:TableOfContent
+- uid: LP
+  name: LP
+  items:
+  - uid: LP.AllPositions
+    name: AllPositions
+  - uid: LP.Armchairs
+    name: Armchairs
+  - uid: LP.Beds
+    name: Beds
+  - uid: LP.Chairs
+    name: Chairs
+  - uid: LP.ChangePosition
+    name: ChangePosition
+  - uid: LP.Connection
+    name: Connection
+  - uid: LP.DatabaseDataSet
+    name: DatabaseDataSet
+  - uid: LP.DatabaseDataSet.PricelistDataTable
+    name: DatabaseDataSet.PricelistDataTable
+  - uid: LP.DatabaseDataSet.PricelistRow
+    name: DatabaseDataSet.PricelistRow
+  - uid: LP.DatabaseDataSet.PricelistRowChangeEvent
+    name: DatabaseDataSet.PricelistRowChangeEvent
+  - uid: LP.DatabaseDataSet.PricelistRowChangeEventHandler
+    name: DatabaseDataSet.PricelistRowChangeEventHandler
+  - uid: LP.DatabaseDataSet.UsersDataTable
+    name: DatabaseDataSet.UsersDataTable
+  - uid: LP.DatabaseDataSet.UsersRow
+    name: DatabaseDataSet.UsersRow
+  - uid: LP.DatabaseDataSet.UsersRowChangeEvent
+    name: DatabaseDataSet.UsersRowChangeEvent
+  - uid: LP.DatabaseDataSet.UsersRowChangeEventHandler
+    name: DatabaseDataSet.UsersRowChangeEventHandler
+  - uid: LP.DeletePosition
+    name: DeletePosition
+  - uid: LP.Enterance
+    name: Enterance
+  - uid: LP.FurnitureType
+    name: FurnitureType
+  - uid: LP.FurnitureType.FurnitureTypeTest
+    name: FurnitureType.FurnitureTypeTest
+  - uid: LP.NewPosition
+    name: NewPosition
+  - uid: LP.NewPosition.NewPositionTest
+    name: NewPosition.NewPositionTest
+  - uid: LP.Registration
+    name: Registration
+  - uid: LP.Shelves
+    name: Shelves
+  - uid: LP.Sofas
+    name: Sofas
+  - uid: LP.Sofas.SofasTest
+    name: Sofas.SofasTest
+  - uid: LP.StartPage
+    name: StartPage
+  - uid: LP.Tables
+    name: Tables
+  - uid: LP.Wardrobes
+    name: Wardrobes
+- uid: LP.DatabaseDataSetTableAdapters
+  name: LP.DatabaseDataSetTableAdapters
+  items:
+  - uid: LP.DatabaseDataSetTableAdapters.PricelistTableAdapter
+    name: PricelistTableAdapter
+  - uid: LP.DatabaseDataSetTableAdapters.TableAdapterManager
+    name: TableAdapterManager
+  - uid: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption
+    name: TableAdapterManager.UpdateOrderOption
+  - uid: LP.DatabaseDataSetTableAdapters.UsersTableAdapter
+    name: UsersTableAdapter

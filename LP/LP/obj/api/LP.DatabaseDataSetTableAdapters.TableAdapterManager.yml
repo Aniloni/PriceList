@@ -1,0 +1,1193 @@
+### YamlMime:ManagedReference
+items:
+- uid: LP.DatabaseDataSetTableAdapters.TableAdapterManager
+  commentId: T:LP.DatabaseDataSetTableAdapters.TableAdapterManager
+  id: TableAdapterManager
+  parent: LP.DatabaseDataSetTableAdapters
+  children:
+  - LP.DatabaseDataSetTableAdapters.TableAdapterManager.BackupDataSetBeforeUpdate
+  - LP.DatabaseDataSetTableAdapters.TableAdapterManager.Connection
+  - LP.DatabaseDataSetTableAdapters.TableAdapterManager.MatchTableAdapterConnection(System.Data.IDbConnection)
+  - LP.DatabaseDataSetTableAdapters.TableAdapterManager.PricelistTableAdapter
+  - LP.DatabaseDataSetTableAdapters.TableAdapterManager.SortSelfReferenceRows(System.Data.DataRow[],System.Data.DataRelation,System.Boolean)
+  - LP.DatabaseDataSetTableAdapters.TableAdapterManager.TableAdapterInstanceCount
+  - LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateAll(LP.DatabaseDataSet)
+  - LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrder
+  - LP.DatabaseDataSetTableAdapters.TableAdapterManager.UsersTableAdapter
+  langs:
+  - csharp
+  - vb
+  name: TableAdapterManager
+  nameWithType: TableAdapterManager
+  fullName: LP.DatabaseDataSetTableAdapters.TableAdapterManager
+  type: Class
+  source:
+    remote:
+      path: LP/LP/DatabaseDataSet.Designer.cs
+      branch: develop
+      repo: https://github.com/Aniloni/PriceList.git
+    id: TableAdapterManager
+    path: DatabaseDataSet.Designer.cs
+    startLine: 1953
+  assemblies:
+  - LP
+  namespace: LP.DatabaseDataSetTableAdapters
+  summary: "\nTableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios\n"
+  example: []
+  syntax:
+    content: 'public class TableAdapterManager : Component, IComponent, IDisposable'
+    content.vb: >-
+      Public Class TableAdapterManager
+          Inherits Component
+          Implements IComponent, IDisposable
+  inheritance:
+  - System.Object
+  - System.MarshalByRefObject
+  - System.ComponentModel.Component
+  implements:
+  - System.ComponentModel.IComponent
+  - System.IDisposable
+  inheritedMembers:
+  - System.ComponentModel.Component.Dispose
+  - System.ComponentModel.Component.Dispose(System.Boolean)
+  - System.ComponentModel.Component.GetService(System.Type)
+  - System.ComponentModel.Component.ToString
+  - System.ComponentModel.Component.CanRaiseEvents
+  - System.ComponentModel.Component.Events
+  - System.ComponentModel.Component.Site
+  - System.ComponentModel.Component.Container
+  - System.ComponentModel.Component.DesignMode
+  - System.ComponentModel.Component.Disposed
+  - System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  - System.MarshalByRefObject.GetLifetimeService
+  - System.MarshalByRefObject.InitializeLifetimeService
+  - System.MarshalByRefObject.CreateObjRef(System.Type)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrder
+  commentId: P:LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrder
+  id: UpdateOrder
+  parent: LP.DatabaseDataSetTableAdapters.TableAdapterManager
+  langs:
+  - csharp
+  - vb
+  name: UpdateOrder
+  nameWithType: TableAdapterManager.UpdateOrder
+  fullName: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrder
+  type: Property
+  source:
+    remote:
+      path: LP/LP/DatabaseDataSet.Designer.cs
+      branch: develop
+      repo: https://github.com/Aniloni/PriceList.git
+    id: UpdateOrder
+    path: DatabaseDataSet.Designer.cs
+    startLine: 1970
+  assemblies:
+  - LP
+  namespace: LP.DatabaseDataSetTableAdapters
+  syntax:
+    content: public TableAdapterManager.UpdateOrderOption UpdateOrder { get; set; }
+    parameters: []
+    return:
+      type: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption
+    content.vb: Public Property UpdateOrder As TableAdapterManager.UpdateOrderOption
+  overload: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrder*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: LP.DatabaseDataSetTableAdapters.TableAdapterManager.PricelistTableAdapter
+  commentId: P:LP.DatabaseDataSetTableAdapters.TableAdapterManager.PricelistTableAdapter
+  id: PricelistTableAdapter
+  parent: LP.DatabaseDataSetTableAdapters.TableAdapterManager
+  langs:
+  - csharp
+  - vb
+  name: PricelistTableAdapter
+  nameWithType: TableAdapterManager.PricelistTableAdapter
+  fullName: LP.DatabaseDataSetTableAdapters.TableAdapterManager.PricelistTableAdapter
+  type: Property
+  source:
+    remote:
+      path: LP/LP/DatabaseDataSet.Designer.cs
+      branch: develop
+      repo: https://github.com/Aniloni/PriceList.git
+    id: PricelistTableAdapter
+    path: DatabaseDataSet.Designer.cs
+    startLine: 1981
+  assemblies:
+  - LP
+  namespace: LP.DatabaseDataSetTableAdapters
+  syntax:
+    content: public PricelistTableAdapter PricelistTableAdapter { get; set; }
+    parameters: []
+    return:
+      type: LP.DatabaseDataSetTableAdapters.PricelistTableAdapter
+    content.vb: Public Property PricelistTableAdapter As PricelistTableAdapter
+  overload: LP.DatabaseDataSetTableAdapters.TableAdapterManager.PricelistTableAdapter*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UsersTableAdapter
+  commentId: P:LP.DatabaseDataSetTableAdapters.TableAdapterManager.UsersTableAdapter
+  id: UsersTableAdapter
+  parent: LP.DatabaseDataSetTableAdapters.TableAdapterManager
+  langs:
+  - csharp
+  - vb
+  name: UsersTableAdapter
+  nameWithType: TableAdapterManager.UsersTableAdapter
+  fullName: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UsersTableAdapter
+  type: Property
+  source:
+    remote:
+      path: LP/LP/DatabaseDataSet.Designer.cs
+      branch: develop
+      repo: https://github.com/Aniloni/PriceList.git
+    id: UsersTableAdapter
+    path: DatabaseDataSet.Designer.cs
+    startLine: 1995
+  assemblies:
+  - LP
+  namespace: LP.DatabaseDataSetTableAdapters
+  syntax:
+    content: public UsersTableAdapter UsersTableAdapter { get; set; }
+    parameters: []
+    return:
+      type: LP.DatabaseDataSetTableAdapters.UsersTableAdapter
+    content.vb: Public Property UsersTableAdapter As UsersTableAdapter
+  overload: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UsersTableAdapter*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: LP.DatabaseDataSetTableAdapters.TableAdapterManager.BackupDataSetBeforeUpdate
+  commentId: P:LP.DatabaseDataSetTableAdapters.TableAdapterManager.BackupDataSetBeforeUpdate
+  id: BackupDataSetBeforeUpdate
+  parent: LP.DatabaseDataSetTableAdapters.TableAdapterManager
+  langs:
+  - csharp
+  - vb
+  name: BackupDataSetBeforeUpdate
+  nameWithType: TableAdapterManager.BackupDataSetBeforeUpdate
+  fullName: LP.DatabaseDataSetTableAdapters.TableAdapterManager.BackupDataSetBeforeUpdate
+  type: Property
+  source:
+    remote:
+      path: LP/LP/DatabaseDataSet.Designer.cs
+      branch: develop
+      repo: https://github.com/Aniloni/PriceList.git
+    id: BackupDataSetBeforeUpdate
+    path: DatabaseDataSet.Designer.cs
+    startLine: 2009
+  assemblies:
+  - LP
+  namespace: LP.DatabaseDataSetTableAdapters
+  syntax:
+    content: public bool BackupDataSetBeforeUpdate { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property BackupDataSetBeforeUpdate As Boolean
+  overload: LP.DatabaseDataSetTableAdapters.TableAdapterManager.BackupDataSetBeforeUpdate*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: LP.DatabaseDataSetTableAdapters.TableAdapterManager.Connection
+  commentId: P:LP.DatabaseDataSetTableAdapters.TableAdapterManager.Connection
+  id: Connection
+  parent: LP.DatabaseDataSetTableAdapters.TableAdapterManager
+  langs:
+  - csharp
+  - vb
+  name: Connection
+  nameWithType: TableAdapterManager.Connection
+  fullName: LP.DatabaseDataSetTableAdapters.TableAdapterManager.Connection
+  type: Property
+  source:
+    remote:
+      path: LP/LP/DatabaseDataSet.Designer.cs
+      branch: develop
+      repo: https://github.com/Aniloni/PriceList.git
+    id: Connection
+    path: DatabaseDataSet.Designer.cs
+    startLine: 2020
+  assemblies:
+  - LP
+  namespace: LP.DatabaseDataSetTableAdapters
+  syntax:
+    content: >-
+      [Browsable(false)]
+
+      public IDbConnection Connection { get; set; }
+    parameters: []
+    return:
+      type: System.Data.IDbConnection
+    content.vb: >-
+      <Browsable(False)>
+
+      Public Property Connection As IDbConnection
+  overload: LP.DatabaseDataSetTableAdapters.TableAdapterManager.Connection*
+  attributes:
+  - type: System.ComponentModel.BrowsableAttribute
+    ctor: System.ComponentModel.BrowsableAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: LP.DatabaseDataSetTableAdapters.TableAdapterManager.TableAdapterInstanceCount
+  commentId: P:LP.DatabaseDataSetTableAdapters.TableAdapterManager.TableAdapterInstanceCount
+  id: TableAdapterInstanceCount
+  parent: LP.DatabaseDataSetTableAdapters.TableAdapterManager
+  langs:
+  - csharp
+  - vb
+  name: TableAdapterInstanceCount
+  nameWithType: TableAdapterManager.TableAdapterInstanceCount
+  fullName: LP.DatabaseDataSetTableAdapters.TableAdapterManager.TableAdapterInstanceCount
+  type: Property
+  source:
+    remote:
+      path: LP/LP/DatabaseDataSet.Designer.cs
+      branch: develop
+      repo: https://github.com/Aniloni/PriceList.git
+    id: TableAdapterInstanceCount
+    path: DatabaseDataSet.Designer.cs
+    startLine: 2043
+  assemblies:
+  - LP
+  namespace: LP.DatabaseDataSetTableAdapters
+  syntax:
+    content: >-
+      [Browsable(false)]
+
+      public int TableAdapterInstanceCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Browsable(False)>
+
+      Public ReadOnly Property TableAdapterInstanceCount As Integer
+  overload: LP.DatabaseDataSetTableAdapters.TableAdapterManager.TableAdapterInstanceCount*
+  attributes:
+  - type: System.ComponentModel.BrowsableAttribute
+    ctor: System.ComponentModel.BrowsableAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateAll(LP.DatabaseDataSet)
+  commentId: M:LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateAll(LP.DatabaseDataSet)
+  id: UpdateAll(LP.DatabaseDataSet)
+  parent: LP.DatabaseDataSetTableAdapters.TableAdapterManager
+  langs:
+  - csharp
+  - vb
+  name: UpdateAll(DatabaseDataSet)
+  nameWithType: TableAdapterManager.UpdateAll(DatabaseDataSet)
+  fullName: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateAll(LP.DatabaseDataSet)
+  type: Method
+  source:
+    remote:
+      path: LP/LP/DatabaseDataSet.Designer.cs
+      branch: develop
+      repo: https://github.com/Aniloni/PriceList.git
+    id: UpdateAll
+    path: DatabaseDataSet.Designer.cs
+    startLine: 2166
+  assemblies:
+  - LP
+  namespace: LP.DatabaseDataSetTableAdapters
+  summary: "\nUpdate all changes to the dataset.\n"
+  example: []
+  syntax:
+    content: public virtual int UpdateAll(DatabaseDataSet dataSet)
+    parameters:
+    - id: dataSet
+      type: LP.DatabaseDataSet
+    return:
+      type: System.Int32
+    content.vb: Public Overridable Function UpdateAll(dataSet As DatabaseDataSet) As Integer
+  overload: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateAll*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: LP.DatabaseDataSetTableAdapters.TableAdapterManager.SortSelfReferenceRows(System.Data.DataRow[],System.Data.DataRelation,System.Boolean)
+  commentId: M:LP.DatabaseDataSetTableAdapters.TableAdapterManager.SortSelfReferenceRows(System.Data.DataRow[],System.Data.DataRelation,System.Boolean)
+  id: SortSelfReferenceRows(System.Data.DataRow[],System.Data.DataRelation,System.Boolean)
+  parent: LP.DatabaseDataSetTableAdapters.TableAdapterManager
+  langs:
+  - csharp
+  - vb
+  name: SortSelfReferenceRows(DataRow[], DataRelation, Boolean)
+  nameWithType: TableAdapterManager.SortSelfReferenceRows(DataRow[], DataRelation, Boolean)
+  fullName: LP.DatabaseDataSetTableAdapters.TableAdapterManager.SortSelfReferenceRows(System.Data.DataRow[], System.Data.DataRelation, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: LP/LP/DatabaseDataSet.Designer.cs
+      branch: develop
+      repo: https://github.com/Aniloni/PriceList.git
+    id: SortSelfReferenceRows
+    path: DatabaseDataSet.Designer.cs
+    startLine: 2313
+  assemblies:
+  - LP
+  namespace: LP.DatabaseDataSetTableAdapters
+  syntax:
+    content: protected virtual void SortSelfReferenceRows(DataRow[] rows, DataRelation relation, bool childFirst)
+    parameters:
+    - id: rows
+      type: System.Data.DataRow[]
+    - id: relation
+      type: System.Data.DataRelation
+    - id: childFirst
+      type: System.Boolean
+    content.vb: Protected Overridable Sub SortSelfReferenceRows(rows As DataRow(), relation As DataRelation, childFirst As Boolean)
+  overload: LP.DatabaseDataSetTableAdapters.TableAdapterManager.SortSelfReferenceRows*
+  nameWithType.vb: TableAdapterManager.SortSelfReferenceRows(DataRow(), DataRelation, Boolean)
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: LP.DatabaseDataSetTableAdapters.TableAdapterManager.SortSelfReferenceRows(System.Data.DataRow(), System.Data.DataRelation, System.Boolean)
+  name.vb: SortSelfReferenceRows(DataRow(), DataRelation, Boolean)
+- uid: LP.DatabaseDataSetTableAdapters.TableAdapterManager.MatchTableAdapterConnection(System.Data.IDbConnection)
+  commentId: M:LP.DatabaseDataSetTableAdapters.TableAdapterManager.MatchTableAdapterConnection(System.Data.IDbConnection)
+  id: MatchTableAdapterConnection(System.Data.IDbConnection)
+  parent: LP.DatabaseDataSetTableAdapters.TableAdapterManager
+  langs:
+  - csharp
+  - vb
+  name: MatchTableAdapterConnection(IDbConnection)
+  nameWithType: TableAdapterManager.MatchTableAdapterConnection(IDbConnection)
+  fullName: LP.DatabaseDataSetTableAdapters.TableAdapterManager.MatchTableAdapterConnection(System.Data.IDbConnection)
+  type: Method
+  source:
+    remote:
+      path: LP/LP/DatabaseDataSet.Designer.cs
+      branch: develop
+      repo: https://github.com/Aniloni/PriceList.git
+    id: MatchTableAdapterConnection
+    path: DatabaseDataSet.Designer.cs
+    startLine: 2319
+  assemblies:
+  - LP
+  namespace: LP.DatabaseDataSetTableAdapters
+  syntax:
+    content: protected virtual bool MatchTableAdapterConnection(IDbConnection inputConnection)
+    parameters:
+    - id: inputConnection
+      type: System.Data.IDbConnection
+    return:
+      type: System.Boolean
+    content.vb: Protected Overridable Function MatchTableAdapterConnection(inputConnection As IDbConnection) As Boolean
+  overload: LP.DatabaseDataSetTableAdapters.TableAdapterManager.MatchTableAdapterConnection*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+references:
+- uid: LP.DatabaseDataSetTableAdapters
+  commentId: N:LP.DatabaseDataSetTableAdapters
+  name: LP.DatabaseDataSetTableAdapters
+  nameWithType: LP.DatabaseDataSetTableAdapters
+  fullName: LP.DatabaseDataSetTableAdapters
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.MarshalByRefObject
+  commentId: T:System.MarshalByRefObject
+  parent: System
+  isExternal: true
+  name: MarshalByRefObject
+  nameWithType: MarshalByRefObject
+  fullName: System.MarshalByRefObject
+- uid: System.ComponentModel.Component
+  commentId: T:System.ComponentModel.Component
+  parent: System.ComponentModel
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: System.ComponentModel.Component
+- uid: System.ComponentModel.IComponent
+  commentId: T:System.ComponentModel.IComponent
+  parent: System.ComponentModel
+  isExternal: true
+  name: IComponent
+  nameWithType: IComponent
+  fullName: System.ComponentModel.IComponent
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.ComponentModel.Component.Dispose
+  commentId: M:System.ComponentModel.Component.Dispose
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: Dispose()
+  nameWithType: Component.Dispose()
+  fullName: System.ComponentModel.Component.Dispose()
+  spec.csharp:
+  - uid: System.ComponentModel.Component.Dispose
+    name: Dispose
+    nameWithType: Component.Dispose
+    fullName: System.ComponentModel.Component.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.Component.Dispose
+    name: Dispose
+    nameWithType: Component.Dispose
+    fullName: System.ComponentModel.Component.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ComponentModel.Component.Dispose(System.Boolean)
+  commentId: M:System.ComponentModel.Component.Dispose(System.Boolean)
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: Dispose(Boolean)
+  nameWithType: Component.Dispose(Boolean)
+  fullName: System.ComponentModel.Component.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: System.ComponentModel.Component.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: Component.Dispose
+    fullName: System.ComponentModel.Component.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.Component.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: Component.Dispose
+    fullName: System.ComponentModel.Component.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ComponentModel.Component.GetService(System.Type)
+  commentId: M:System.ComponentModel.Component.GetService(System.Type)
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: GetService(Type)
+  nameWithType: Component.GetService(Type)
+  fullName: System.ComponentModel.Component.GetService(System.Type)
+  spec.csharp:
+  - uid: System.ComponentModel.Component.GetService(System.Type)
+    name: GetService
+    nameWithType: Component.GetService
+    fullName: System.ComponentModel.Component.GetService
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.Component.GetService(System.Type)
+    name: GetService
+    nameWithType: Component.GetService
+    fullName: System.ComponentModel.Component.GetService
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ComponentModel.Component.ToString
+  commentId: M:System.ComponentModel.Component.ToString
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: ToString()
+  nameWithType: Component.ToString()
+  fullName: System.ComponentModel.Component.ToString()
+  spec.csharp:
+  - uid: System.ComponentModel.Component.ToString
+    name: ToString
+    nameWithType: Component.ToString
+    fullName: System.ComponentModel.Component.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.Component.ToString
+    name: ToString
+    nameWithType: Component.ToString
+    fullName: System.ComponentModel.Component.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ComponentModel.Component.CanRaiseEvents
+  commentId: P:System.ComponentModel.Component.CanRaiseEvents
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: CanRaiseEvents
+  nameWithType: Component.CanRaiseEvents
+  fullName: System.ComponentModel.Component.CanRaiseEvents
+- uid: System.ComponentModel.Component.Events
+  commentId: P:System.ComponentModel.Component.Events
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: Events
+  nameWithType: Component.Events
+  fullName: System.ComponentModel.Component.Events
+- uid: System.ComponentModel.Component.Site
+  commentId: P:System.ComponentModel.Component.Site
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: Site
+  nameWithType: Component.Site
+  fullName: System.ComponentModel.Component.Site
+- uid: System.ComponentModel.Component.Container
+  commentId: P:System.ComponentModel.Component.Container
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: Container
+  nameWithType: Component.Container
+  fullName: System.ComponentModel.Component.Container
+- uid: System.ComponentModel.Component.DesignMode
+  commentId: P:System.ComponentModel.Component.DesignMode
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: DesignMode
+  nameWithType: Component.DesignMode
+  fullName: System.ComponentModel.Component.DesignMode
+- uid: System.ComponentModel.Component.Disposed
+  commentId: E:System.ComponentModel.Component.Disposed
+  parent: System.ComponentModel.Component
+  isExternal: true
+  name: Disposed
+  nameWithType: Component.Disposed
+  fullName: System.ComponentModel.Component.Disposed
+- uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  commentId: M:System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  parent: System.MarshalByRefObject
+  isExternal: true
+  name: MemberwiseClone(Boolean)
+  nameWithType: MarshalByRefObject.MemberwiseClone(Boolean)
+  fullName: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  spec.csharp:
+  - uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+    name: MemberwiseClone
+    nameWithType: MarshalByRefObject.MemberwiseClone
+    fullName: System.MarshalByRefObject.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+    name: MemberwiseClone
+    nameWithType: MarshalByRefObject.MemberwiseClone
+    fullName: System.MarshalByRefObject.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.MarshalByRefObject.GetLifetimeService
+  commentId: M:System.MarshalByRefObject.GetLifetimeService
+  parent: System.MarshalByRefObject
+  isExternal: true
+  name: GetLifetimeService()
+  nameWithType: MarshalByRefObject.GetLifetimeService()
+  fullName: System.MarshalByRefObject.GetLifetimeService()
+  spec.csharp:
+  - uid: System.MarshalByRefObject.GetLifetimeService
+    name: GetLifetimeService
+    nameWithType: MarshalByRefObject.GetLifetimeService
+    fullName: System.MarshalByRefObject.GetLifetimeService
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.GetLifetimeService
+    name: GetLifetimeService
+    nameWithType: MarshalByRefObject.GetLifetimeService
+    fullName: System.MarshalByRefObject.GetLifetimeService
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.MarshalByRefObject.InitializeLifetimeService
+  commentId: M:System.MarshalByRefObject.InitializeLifetimeService
+  parent: System.MarshalByRefObject
+  isExternal: true
+  name: InitializeLifetimeService()
+  nameWithType: MarshalByRefObject.InitializeLifetimeService()
+  fullName: System.MarshalByRefObject.InitializeLifetimeService()
+  spec.csharp:
+  - uid: System.MarshalByRefObject.InitializeLifetimeService
+    name: InitializeLifetimeService
+    nameWithType: MarshalByRefObject.InitializeLifetimeService
+    fullName: System.MarshalByRefObject.InitializeLifetimeService
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.InitializeLifetimeService
+    name: InitializeLifetimeService
+    nameWithType: MarshalByRefObject.InitializeLifetimeService
+    fullName: System.MarshalByRefObject.InitializeLifetimeService
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+  commentId: M:System.MarshalByRefObject.CreateObjRef(System.Type)
+  parent: System.MarshalByRefObject
+  isExternal: true
+  name: CreateObjRef(Type)
+  nameWithType: MarshalByRefObject.CreateObjRef(Type)
+  fullName: System.MarshalByRefObject.CreateObjRef(System.Type)
+  spec.csharp:
+  - uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+    name: CreateObjRef
+    nameWithType: MarshalByRefObject.CreateObjRef
+    fullName: System.MarshalByRefObject.CreateObjRef
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+    name: CreateObjRef
+    nameWithType: MarshalByRefObject.CreateObjRef
+    fullName: System.MarshalByRefObject.CreateObjRef
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrder*
+  commentId: Overload:LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrder
+  name: UpdateOrder
+  nameWithType: TableAdapterManager.UpdateOrder
+  fullName: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrder
+- uid: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption
+  commentId: T:LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption
+  parent: LP.DatabaseDataSetTableAdapters
+  name: TableAdapterManager.UpdateOrderOption
+  nameWithType: TableAdapterManager.UpdateOrderOption
+  fullName: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption
+- uid: LP.DatabaseDataSetTableAdapters.TableAdapterManager.PricelistTableAdapter*
+  commentId: Overload:LP.DatabaseDataSetTableAdapters.TableAdapterManager.PricelistTableAdapter
+  name: PricelistTableAdapter
+  nameWithType: TableAdapterManager.PricelistTableAdapter
+  fullName: LP.DatabaseDataSetTableAdapters.TableAdapterManager.PricelistTableAdapter
+- uid: LP.DatabaseDataSetTableAdapters.PricelistTableAdapter
+  commentId: T:LP.DatabaseDataSetTableAdapters.PricelistTableAdapter
+  parent: LP.DatabaseDataSetTableAdapters
+  name: PricelistTableAdapter
+  nameWithType: PricelistTableAdapter
+  fullName: LP.DatabaseDataSetTableAdapters.PricelistTableAdapter
+- uid: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UsersTableAdapter*
+  commentId: Overload:LP.DatabaseDataSetTableAdapters.TableAdapterManager.UsersTableAdapter
+  name: UsersTableAdapter
+  nameWithType: TableAdapterManager.UsersTableAdapter
+  fullName: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UsersTableAdapter
+- uid: LP.DatabaseDataSetTableAdapters.UsersTableAdapter
+  commentId: T:LP.DatabaseDataSetTableAdapters.UsersTableAdapter
+  parent: LP.DatabaseDataSetTableAdapters
+  name: UsersTableAdapter
+  nameWithType: UsersTableAdapter
+  fullName: LP.DatabaseDataSetTableAdapters.UsersTableAdapter
+- uid: LP.DatabaseDataSetTableAdapters.TableAdapterManager.BackupDataSetBeforeUpdate*
+  commentId: Overload:LP.DatabaseDataSetTableAdapters.TableAdapterManager.BackupDataSetBeforeUpdate
+  name: BackupDataSetBeforeUpdate
+  nameWithType: TableAdapterManager.BackupDataSetBeforeUpdate
+  fullName: LP.DatabaseDataSetTableAdapters.TableAdapterManager.BackupDataSetBeforeUpdate
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: LP.DatabaseDataSetTableAdapters.TableAdapterManager.Connection*
+  commentId: Overload:LP.DatabaseDataSetTableAdapters.TableAdapterManager.Connection
+  name: Connection
+  nameWithType: TableAdapterManager.Connection
+  fullName: LP.DatabaseDataSetTableAdapters.TableAdapterManager.Connection
+- uid: System.Data.IDbConnection
+  commentId: T:System.Data.IDbConnection
+  parent: System.Data
+  isExternal: true
+  name: IDbConnection
+  nameWithType: IDbConnection
+  fullName: System.Data.IDbConnection
+- uid: System.Data
+  commentId: N:System.Data
+  isExternal: true
+  name: System.Data
+  nameWithType: System.Data
+  fullName: System.Data
+- uid: LP.DatabaseDataSetTableAdapters.TableAdapterManager.TableAdapterInstanceCount*
+  commentId: Overload:LP.DatabaseDataSetTableAdapters.TableAdapterManager.TableAdapterInstanceCount
+  name: TableAdapterInstanceCount
+  nameWithType: TableAdapterManager.TableAdapterInstanceCount
+  fullName: LP.DatabaseDataSetTableAdapters.TableAdapterManager.TableAdapterInstanceCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateAll*
+  commentId: Overload:LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateAll
+  name: UpdateAll
+  nameWithType: TableAdapterManager.UpdateAll
+  fullName: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateAll
+- uid: LP.DatabaseDataSet
+  commentId: T:LP.DatabaseDataSet
+  parent: LP
+  name: DatabaseDataSet
+  nameWithType: DatabaseDataSet
+  fullName: LP.DatabaseDataSet
+- uid: LP
+  commentId: N:LP
+  name: LP
+  nameWithType: LP
+  fullName: LP
+- uid: LP.DatabaseDataSetTableAdapters.TableAdapterManager.SortSelfReferenceRows*
+  commentId: Overload:LP.DatabaseDataSetTableAdapters.TableAdapterManager.SortSelfReferenceRows
+  name: SortSelfReferenceRows
+  nameWithType: TableAdapterManager.SortSelfReferenceRows
+  fullName: LP.DatabaseDataSetTableAdapters.TableAdapterManager.SortSelfReferenceRows
+- uid: System.Data.DataRow[]
+  isExternal: true
+  name: DataRow[]
+  nameWithType: DataRow[]
+  fullName: System.Data.DataRow[]
+  nameWithType.vb: DataRow()
+  fullName.vb: System.Data.DataRow()
+  name.vb: DataRow()
+  spec.csharp:
+  - uid: System.Data.DataRow
+    name: DataRow
+    nameWithType: DataRow
+    fullName: System.Data.DataRow
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Data.DataRow
+    name: DataRow
+    nameWithType: DataRow
+    fullName: System.Data.DataRow
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Data.DataRelation
+  commentId: T:System.Data.DataRelation
+  parent: System.Data
+  isExternal: true
+  name: DataRelation
+  nameWithType: DataRelation
+  fullName: System.Data.DataRelation
+- uid: LP.DatabaseDataSetTableAdapters.TableAdapterManager.MatchTableAdapterConnection*
+  commentId: Overload:LP.DatabaseDataSetTableAdapters.TableAdapterManager.MatchTableAdapterConnection
+  name: MatchTableAdapterConnection
+  nameWithType: TableAdapterManager.MatchTableAdapterConnection
+  fullName: LP.DatabaseDataSetTableAdapters.TableAdapterManager.MatchTableAdapterConnection

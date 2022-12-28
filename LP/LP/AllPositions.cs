@@ -5,14 +5,25 @@ using System.Windows.Forms;
 
 namespace LP
 {
-    public partial class AllPositions : Form //Класс формы для просмотра всех позиций в прайс-листе
+    /// <summary>
+    /// Класс формы для просмотра всех позиций в прайс-листе
+    /// </summary>
+    public partial class AllPositions : Form 
     {
-        public AllPositions() //Конструктор класса
+        /// <summary>
+        /// Конструктор класса
+        /// </summary>
+        public AllPositions() 
         {
             InitializeComponent();
         }
-
-        private void AllPositions_Load(object sender, EventArgs e) //Метод, запускающийся при загрузке формы AllPositions
+        
+        /// <summary>
+        /// Метод, запускающийся при загрузке формы AllPositions
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void AllPositions_Load(object sender, EventArgs e) 
         {
             Connection con = new Connection();
             con.OpenConnection();
@@ -31,12 +42,12 @@ namespace LP
             con.CloseConnection();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e) //Метод, запускающийся при нажатии кнопки назад и открывающий форму FurnitureType
+        /// <summary>
+        /// Метод, запускающийся при нажатии кнопки назад и открывающий форму FurnitureType
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void button1_Click(object sender, EventArgs e) 
         {
             FurnitureType f = new FurnitureType();
             f.Show();

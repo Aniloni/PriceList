@@ -5,29 +5,53 @@ using System.Windows.Forms;
 
 namespace LP
 {
-    public partial class Enterance : Form //Класс формы для авторизации
+    /// <summary>
+    /// Класс формы для авторизации
+    /// </summary>
+    public partial class Enterance : Form 
     {
-        public Enterance() //Конструктор класса
+        /// <summary>
+        /// Конструктор класса
+        /// </summary>
+        public Enterance() 
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e) //Метод, запускающийся при нажатии кнопки назад и открывающий форму StartPage
+        /// <summary>
+        /// Метод, запускающийся при нажатии кнопки назад и открывающий форму StartPage
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void button1_Click(object sender, EventArgs e) 
         {
             StartPage f = new StartPage();
             f.Show();
             this.Hide();
         }
 
-        Connection con; //Поле типа Connection, использующееся для подключения к базе данных
+        /// <summary>
+        /// Поле типа Connection, использующееся для подключения к базе данных
+        /// </summary>
+        Connection con;
 
-        private void Enterance_Load(object sender, EventArgs e) //Метод, запускающийся при загрузке формы Enterance
+        /// <summary>
+        /// Метод, запускающийся при загрузке формы Enterance
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Enterance_Load(object sender, EventArgs e) 
         {
             con = new Connection();
             con.OpenConnection();
         }
 
-        private void button2_Click(object sender, EventArgs e) //Метод, запускающийся при нажатии кнопки вход
+        /// <summary>
+        /// Метод, запускающийся при нажатии кнопки вход
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void button2_Click(object sender, EventArgs e) 
         {
             DataTable table = new DataTable();
 
@@ -54,25 +78,45 @@ namespace LP
             }
         }
 
-        private void textBox1_Enter(object sender, EventArgs e) //Метод, запускающийся при нажатии на textBox1
+        /// <summary>
+        /// Метод, запускающийся при нажатии на textBox1
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void textBox1_Enter(object sender, EventArgs e) 
         {
             if (textBox1.Text == "Логин")
                 textBox1.Text = "";
         }
 
-        private void textBox2_Enter(object sender, EventArgs e) //Метод, запускающийся при нажатии на textBox2
+        /// <summary>
+        /// Метод, запускающийся при нажатии на textBox2
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void textBox2_Enter(object sender, EventArgs e) 
         {
             if (textBox2.Text == "Пароль")
                 textBox2.Text = "";
         }
 
-        private void textBox1_Leave(object sender, EventArgs e) //Метод, запускающийся при выходе из поля textBox1
+        /// <summary>
+        /// Метод, запускающийся при выходе из поля textBox1
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void textBox1_Leave(object sender, EventArgs e) 
         {
             if (textBox1.Text == "")
                 textBox1.Text = "Логин";
         }
 
-        private void textBox2_Leave(object sender, EventArgs e) //Метод, запускающийся при выходе из поля textBox2
+        /// <summary>
+        /// Метод, запускающийся при выходе из поля textBox2
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void textBox2_Leave(object sender, EventArgs e) 
         {
             if (textBox2.Text == "")
                 textBox2.Text = "Пароль";

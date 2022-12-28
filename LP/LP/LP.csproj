@@ -117,11 +117,11 @@
     <Compile Include="Enterance.Designer.cs">
       <DependentUpon>Enterance.cs</DependentUpon>
     </Compile>
-    <Compile Include="Chair.cs">
+    <Compile Include="Chairs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Chair.Designer.cs">
-      <DependentUpon>Chair.cs</DependentUpon>
+    <Compile Include="Chairs.Designer.cs">
+      <DependentUpon>Chairs.cs</DependentUpon>
     </Compile>
     <Compile Include="FurnitureType.cs">
       <SubType>Form</SubType>
@@ -182,8 +182,8 @@
     <EmbeddedResource Include="Beds.resx">
       <DependentUpon>Beds.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Chair.resx">
-      <DependentUpon>Chair.cs</DependentUpon>
+    <EmbeddedResource Include="Chairs.resx">
+      <DependentUpon>Chairs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChangePosition.resx">
       <DependentUpon>ChangePosition.cs</DependentUpon>
@@ -227,6 +227,9 @@
     <EmbeddedResource Include="Wardrobes.resx">
       <DependentUpon>Wardrobes.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="api\index.md" />
+    <None Include="articles\intro.md" />
+    <None Include="articles\toc.md" />
     <None Include="DatabaseDataSet.xsc">
       <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
     </None>
@@ -238,6 +241,8 @@
     <None Include="DatabaseDataSet.xss">
       <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
     </None>
+    <None Include="docfx.json" />
+    <None Include="index.md" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -248,6 +253,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="toc.yml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -284,7 +290,9 @@
     <Error Condition="!Exists('..\packages\Microsoft.CodeCoverage.17.4.1\build\netstandard2.0\Microsoft.CodeCoverage.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeCoverage.17.4.1\build\netstandard2.0\Microsoft.CodeCoverage.targets'))" />
     <Error Condition="!Exists('..\packages\Microsoft.NET.Test.Sdk.17.4.1\build\net462\Microsoft.NET.Test.Sdk.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.NET.Test.Sdk.17.4.1\build\net462\Microsoft.NET.Test.Sdk.props'))" />
     <Error Condition="!Exists('..\packages\Microsoft.NET.Test.Sdk.17.4.1\build\net462\Microsoft.NET.Test.Sdk.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.NET.Test.Sdk.17.4.1\build\net462\Microsoft.NET.Test.Sdk.targets'))" />
+    <Error Condition="!Exists('..\packages\docfx.console.2.59.4\build\docfx.console.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\docfx.console.2.59.4\build\docfx.console.targets'))" />
   </Target>
   <Import Project="..\packages\Microsoft.CodeCoverage.17.4.1\build\netstandard2.0\Microsoft.CodeCoverage.targets" Condition="Exists('..\packages\Microsoft.CodeCoverage.17.4.1\build\netstandard2.0\Microsoft.CodeCoverage.targets')" />
   <Import Project="..\packages\Microsoft.NET.Test.Sdk.17.4.1\build\net462\Microsoft.NET.Test.Sdk.targets" Condition="Exists('..\packages\Microsoft.NET.Test.Sdk.17.4.1\build\net462\Microsoft.NET.Test.Sdk.targets')" />
+  <Import Project="..\packages\docfx.console.2.59.4\build\docfx.console.targets" Condition="Exists('..\packages\docfx.console.2.59.4\build\docfx.console.targets')" />
 </Project>

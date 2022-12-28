@@ -1,0 +1,536 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/vasil/OneDrive/Desktop/Documents/VS/PriceList/LP/LP",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "bHzidwppg7tAiy2PMdb8ajWktIabmqTP1ZkpabXsL0M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "slGfKc3KSQzQTboeuZcK6XNRWM2C1xDVxZAtd6gmRjw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "CrN+xx/KTYuOngsHOJBOlswB8K70TtqDlYesXeTrLTE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.AllPositions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.AllPositions.html",
+          "hash": "goacRLGdxPibvrbz3XZBEjhLUBzhwrwcsfnApLvCSPI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.Armchairs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.Armchairs.html",
+          "hash": "cO/a2mwBLXuJjVxGIXLRESpRG7fUh9qlboXz2x6KQTg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.Beds.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.Beds.html",
+          "hash": "NvHqTk21Oj4CNsocm4qJQ2Gp+t4voRQIn/1jTG3zoHU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.Chairs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.Chairs.html",
+          "hash": "FSb53ZhARYAeogiYFVfIcmL2zBdefXSKLuRpJ+KMYE8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.ChangePosition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.ChangePosition.html",
+          "hash": "Z0zOntTOUbJYOLUAo4Br+05P39nnIAjlYXPGl2u3EZY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.Connection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.Connection.html",
+          "hash": "C693yKjGlttHC3ZeYA6r3wxGr/6pCCf/ziIFIjoX++E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.DatabaseDataSet.PricelistDataTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.DatabaseDataSet.PricelistDataTable.html",
+          "hash": "CF/ecK1Oid7I8CxyvrQp2aEm7UrQgfPlGY4225i3dPc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.DatabaseDataSet.PricelistRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.DatabaseDataSet.PricelistRow.html",
+          "hash": "tuQRYtp/42KNLfBaDlGAR+U8+RIVswuoIDhp60Li84I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.DatabaseDataSet.PricelistRowChangeEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.DatabaseDataSet.PricelistRowChangeEvent.html",
+          "hash": "bco1V9YjRZGb0F37Iy855OgibT5ur6gxc0Q9q2rrPog="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.DatabaseDataSet.PricelistRowChangeEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.DatabaseDataSet.PricelistRowChangeEventHandler.html",
+          "hash": "PXmumWfOjbW10HqpZLd/PqjibxCgfbrhu3CIB13dWVI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.DatabaseDataSet.UsersDataTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.DatabaseDataSet.UsersDataTable.html",
+          "hash": "vB1/t7nQM6T9ti7/kXzAffr3GMEbvGifo3UutHgnlQA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.DatabaseDataSet.UsersRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.DatabaseDataSet.UsersRow.html",
+          "hash": "i3O9mXNFiw+0MF+x8d/lbFQLFm6NeYpBJcxvMYiuUtU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.DatabaseDataSet.UsersRowChangeEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.DatabaseDataSet.UsersRowChangeEvent.html",
+          "hash": "XmXx5HdOtn+ljC9SIAbGYYFejEPIv7C5+ekfnFNbNE4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.DatabaseDataSet.UsersRowChangeEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.DatabaseDataSet.UsersRowChangeEventHandler.html",
+          "hash": "vwl8l/NFl2vz5dhI5zWYa6rXMeL+qKNX+LelloYphpE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.DatabaseDataSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.DatabaseDataSet.html",
+          "hash": "qA+MfNEpdMNg8ZSENX8h/F7rpqwzPKHlCLjwdVSV4qg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.html",
+          "hash": "JyH5mJpuXVwlJMFchFKwNFV3MV7uNGLYpVuTkjPEe2c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.html",
+          "hash": "6Mv2wXwdv53/mHZh3AOfCLtaeslmaJLJlyZKCqBxMo8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.DatabaseDataSetTableAdapters.TableAdapterManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.DatabaseDataSetTableAdapters.TableAdapterManager.html",
+          "hash": "GpsS58JGHqQM4BhiGuoggUDGooXjjvzUVxcvErNBNt0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.DatabaseDataSetTableAdapters.UsersTableAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.DatabaseDataSetTableAdapters.UsersTableAdapter.html",
+          "hash": "QxEF4TKyaCxAv7abmFe2hVsSd6WtDZpYpnI2bNbafwo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.DatabaseDataSetTableAdapters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.DatabaseDataSetTableAdapters.html",
+          "hash": "pijg5H5WVVULzHFa8Xn5k7Uyf5D1ab5aicJJgGid3M8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.DeletePosition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.DeletePosition.html",
+          "hash": "IP8y0T/+HSldAasd+wjzz9xfqj5nEf398qNNZOmVAn4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.Enterance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.Enterance.html",
+          "hash": "dB2B+MTI8Bl8O+pwPSzzd2E6CrPfd9dEAOdAJapPhLI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.FurnitureType.FurnitureTypeTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.FurnitureType.FurnitureTypeTest.html",
+          "hash": "RapeqMQF+HUHlSuRy//Xcdc8uCHoinw2/e3+CSsYk2E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.FurnitureType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.FurnitureType.html",
+          "hash": "OoIVB0otZao8clNMiTPHDxONDhK9hxQPb21SquYX6Qc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.NewPosition.NewPositionTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.NewPosition.NewPositionTest.html",
+          "hash": "2V4dntUxzbBpurytTDazvNfzoq9bCxgpBAMzdR6EwBA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.NewPosition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.NewPosition.html",
+          "hash": "mhAaSx10BUKBZhmp7hMUpJxBs2a9NlN8ZigzPOG/gSg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.Registration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.Registration.html",
+          "hash": "2uAzDaoJ0FZ7EZjlJ0wAYXsUV4fDjxtECbUyrjfO340="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.Shelves.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.Shelves.html",
+          "hash": "jdPOmshIMBcdRTUBgaG4fRdaq7NBoqRK1MNYcmL5eAM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.Sofas.SofasTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.Sofas.SofasTest.html",
+          "hash": "hHTLmMfKdHkDVbjgmORsn79iJOV6xy6kdNuZEfd71mY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.Sofas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.Sofas.html",
+          "hash": "JYIXwMp9nR/eSyhScQrgSWUIuYL0aU+CiEphlvIUc4k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.StartPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.StartPage.html",
+          "hash": "68XqZzVcpgAWSQF8sDXpxx7DtOaQa00qXmmtEsqm9/U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.Tables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.Tables.html",
+          "hash": "JmsI94nM6BmIdKUuPV+0lL7PEgcgXa8MOx8uj+u4V3g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.Wardrobes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.Wardrobes.html",
+          "hash": "tI9Uyo935NR+wSdg2ZZ27uEcfKB+RGxqFtwQWXai4F0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/LP.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LP.html",
+          "hash": "dDyVbBBHeAnZUhliGkBQY91F95eeOgzkfZWagqVfnh0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "/Z/5+QtAt9g5VzXKh3CnXVBds733WzEnHfV9uNasMJQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "Oa9PuD4E1hvZnCkVjUgzNBX6S00Zo5YilamTERTZo54="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 34,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

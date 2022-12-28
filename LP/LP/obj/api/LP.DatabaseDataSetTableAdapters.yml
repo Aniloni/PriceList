@@ -1,0 +1,48 @@
+### YamlMime:ManagedReference
+items:
+- uid: LP.DatabaseDataSetTableAdapters
+  commentId: N:LP.DatabaseDataSetTableAdapters
+  id: LP.DatabaseDataSetTableAdapters
+  children:
+  - LP.DatabaseDataSetTableAdapters.PricelistTableAdapter
+  - LP.DatabaseDataSetTableAdapters.TableAdapterManager
+  - LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption
+  - LP.DatabaseDataSetTableAdapters.UsersTableAdapter
+  langs:
+  - csharp
+  - vb
+  name: LP.DatabaseDataSetTableAdapters
+  nameWithType: LP.DatabaseDataSetTableAdapters
+  fullName: LP.DatabaseDataSetTableAdapters
+  type: Namespace
+  assemblies:
+  - LP
+references:
+- uid: LP.DatabaseDataSetTableAdapters.PricelistTableAdapter
+  commentId: T:LP.DatabaseDataSetTableAdapters.PricelistTableAdapter
+  parent: LP.DatabaseDataSetTableAdapters
+  name: PricelistTableAdapter
+  nameWithType: PricelistTableAdapter
+  fullName: LP.DatabaseDataSetTableAdapters.PricelistTableAdapter
+- uid: LP.DatabaseDataSetTableAdapters.UsersTableAdapter
+  commentId: T:LP.DatabaseDataSetTableAdapters.UsersTableAdapter
+  parent: LP.DatabaseDataSetTableAdapters
+  name: UsersTableAdapter
+  nameWithType: UsersTableAdapter
+  fullName: LP.DatabaseDataSetTableAdapters.UsersTableAdapter
+- uid: LP.DatabaseDataSetTableAdapters.TableAdapterManager
+  commentId: T:LP.DatabaseDataSetTableAdapters.TableAdapterManager
+  name: TableAdapterManager
+  nameWithType: TableAdapterManager
+  fullName: LP.DatabaseDataSetTableAdapters.TableAdapterManager
+- uid: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption
+  commentId: T:LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption
+  parent: LP.DatabaseDataSetTableAdapters
+  name: TableAdapterManager.UpdateOrderOption
+  nameWithType: TableAdapterManager.UpdateOrderOption
+  fullName: LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption
+- uid: LP.DatabaseDataSetTableAdapters
+  commentId: N:LP.DatabaseDataSetTableAdapters
+  name: LP.DatabaseDataSetTableAdapters
+  nameWithType: LP.DatabaseDataSetTableAdapters
+  fullName: LP.DatabaseDataSetTableAdapters

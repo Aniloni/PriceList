@@ -1,0 +1,504 @@
+### YamlMime:ManagedReference
+items:
+- uid: LP.DatabaseDataSet.PricelistRowChangeEvent
+  commentId: T:LP.DatabaseDataSet.PricelistRowChangeEvent
+  id: DatabaseDataSet.PricelistRowChangeEvent
+  parent: LP
+  children:
+  - LP.DatabaseDataSet.PricelistRowChangeEvent.#ctor(LP.DatabaseDataSet.PricelistRow,System.Data.DataRowAction)
+  - LP.DatabaseDataSet.PricelistRowChangeEvent.Action
+  - LP.DatabaseDataSet.PricelistRowChangeEvent.Row
+  langs:
+  - csharp
+  - vb
+  name: DatabaseDataSet.PricelistRowChangeEvent
+  nameWithType: DatabaseDataSet.PricelistRowChangeEvent
+  fullName: LP.DatabaseDataSet.PricelistRowChangeEvent
+  type: Class
+  source:
+    remote:
+      path: LP/LP/DatabaseDataSet.Designer.cs
+      branch: develop
+      repo: https://github.com/Aniloni/PriceList.git
+    id: PricelistRowChangeEvent
+    path: DatabaseDataSet.Designer.cs
+    startLine: 1040
+  assemblies:
+  - LP
+  namespace: LP
+  summary: "\nRow event argument class\n"
+  example: []
+  syntax:
+    content: 'public class PricelistRowChangeEvent : EventArgs'
+    content.vb: >-
+      Public Class PricelistRowChangeEvent
+          Inherits EventArgs
+  inheritance:
+  - System.Object
+  - System.EventArgs
+  inheritedMembers:
+  - System.EventArgs.Empty
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: LP.DatabaseDataSet.PricelistRowChangeEvent.#ctor(LP.DatabaseDataSet.PricelistRow,System.Data.DataRowAction)
+  commentId: M:LP.DatabaseDataSet.PricelistRowChangeEvent.#ctor(LP.DatabaseDataSet.PricelistRow,System.Data.DataRowAction)
+  id: '#ctor(LP.DatabaseDataSet.PricelistRow,System.Data.DataRowAction)'
+  parent: LP.DatabaseDataSet.PricelistRowChangeEvent
+  langs:
+  - csharp
+  - vb
+  name: PricelistRowChangeEvent(DatabaseDataSet.PricelistRow, DataRowAction)
+  nameWithType: DatabaseDataSet.PricelistRowChangeEvent.PricelistRowChangeEvent(DatabaseDataSet.PricelistRow, DataRowAction)
+  fullName: LP.DatabaseDataSet.PricelistRowChangeEvent.PricelistRowChangeEvent(LP.DatabaseDataSet.PricelistRow, System.Data.DataRowAction)
+  type: Constructor
+  source:
+    remote:
+      path: LP/LP/DatabaseDataSet.Designer.cs
+      branch: develop
+      repo: https://github.com/Aniloni/PriceList.git
+    id: .ctor
+    path: DatabaseDataSet.Designer.cs
+    startLine: 1047
+  assemblies:
+  - LP
+  namespace: LP
+  syntax:
+    content: public PricelistRowChangeEvent(DatabaseDataSet.PricelistRow row, DataRowAction action)
+    parameters:
+    - id: row
+      type: LP.DatabaseDataSet.PricelistRow
+    - id: action
+      type: System.Data.DataRowAction
+    content.vb: Public Sub New(row As DatabaseDataSet.PricelistRow, action As DataRowAction)
+  overload: LP.DatabaseDataSet.PricelistRowChangeEvent.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: LP.DatabaseDataSet.PricelistRowChangeEvent.Row
+  commentId: P:LP.DatabaseDataSet.PricelistRowChangeEvent.Row
+  id: Row
+  parent: LP.DatabaseDataSet.PricelistRowChangeEvent
+  langs:
+  - csharp
+  - vb
+  name: Row
+  nameWithType: DatabaseDataSet.PricelistRowChangeEvent.Row
+  fullName: LP.DatabaseDataSet.PricelistRowChangeEvent.Row
+  type: Property
+  source:
+    remote:
+      path: LP/LP/DatabaseDataSet.Designer.cs
+      branch: develop
+      repo: https://github.com/Aniloni/PriceList.git
+    id: Row
+    path: DatabaseDataSet.Designer.cs
+    startLine: 1054
+  assemblies:
+  - LP
+  namespace: LP
+  syntax:
+    content: public DatabaseDataSet.PricelistRow Row { get; }
+    parameters: []
+    return:
+      type: LP.DatabaseDataSet.PricelistRow
+    content.vb: Public ReadOnly Property Row As DatabaseDataSet.PricelistRow
+  overload: LP.DatabaseDataSet.PricelistRowChangeEvent.Row*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: LP.DatabaseDataSet.PricelistRowChangeEvent.Action
+  commentId: P:LP.DatabaseDataSet.PricelistRowChangeEvent.Action
+  id: Action
+  parent: LP.DatabaseDataSet.PricelistRowChangeEvent
+  langs:
+  - csharp
+  - vb
+  name: Action
+  nameWithType: DatabaseDataSet.PricelistRowChangeEvent.Action
+  fullName: LP.DatabaseDataSet.PricelistRowChangeEvent.Action
+  type: Property
+  source:
+    remote:
+      path: LP/LP/DatabaseDataSet.Designer.cs
+      branch: develop
+      repo: https://github.com/Aniloni/PriceList.git
+    id: Action
+    path: DatabaseDataSet.Designer.cs
+    startLine: 1062
+  assemblies:
+  - LP
+  namespace: LP
+  syntax:
+    content: public DataRowAction Action { get; }
+    parameters: []
+    return:
+      type: System.Data.DataRowAction
+    content.vb: Public ReadOnly Property Action As DataRowAction
+  overload: LP.DatabaseDataSet.PricelistRowChangeEvent.Action*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: LP
+  commentId: N:LP
+  name: LP
+  nameWithType: LP
+  fullName: LP
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.EventArgs
+  commentId: T:System.EventArgs
+  parent: System
+  isExternal: true
+  name: EventArgs
+  nameWithType: EventArgs
+  fullName: System.EventArgs
+- uid: System.EventArgs.Empty
+  commentId: F:System.EventArgs.Empty
+  parent: System.EventArgs
+  isExternal: true
+  name: Empty
+  nameWithType: EventArgs.Empty
+  fullName: System.EventArgs.Empty
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LP.DatabaseDataSet.PricelistRowChangeEvent.#ctor*
+  commentId: Overload:LP.DatabaseDataSet.PricelistRowChangeEvent.#ctor
+  name: PricelistRowChangeEvent
+  nameWithType: DatabaseDataSet.PricelistRowChangeEvent.PricelistRowChangeEvent
+  fullName: LP.DatabaseDataSet.PricelistRowChangeEvent.PricelistRowChangeEvent
+- uid: LP.DatabaseDataSet.PricelistRow
+  commentId: T:LP.DatabaseDataSet.PricelistRow
+  parent: LP
+  name: DatabaseDataSet.PricelistRow
+  nameWithType: DatabaseDataSet.PricelistRow
+  fullName: LP.DatabaseDataSet.PricelistRow
+- uid: System.Data.DataRowAction
+  commentId: T:System.Data.DataRowAction
+  parent: System.Data
+  isExternal: true
+  name: DataRowAction
+  nameWithType: DataRowAction
+  fullName: System.Data.DataRowAction
+- uid: System.Data
+  commentId: N:System.Data
+  isExternal: true
+  name: System.Data
+  nameWithType: System.Data
+  fullName: System.Data
+- uid: LP.DatabaseDataSet.PricelistRowChangeEvent.Row*
+  commentId: Overload:LP.DatabaseDataSet.PricelistRowChangeEvent.Row
+  name: Row
+  nameWithType: DatabaseDataSet.PricelistRowChangeEvent.Row
+  fullName: LP.DatabaseDataSet.PricelistRowChangeEvent.Row
+- uid: LP.DatabaseDataSet.PricelistRowChangeEvent.Action*
+  commentId: Overload:LP.DatabaseDataSet.PricelistRowChangeEvent.Action
+  name: Action
+  nameWithType: DatabaseDataSet.PricelistRowChangeEvent.Action
+  fullName: LP.DatabaseDataSet.PricelistRowChangeEvent.Action

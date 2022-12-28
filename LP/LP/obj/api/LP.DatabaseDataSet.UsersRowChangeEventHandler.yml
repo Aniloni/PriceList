@@ -1,0 +1,64 @@
+### YamlMime:ManagedReference
+items:
+- uid: LP.DatabaseDataSet.UsersRowChangeEventHandler
+  commentId: T:LP.DatabaseDataSet.UsersRowChangeEventHandler
+  id: DatabaseDataSet.UsersRowChangeEventHandler
+  parent: LP
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: DatabaseDataSet.UsersRowChangeEventHandler
+  nameWithType: DatabaseDataSet.UsersRowChangeEventHandler
+  fullName: LP.DatabaseDataSet.UsersRowChangeEventHandler
+  type: Delegate
+  source:
+    remote:
+      path: LP/LP/DatabaseDataSet.Designer.cs
+      branch: develop
+      repo: https://github.com/Aniloni/PriceList.git
+    id: UsersRowChangeEventHandler
+    path: DatabaseDataSet.Designer.cs
+    startLine: 306
+  assemblies:
+  - LP
+  namespace: LP
+  syntax:
+    content: public delegate void UsersRowChangeEventHandler(object sender, DatabaseDataSet.UsersRowChangeEvent e);
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: LP.DatabaseDataSet.UsersRowChangeEvent
+    content.vb: Public Delegate Sub UsersRowChangeEventHandler(sender As Object, e As DatabaseDataSet.UsersRowChangeEvent)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: LP
+  commentId: N:LP
+  name: LP
+  nameWithType: LP
+  fullName: LP
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: LP.DatabaseDataSet.UsersRowChangeEvent
+  commentId: T:LP.DatabaseDataSet.UsersRowChangeEvent
+  parent: LP
+  name: DatabaseDataSet.UsersRowChangeEvent
+  nameWithType: DatabaseDataSet.UsersRowChangeEvent
+  fullName: LP.DatabaseDataSet.UsersRowChangeEvent
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

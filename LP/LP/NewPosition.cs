@@ -5,62 +5,105 @@ using System.Data.SqlClient;
 using System.Windows.Forms;
 namespace LP
 {
-    public partial class NewPosition : Form // Класс формы для добавления новой позиции в прайс-лист
+    /// <summary>
+    /// Класс формы для добавления новой позиции в прайс-лист
+    /// </summary>
+    public partial class NewPosition : Form 
     {
+        /// <summary>
+        /// Тесты для класса NewPosition
+        /// </summary>
         [TestFixture]
-        public class NewPositionTest : NewPosition // Тесты для класса NewPosition
+        public class NewPositionTest : NewPosition 
         {
-            [Test] // Тест на проверку цвета текстбокса Type
+            /// <summary>
+            /// Тест на проверку цвета текстбокса Type
+            /// </summary>
+            /// <param name="actual"></param>
+            [Test] 
             [TestCase("Color [A=255, R=80, G=111, B=154]")]
             public void TestTypeColor(string actual)
             {
                 Assert.AreEqual(Type.BackColor.ToString(), actual);
             }
-            [Test] // Тест на проверку цвета текстбокса Color
+            /// <summary>
+            /// Тест на проверку цвета текстбокса Color
+            /// </summary>
+            /// <param name="actual"></param>
+            [Test] 
             [TestCase("Color [A=255, R=50, G=80, B=110]")]
             public void TestbuttonBackColor(string actual)
             {
                 Assert.AreEqual(buttonBack.BackColor.ToString(), actual);
             }
-            [Test] // Тест на проверку цвета текстбокса Articule
+            /// <summary>
+            /// Тест на проверку цвета текстбокса Articule
+            /// </summary>
+            /// <param name="actual"></param>
+            [Test] 
             [TestCase("Color [A=255, R=80, G=111, B=154]")]
             public void TestArticuleColor(string actual)
             {
                 Assert.AreEqual(Articule.BackColor.ToString(), actual);
             }
-            [Test] // Тест на проверку цвета текстбокса NameP
+            /// <summary>
+            /// Тест на проверку цвета текстбокса NameP
+            /// </summary>
+            /// <param name="actual"></param>
+            [Test] 
             [TestCase("Color [A=255, R=80, G=111, B=154]")]
             public void TestNamePColor(string actual)
             {
                 Assert.AreEqual(NameP.BackColor.ToString(), actual);
             }
         }
-        public NewPosition() //Конструктор класса
+        /// <summary>
+        /// Конструктор класса
+        /// </summary>
+        public NewPosition() 
         {
             InitializeComponent();
         }
-
-        private void buttonExit2_Click(object sender, EventArgs e) //Метод, запускающийся при нажатии кнопки выход и завершающий работу программы
+        /// <summary>
+        /// Метод, запускающийся при нажатии кнопки выход и завершающий работу программы
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void buttonExit2_Click(object sender, EventArgs e) 
         {
             Application.Exit(); 
         }
-
-        private void buttonBack_Click(object sender, EventArgs e) //Метод, запускающийся при нажатии кнопки назад и открывающий форму FurnitureType
+        /// <summary>
+        /// Метод, запускающийся при нажатии кнопки назад и открывающий форму FurnitureType
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void buttonBack_Click(object sender, EventArgs e) 
         {
             FurnitureType back = new FurnitureType();
             back.Show(); 
             this.Hide();
             con.CloseConnection();
         }
-
-        Connection con = new Connection(); //Поле, использующееся для подключения к базе данных
-
-        private void NewPosition_Load(object sender, EventArgs e) //Метод, запускающийся при загрузке страницы
+        /// <summary>
+        /// Поле, использующееся для подключения к базе данных
+        /// </summary>
+        Connection con = new Connection();
+        /// <summary>
+        /// Метод, запускающийся при загрузке страницы
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void NewPosition_Load(object sender, EventArgs e) 
         {
             con.OpenConnection();
         }
-
-        private void Add_Click(object sender, EventArgs e) //Метод,запускающийся при нажатии на кнопку добавления позиции
+        /// <summary>
+        /// Метод,запускающийся при нажатии на кнопку добавления позиции
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Add_Click(object sender, EventArgs e) 
         {
             string type = Type.Text;
             string articule = Articule.Text;
@@ -124,7 +167,11 @@ namespace LP
             else
                 MessageBox.Show("Позиция не добавлена");
         }
-        public bool IsPosExists() //Метод, проверяющий существование позиции
+        /// <summary>
+        /// Метод, проверяющий существование позиции
+        /// </summary>
+        /// <returns></returns>
+        public bool IsPosExists() 
         {
             string articule = Articule.Text;
 
@@ -149,110 +196,174 @@ namespace LP
                 return false;
             }
         }
-
-        private void Articule_KeyPress(object sender, KeyPressEventArgs e) // Метод, накладывающий условия на вводимые значения в текстбокс Articule
+        /// <summary>
+        /// Метод, накладывающий условия на вводимые значения в текстбокс Articule
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Articule_KeyPress(object sender, KeyPressEventArgs e) 
         {
             char number = e.KeyChar;
-            if (!Char.IsDigit(number) && number != 8) // цифры и клавиша BackSpace
+            if (!Char.IsDigit(number) && number != 8) 
             {
                 e.Handled = true;
             }
         }
-
-        private void Nalichie_KeyPress(object sender, KeyPressEventArgs e) // Метод, накладывающий условия на вводимые значения в текстбокс Nalichie
+        /// <summary>
+        /// Метод, накладывающий условия на вводимые значения в текстбокс Nalichie
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Nalichie_KeyPress(object sender, KeyPressEventArgs e) 
         {
             char number = e.KeyChar;
-            if (!Char.IsDigit(number) && number != 8) // цифры и клавиша BackSpace
+            if (!Char.IsDigit(number) && number != 8) 
             {
                 e.Handled = true;
             }
         }
-
-        private void Price_KeyPress(object sender, KeyPressEventArgs e) // Метод, накладывающий условия на вводимые значения в текстбокс Price
+        /// <summary>
+        /// Метод, накладывающий условия на вводимые значения в текстбокс Price
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Price_KeyPress(object sender, KeyPressEventArgs e) 
         {
             char number = e.KeyChar;
-            if (!Char.IsDigit(number) && number != 8) // цифры и клавиша BackSpace
+            if (!Char.IsDigit(number) && number != 8) 
             {
                 e.Handled = true;
             }
         }
-
-        private void PriceO_KeyPress(object sender, KeyPressEventArgs e) // Метод, накладывающий условия на вводимые значения в текстбокс PriceO
+        /// <summary>
+        /// Метод, накладывающий условия на вводимые значения в текстбокс PriceO
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void PriceO_KeyPress(object sender, KeyPressEventArgs e) 
         {
             char number = e.KeyChar;
-            if (!Char.IsDigit(number) && number != 8) // цифры и клавиша BackSpace
+            if (!Char.IsDigit(number) && number != 8) 
             {
                 e.Handled = true;
             }
         }
-
-        private void Type_Enter(object sender, EventArgs e) //Метод, запускающийся при нажатии на текстбокс Type
+        /// <summary>
+        /// Метод, запускающийся при нажатии на текстбокс Type
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Type_Enter(object sender, EventArgs e) 
         {
             if (Type.Text == "Тип мебели")
                 Type.Text = "";
         }
-
-        private void Articule_Enter(object sender, EventArgs e)//Метод, запускающийся при нажатии на текстбокс Articule
+        /// <summary>
+        /// Метод, запускающийся при нажатии на текстбокс Articule
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Articule_Enter(object sender, EventArgs e)
         {
             if (Articule.Text == "Артикул")
                 Articule.Text = "";
         }
-
-        private void NameP_Enter(object sender, EventArgs e)//Метод, запускающийся при нажатии на текстбокс NameP
+        /// <summary>
+        /// Метод, запускающийся при нажатии на текстбокс NameP
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void NameP_Enter(object sender, EventArgs e)
         {
             if (NameP.Text == "Название")
                 NameP.Text = "";
         }
-
-        private void Nalichie_Enter(object sender, EventArgs e)//Метод, запускающийся при нажатии на текстбокс Nalichie
+        /// <summary>
+        /// Метод, запускающийся при нажатии на текстбокс Nalichie
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Nalichie_Enter(object sender, EventArgs e)
         {
             if (Nalichie.Text == "Количество позиций")
                 Nalichie.Text = "";
         }
-
-        private void Price_Enter(object sender, EventArgs e)//Метод, запускающийся при нажатии на текстбокс Price
+        /// <summary>
+        /// Метод, запускающийся при нажатии на текстбокс Price
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Price_Enter(object sender, EventArgs e)
         {
             if (Price.Text == "Цена в розницу")
                 Price.Text = "";
         }
-
-        private void PriceO_Enter(object sender, EventArgs e)//Метод, запускающийся при нажатии на текстбокс PriceO
+        /// <summary>
+        /// Метод, запускающийся при нажатии на текстбокс PriceO
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void PriceO_Enter(object sender, EventArgs e)
         {
             if (PriceO.Text == "Цена оптом")
                 PriceO.Text = "";
         }
-
-        private void Type_Leave(object sender, EventArgs e) //Метод, запускающийся при выходе из поля текстбокса Type
+        /// <summary>
+        /// Метод, запускающийся при выходе из поля текстбокса Type
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Type_Leave(object sender, EventArgs e) 
         {
             if (Type.Text == "")
                 Type.Text = "Тип мебели";
         }
-
-        private void Articule_Leave(object sender, EventArgs e) //Метод, запускающийся при выходе из поля текстбокса Articule
+        /// <summary>
+        /// Метод, запускающийся при выходе из поля текстбокса Articule
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Articule_Leave(object sender, EventArgs e) 
         {
             if (Articule.Text == "")
                 Articule.Text = "Артикул";
         }
-
-        private void NameP_Leave(object sender, EventArgs e) //Метод, запускающийся при выходе из поля текстбокса NameP
+        /// <summary>
+        /// Метод, запускающийся при выходе из поля текстбокса NameP
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void NameP_Leave(object sender, EventArgs e) 
         {
             if (NameP.Text == "")
                 NameP.Text = "Название";
         }
-
-        private void Nalichie_Leave(object sender, EventArgs e) //Метод, запускающийся при выходе из поля текстбокса Nalichie
+        /// <summary>
+        /// Метод, запускающийся при выходе из поля текстбокса Nalichie
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Nalichie_Leave(object sender, EventArgs e) 
         {
             if (Nalichie.Text == "")
                 Nalichie.Text = "Количество позиций";
         }
-
-        private void Price_Leave(object sender, EventArgs e) //Метод, запускающийся при выходе из поля текстбокса Price
+        /// <summary>
+        /// Метод, запускающийся при выходе из поля текстбокса Price
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Price_Leave(object sender, EventArgs e) 
         {
             if (Price.Text == "")
                 Price.Text = "Цена в розницу";
         }
-
-        private void PriceO_Leave(object sender, EventArgs e) //Метод, запускающийся при выходе из поля текстбокса PriceO
+        /// <summary>
+        /// Метод, запускающийся при выходе из поля текстбокса PriceO
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void PriceO_Leave(object sender, EventArgs e) 
         {
             if (PriceO.Text == "")
                 PriceO.Text = "Цена оптом";

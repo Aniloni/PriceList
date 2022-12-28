@@ -1,0 +1,467 @@
+### YamlMime:ManagedReference
+items:
+- uid: LP.Connection
+  commentId: T:LP.Connection
+  id: Connection
+  parent: LP
+  children:
+  - LP.Connection.CloseConnection
+  - LP.Connection.connection
+  - LP.Connection.OpenConnection
+  langs:
+  - csharp
+  - vb
+  name: Connection
+  nameWithType: Connection
+  fullName: LP.Connection
+  type: Class
+  source:
+    remote:
+      path: LP/LP/Connection.cs
+      branch: develop
+      repo: https://github.com/Aniloni/PriceList.git
+    id: Connection
+    path: Connection.cs
+    startLine: 7
+  assemblies:
+  - LP
+  namespace: LP
+  summary: "\nКласс для подключения к базе данных\n"
+  example: []
+  syntax:
+    content: public class Connection
+    content.vb: Public Class Connection
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: LP.Connection.connection
+  commentId: F:LP.Connection.connection
+  id: connection
+  parent: LP.Connection
+  langs:
+  - csharp
+  - vb
+  name: connection
+  nameWithType: Connection.connection
+  fullName: LP.Connection.connection
+  type: Field
+  source:
+    remote:
+      path: LP/LP/Connection.cs
+      branch: develop
+      repo: https://github.com/Aniloni/PriceList.git
+    id: connection
+    path: Connection.cs
+    startLine: 12
+  assemblies:
+  - LP
+  namespace: LP
+  summary: "\nПоле типа SqlConnection, использующееся для подключения к базе данных\n"
+  example: []
+  syntax:
+    content: public SqlConnection connection
+    return:
+      type: System.Data.SqlClient.SqlConnection
+    content.vb: Public connection As SqlConnection
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: LP.Connection.OpenConnection
+  commentId: M:LP.Connection.OpenConnection
+  id: OpenConnection
+  parent: LP.Connection
+  langs:
+  - csharp
+  - vb
+  name: OpenConnection()
+  nameWithType: Connection.OpenConnection()
+  fullName: LP.Connection.OpenConnection()
+  type: Method
+  source:
+    remote:
+      path: LP/LP/Connection.cs
+      branch: develop
+      repo: https://github.com/Aniloni/PriceList.git
+    id: OpenConnection
+    path: Connection.cs
+    startLine: 17
+  assemblies:
+  - LP
+  namespace: LP
+  summary: "\nМетод, открывающий подключение к базе данных\n"
+  example: []
+  syntax:
+    content: public void OpenConnection()
+    content.vb: Public Sub OpenConnection
+  overload: LP.Connection.OpenConnection*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: LP.Connection.CloseConnection
+  commentId: M:LP.Connection.CloseConnection
+  id: CloseConnection
+  parent: LP.Connection
+  langs:
+  - csharp
+  - vb
+  name: CloseConnection()
+  nameWithType: Connection.CloseConnection()
+  fullName: LP.Connection.CloseConnection()
+  type: Method
+  source:
+    remote:
+      path: LP/LP/Connection.cs
+      branch: develop
+      repo: https://github.com/Aniloni/PriceList.git
+    id: CloseConnection
+    path: Connection.cs
+    startLine: 28
+  assemblies:
+  - LP
+  namespace: LP
+  summary: "\nМетод, закрывающий подключение к базе данных\n"
+  example: []
+  syntax:
+    content: public void CloseConnection()
+    content.vb: Public Sub CloseConnection
+  overload: LP.Connection.CloseConnection*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: LP
+  commentId: N:LP
+  name: LP
+  nameWithType: LP
+  fullName: LP
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Data.SqlClient.SqlConnection
+  commentId: T:System.Data.SqlClient.SqlConnection
+  parent: System.Data.SqlClient
+  isExternal: true
+  name: SqlConnection
+  nameWithType: SqlConnection
+  fullName: System.Data.SqlClient.SqlConnection
+- uid: System.Data.SqlClient
+  commentId: N:System.Data.SqlClient
+  isExternal: true
+  name: System.Data.SqlClient
+  nameWithType: System.Data.SqlClient
+  fullName: System.Data.SqlClient
+- uid: LP.Connection.OpenConnection*
+  commentId: Overload:LP.Connection.OpenConnection
+  name: OpenConnection
+  nameWithType: Connection.OpenConnection
+  fullName: LP.Connection.OpenConnection
+- uid: LP.Connection.CloseConnection*
+  commentId: Overload:LP.Connection.CloseConnection
+  name: CloseConnection
+  nameWithType: Connection.CloseConnection
+  fullName: LP.Connection.CloseConnection

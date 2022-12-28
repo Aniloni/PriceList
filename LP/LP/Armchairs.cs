@@ -5,14 +5,24 @@ using System.Windows.Forms;
 
 namespace LP
 {
-    public partial class Armchairs : Form //Класс формы для просмотра позиций типа кресло в прайс-листе
+    /// <summary>
+    /// Класс формы для просмотра позиций типа кресло в прайс-листе
+    /// </summary>
+    public partial class Armchairs : Form 
     {
-        public Armchairs() //Конструктор класса
+        /// <summary>
+        /// Конструктор класса
+        /// </summary>
+        public Armchairs() 
         {
             InitializeComponent();
         }
-
-        private void Armchairs_Load(object sender, EventArgs e) //Метод, запускающийся при загрузке формы Armchairs
+        /// <summary>
+        /// Метод, запускающийся при загрузке формы Armchairs
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Armchairs_Load(object sender, EventArgs e) 
         {
             Connection con = new Connection();
             con.OpenConnection();
@@ -31,8 +41,12 @@ namespace LP
             con.CloseConnection();
 
         }
-
-        private void button1_Click(object sender, EventArgs e) //Метод, запускающийся при нажатии кнопки назад и открывающий форму FurnitureType
+        /// <summary>
+        /// Метод, запускающийся при нажатии кнопки назад и открывающий форму FurnitureType
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void button1_Click(object sender, EventArgs e) 
         {   
             FurnitureType f = new FurnitureType();
             f.Show();

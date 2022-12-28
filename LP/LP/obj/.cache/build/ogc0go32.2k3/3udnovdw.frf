@@ -1,0 +1,837 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DatabaseDataSet
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DatabaseDataSet
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="LP.DatabaseDataSet">
+  
+  
+  <h1 id="LP_DatabaseDataSet" data-uid="LP.DatabaseDataSet" class="text-break">Class DatabaseDataSet
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a strongly typed in-memory cache of data.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">System.ComponentModel.MarshalByValueComponent</span></div>
+    <div class="level2"><span class="xref">System.Data.DataSet</span></div>
+    <div class="level3"><span class="xref">DatabaseDataSet</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.IComponent</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><span class="xref">System.IServiceProvider</span></div>
+    <div><span class="xref">System.ComponentModel.IListSource</span></div>
+    <div><span class="xref">System.Xml.Serialization.IXmlSerializable</span></div>
+    <div><span class="xref">System.ComponentModel.ISupportInitializeNotification</span></div>
+    <div><span class="xref">System.ComponentModel.ISupportInitialize</span></div>
+    <div><span class="xref">System.Runtime.Serialization.ISerializable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Data.DataSet.IsBinarySerialized(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.DetermineSchemaSerializationMode(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.DetermineSchemaSerializationMode(System.Xml.XmlReader)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.GetSerializationData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.AcceptChanges()</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.BeginInit()</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.EndInit()</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.Clear()</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.Copy()</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.GetChanges()</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.GetChanges(System.Data.DataRowState)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.System.ComponentModel.IListSource.GetList()</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.GetXml()</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.GetXmlSchema()</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.HasChanges()</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.HasChanges(System.Data.DataRowState)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.InferXmlSchema(System.Xml.XmlReader, System.String[])</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.InferXmlSchema(System.IO.Stream, System.String[])</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.InferXmlSchema(System.IO.TextReader, System.String[])</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.InferXmlSchema(System.String, System.String[])</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.ReadXmlSchema(System.Xml.XmlReader)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.ReadXmlSchema(System.IO.Stream)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.ReadXmlSchema(System.IO.TextReader)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.ReadXmlSchema(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.WriteXmlSchema(System.IO.Stream)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.WriteXmlSchema(System.IO.Stream, System.Converter&lt;System.Type, System.String&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.WriteXmlSchema(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.WriteXmlSchema(System.String, System.Converter&lt;System.Type, System.String&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.WriteXmlSchema(System.IO.TextWriter)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.WriteXmlSchema(System.IO.TextWriter, System.Converter&lt;System.Type, System.String&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.WriteXmlSchema(System.Xml.XmlWriter)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.WriteXmlSchema(System.Xml.XmlWriter, System.Converter&lt;System.Type, System.String&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.ReadXml(System.Xml.XmlReader)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.ReadXml(System.IO.Stream)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.ReadXml(System.IO.TextReader)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.ReadXml(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.ReadXml(System.Xml.XmlReader, System.Data.XmlReadMode)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.ReadXml(System.IO.Stream, System.Data.XmlReadMode)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.ReadXml(System.IO.TextReader, System.Data.XmlReadMode)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.ReadXml(System.String, System.Data.XmlReadMode)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.WriteXml(System.IO.Stream)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.WriteXml(System.IO.TextWriter)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.WriteXml(System.Xml.XmlWriter)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.WriteXml(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.WriteXml(System.IO.Stream, System.Data.XmlWriteMode)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.WriteXml(System.IO.TextWriter, System.Data.XmlWriteMode)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.WriteXml(System.Xml.XmlWriter, System.Data.XmlWriteMode)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.WriteXml(System.String, System.Data.XmlWriteMode)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.Merge(System.Data.DataSet)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.Merge(System.Data.DataSet, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.Merge(System.Data.DataSet, System.Boolean, System.Data.MissingSchemaAction)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.Merge(System.Data.DataTable)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.Merge(System.Data.DataTable, System.Boolean, System.Data.MissingSchemaAction)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.Merge(System.Data.DataRow[])</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.Merge(System.Data.DataRow[], System.Boolean, System.Data.MissingSchemaAction)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.OnPropertyChanging(System.ComponentModel.PropertyChangedEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.OnRemoveTable(System.Data.DataTable)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.OnRemoveRelation(System.Data.DataRelation)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.RaisePropertyChanging(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.RejectChanges()</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.Reset()</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.GetDataSetSchema(System.Xml.Schema.XmlSchemaSet)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.System.Xml.Serialization.IXmlSerializable.GetSchema()</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.System.Xml.Serialization.IXmlSerializable.ReadXml(System.Xml.XmlReader)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.System.Xml.Serialization.IXmlSerializable.WriteXml(System.Xml.XmlWriter)</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.Load(System.Data.IDataReader, System.Data.LoadOption, System.Data.FillErrorEventHandler, System.Data.DataTable[])</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.Load(System.Data.IDataReader, System.Data.LoadOption, System.Data.DataTable[])</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.Load(System.Data.IDataReader, System.Data.LoadOption, System.String[])</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.CreateDataReader()</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.CreateDataReader(System.Data.DataTable[])</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.RemotingFormat</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.CaseSensitive</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.System.ComponentModel.IListSource.ContainsListCollection</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.DefaultViewManager</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.EnforceConstraints</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.DataSetName</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.Namespace</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.Prefix</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.ExtendedProperties</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.HasErrors</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.IsInitialized</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.Locale</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.Site</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.MergeFailed</span>
+    </div>
+    <div>
+      <span class="xref">System.Data.DataSet.Initialized</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.MarshalByValueComponent.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.MarshalByValueComponent.Dispose(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.MarshalByValueComponent.GetService(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.MarshalByValueComponent.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.MarshalByValueComponent.Events</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.MarshalByValueComponent.Container</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.MarshalByValueComponent.DesignMode</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.MarshalByValueComponent.Disposed</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="LP.html">LP</a></h6>
+  <h6><strong>Assembly</strong>: LP.dll</h6>
+  <h5 id="LP_DatabaseDataSet_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class DatabaseDataSet : DataSet, IComponent, IDisposable, IServiceProvider, IListSource, IXmlSerializable, ISupportInitializeNotification, ISupportInitialize, ISerializable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="LP_DatabaseDataSet__ctor_" data-uid="LP.DatabaseDataSet.#ctor*"></a>
+  <h4 id="LP_DatabaseDataSet__ctor" data-uid="LP.DatabaseDataSet.#ctor">DatabaseDataSet()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DatabaseDataSet()</code></pre>
+  </div>
+  
+  
+  <a id="LP_DatabaseDataSet__ctor_" data-uid="LP.DatabaseDataSet.#ctor*"></a>
+  <h4 id="LP_DatabaseDataSet__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="LP.DatabaseDataSet.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">DatabaseDataSet(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DatabaseDataSet(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.SerializationInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.StreamingContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="LP_DatabaseDataSet_Pricelist_" data-uid="LP.DatabaseDataSet.Pricelist*"></a>
+  <h4 id="LP_DatabaseDataSet_Pricelist" data-uid="LP.DatabaseDataSet.Pricelist">Pricelist</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Browsable(false)]
+public DatabaseDataSet.PricelistDataTable Pricelist { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LP.DatabaseDataSet.PricelistDataTable.html">DatabaseDataSet.PricelistDataTable</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LP_DatabaseDataSet_Relations_" data-uid="LP.DatabaseDataSet.Relations*"></a>
+  <h4 id="LP_DatabaseDataSet_Relations" data-uid="LP.DatabaseDataSet.Relations">Relations</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataRelationCollection Relations { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.DataRelationCollection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LP_DatabaseDataSet_SchemaSerializationMode_" data-uid="LP.DatabaseDataSet.SchemaSerializationMode*"></a>
+  <h4 id="LP_DatabaseDataSet_SchemaSerializationMode" data-uid="LP.DatabaseDataSet.SchemaSerializationMode">SchemaSerializationMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Browsable(true)]
+public override SchemaSerializationMode SchemaSerializationMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.SchemaSerializationMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Data.DataSet.SchemaSerializationMode</span></div>
+  
+  
+  <a id="LP_DatabaseDataSet_Tables_" data-uid="LP.DatabaseDataSet.Tables*"></a>
+  <h4 id="LP_DatabaseDataSet_Tables" data-uid="LP.DatabaseDataSet.Tables">Tables</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataTableCollection Tables { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.DataTableCollection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LP_DatabaseDataSet_Users_" data-uid="LP.DatabaseDataSet.Users*"></a>
+  <h4 id="LP_DatabaseDataSet_Users" data-uid="LP.DatabaseDataSet.Users">Users</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Browsable(false)]
+public DatabaseDataSet.UsersDataTable Users { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LP.DatabaseDataSet.UsersDataTable.html">DatabaseDataSet.UsersDataTable</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="LP_DatabaseDataSet_Clone_" data-uid="LP.DatabaseDataSet.Clone*"></a>
+  <h4 id="LP_DatabaseDataSet_Clone" data-uid="LP.DatabaseDataSet.Clone">Clone()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override DataSet Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.DataSet</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Data.DataSet.Clone()</span></div>
+  
+  
+  <a id="LP_DatabaseDataSet_GetSchemaSerializable_" data-uid="LP.DatabaseDataSet.GetSchemaSerializable*"></a>
+  <h4 id="LP_DatabaseDataSet_GetSchemaSerializable" data-uid="LP.DatabaseDataSet.GetSchemaSerializable">GetSchemaSerializable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override XmlSchema GetSchemaSerializable()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Xml.Schema.XmlSchema</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Data.DataSet.GetSchemaSerializable()</span></div>
+  
+  
+  <a id="LP_DatabaseDataSet_GetTypedDataSetSchema_" data-uid="LP.DatabaseDataSet.GetTypedDataSetSchema*"></a>
+  <h4 id="LP_DatabaseDataSet_GetTypedDataSetSchema_System_Xml_Schema_XmlSchemaSet_" data-uid="LP.DatabaseDataSet.GetTypedDataSetSchema(System.Xml.Schema.XmlSchemaSet)">GetTypedDataSetSchema(XmlSchemaSet)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static XmlSchemaComplexType GetTypedDataSetSchema(XmlSchemaSet xs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Xml.Schema.XmlSchemaSet</span></td>
+        <td><span class="parametername">xs</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Xml.Schema.XmlSchemaComplexType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="LP_DatabaseDataSet_InitializeDerivedDataSet_" data-uid="LP.DatabaseDataSet.InitializeDerivedDataSet*"></a>
+  <h4 id="LP_DatabaseDataSet_InitializeDerivedDataSet" data-uid="LP.DatabaseDataSet.InitializeDerivedDataSet">InitializeDerivedDataSet()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void InitializeDerivedDataSet()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Data.DataSet.InitializeDerivedDataSet()</span></div>
+  
+  
+  <a id="LP_DatabaseDataSet_ReadXmlSerializable_" data-uid="LP.DatabaseDataSet.ReadXmlSerializable*"></a>
+  <h4 id="LP_DatabaseDataSet_ReadXmlSerializable_System_Xml_XmlReader_" data-uid="LP.DatabaseDataSet.ReadXmlSerializable(System.Xml.XmlReader)">ReadXmlSerializable(XmlReader)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void ReadXmlSerializable(XmlReader reader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Xml.XmlReader</span></td>
+        <td><span class="parametername">reader</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Data.DataSet.ReadXmlSerializable(System.Xml.XmlReader)</span></div>
+  
+  
+  <a id="LP_DatabaseDataSet_ShouldSerializeRelations_" data-uid="LP.DatabaseDataSet.ShouldSerializeRelations*"></a>
+  <h4 id="LP_DatabaseDataSet_ShouldSerializeRelations" data-uid="LP.DatabaseDataSet.ShouldSerializeRelations">ShouldSerializeRelations()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool ShouldSerializeRelations()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Data.DataSet.ShouldSerializeRelations()</span></div>
+  
+  
+  <a id="LP_DatabaseDataSet_ShouldSerializeTables_" data-uid="LP.DatabaseDataSet.ShouldSerializeTables*"></a>
+  <h4 id="LP_DatabaseDataSet_ShouldSerializeTables" data-uid="LP.DatabaseDataSet.ShouldSerializeTables">ShouldSerializeTables()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool ShouldSerializeTables()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Data.DataSet.ShouldSerializeTables()</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.IComponent</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <span class="xref">System.IServiceProvider</span>
+  </div>
+  <div>
+      <span class="xref">System.ComponentModel.IListSource</span>
+  </div>
+  <div>
+      <span class="xref">System.Xml.Serialization.IXmlSerializable</span>
+  </div>
+  <div>
+      <span class="xref">System.ComponentModel.ISupportInitializeNotification</span>
+  </div>
+  <div>
+      <span class="xref">System.ComponentModel.ISupportInitialize</span>
+  </div>
+  <div>
+      <span class="xref">System.Runtime.Serialization.ISerializable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

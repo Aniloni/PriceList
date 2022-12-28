@@ -3,22 +3,36 @@ using System.Windows.Forms;
 
 namespace LP
 {
-    public partial class StartPage : Form //Класс формы начальной страницы
+    /// <summary>
+    /// Класс формы начальной страницы
+    /// </summary>
+    public partial class StartPage : Form 
     {
-        public StartPage() //Конструктор класса
+        /// <summary>
+        /// Конструктор класса
+        /// </summary>
+        public StartPage() 
         {
             InitializeComponent();
         }
-
-        private void button1_Click_1(object sender, EventArgs e) //Метод, запускающийся при нажатии кнопки назад и открывающий форму Enterance
+        /// <summary>
+        /// Метод, запускающийся при нажатии кнопки назад и открывающий форму Enterance
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void button1_Click_1(object sender, EventArgs e) 
         {
             Enterance frm = new Enterance();
             frm.Show();
             this.Hide();
 
         }
-
-        private void button2_Click(object sender, EventArgs e) //Метод, запускающийся при нажатии кнопки назад и открывающий форму Registration
+        /// <summary>
+        /// Метод, запускающийся при нажатии кнопки назад и открывающий форму Registration
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void button2_Click(object sender, EventArgs e) 
         {
             Registration frm = new Registration();
             frm.Show();

@@ -1,0 +1,129 @@
+﻿
+<div id="sidetoggle">
+  <div>
+    <div class="sidefilter">
+      <form class="toc-filter">
+        <span class="glyphicon glyphicon-filter filter-icon"></span>
+        <span class="glyphicon glyphicon-remove clear-icon" id="toc_filter_clear"></span>
+        <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+      </form>
+    </div>
+    <div class="sidetoc">
+      <div class="toc" id="toc">
+          
+          <ul class="nav level1">
+                <li>
+                    <span class="expand-stub"></span>
+                    <a href="LP.html" name="" title="LP">LP</a>
+                    
+                    <ul class="nav level2">
+                          <li>
+                              <a href="LP.AllPositions.html" name="" title="AllPositions">AllPositions</a>
+                          </li>
+                          <li>
+                              <a href="LP.Armchairs.html" name="" title="Armchairs">Armchairs</a>
+                          </li>
+                          <li>
+                              <a href="LP.Beds.html" name="" title="Beds">Beds</a>
+                          </li>
+                          <li>
+                              <a href="LP.Chair.html" name="" title="Chair">Chair</a>
+                          </li>
+                          <li>
+                              <a href="LP.ChangePosition.html" name="" title="ChangePosition">ChangePosition</a>
+                          </li>
+                          <li>
+                              <a href="LP.Connection.html" name="" title="Connection">Connection</a>
+                          </li>
+                          <li>
+                              <a href="LP.DatabaseDataSet.html" name="" title="DatabaseDataSet">DatabaseDataSet</a>
+                          </li>
+                          <li>
+                              <a href="LP.DatabaseDataSet.PricelistDataTable.html" name="" title="DatabaseDataSet.PricelistDataTable">DatabaseDataSet.PricelistDataTable</a>
+                          </li>
+                          <li>
+                              <a href="LP.DatabaseDataSet.PricelistRow.html" name="" title="DatabaseDataSet.PricelistRow">DatabaseDataSet.PricelistRow</a>
+                          </li>
+                          <li>
+                              <a href="LP.DatabaseDataSet.PricelistRowChangeEvent.html" name="" title="DatabaseDataSet.PricelistRowChangeEvent">DatabaseDataSet.PricelistRowChangeEvent</a>
+                          </li>
+                          <li>
+                              <a href="LP.DatabaseDataSet.PricelistRowChangeEventHandler.html" name="" title="DatabaseDataSet.PricelistRowChangeEventHandler">DatabaseDataSet.PricelistRowChangeEventHandler</a>
+                          </li>
+                          <li>
+                              <a href="LP.DatabaseDataSet.UsersDataTable.html" name="" title="DatabaseDataSet.UsersDataTable">DatabaseDataSet.UsersDataTable</a>
+                          </li>
+                          <li>
+                              <a href="LP.DatabaseDataSet.UsersRow.html" name="" title="DatabaseDataSet.UsersRow">DatabaseDataSet.UsersRow</a>
+                          </li>
+                          <li>
+                              <a href="LP.DatabaseDataSet.UsersRowChangeEvent.html" name="" title="DatabaseDataSet.UsersRowChangeEvent">DatabaseDataSet.UsersRowChangeEvent</a>
+                          </li>
+                          <li>
+                              <a href="LP.DatabaseDataSet.UsersRowChangeEventHandler.html" name="" title="DatabaseDataSet.UsersRowChangeEventHandler">DatabaseDataSet.UsersRowChangeEventHandler</a>
+                          </li>
+                          <li>
+                              <a href="LP.DeletePosition.html" name="" title="DeletePosition">DeletePosition</a>
+                          </li>
+                          <li>
+                              <a href="LP.Enterance.html" name="" title="Enterance">Enterance</a>
+                          </li>
+                          <li>
+                              <a href="LP.FurnitureType.html" name="" title="FurnitureType">FurnitureType</a>
+                          </li>
+                          <li>
+                              <a href="LP.FurnitureType.FurnitureTypeTest.html" name="" title="FurnitureType.FurnitureTypeTest">FurnitureType.FurnitureTypeTest</a>
+                          </li>
+                          <li>
+                              <a href="LP.NewPosition.html" name="" title="NewPosition">NewPosition</a>
+                          </li>
+                          <li>
+                              <a href="LP.NewPosition.NewPositionTest.html" name="" title="NewPosition.NewPositionTest">NewPosition.NewPositionTest</a>
+                          </li>
+                          <li>
+                              <a href="LP.Registration.html" name="" title="Registration">Registration</a>
+                          </li>
+                          <li>
+                              <a href="LP.Shelves.html" name="" title="Shelves">Shelves</a>
+                          </li>
+                          <li>
+                              <a href="LP.Sofas.html" name="" title="Sofas">Sofas</a>
+                          </li>
+                          <li>
+                              <a href="LP.Sofas.SofasTest.html" name="" title="Sofas.SofasTest">Sofas.SofasTest</a>
+                          </li>
+                          <li>
+                              <a href="LP.StartPage.html" name="" title="StartPage">StartPage</a>
+                          </li>
+                          <li>
+                              <a href="LP.Tables.html" name="" title="Tables">Tables</a>
+                          </li>
+                          <li>
+                              <a href="LP.Wardrobes.html" name="" title="Wardrobes">Wardrobes</a>
+                          </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="expand-stub"></span>
+                    <a href="LP.DatabaseDataSetTableAdapters.html" name="" title="LP.DatabaseDataSetTableAdapters">LP.DatabaseDataSetTableAdapters</a>
+                    
+                    <ul class="nav level2">
+                          <li>
+                              <a href="LP.DatabaseDataSetTableAdapters.PricelistTableAdapter.html" name="" title="PricelistTableAdapter">PricelistTableAdapter</a>
+                          </li>
+                          <li>
+                              <a href="LP.DatabaseDataSetTableAdapters.TableAdapterManager.html" name="" title="TableAdapterManager">TableAdapterManager</a>
+                          </li>
+                          <li>
+                              <a href="LP.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.html" name="" title="TableAdapterManager.UpdateOrderOption">TableAdapterManager.UpdateOrderOption</a>
+                          </li>
+                          <li>
+                              <a href="LP.DatabaseDataSetTableAdapters.UsersTableAdapter.html" name="" title="UsersTableAdapter">UsersTableAdapter</a>
+                          </li>
+                    </ul>
+                </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
