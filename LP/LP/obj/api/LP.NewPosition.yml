@@ -38,7 +38,7 @@ items:
   source:
     remote:
       path: LP/LP/NewPosition.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: NewPosition
     path: NewPosition.Designer.cs
@@ -607,7 +607,7 @@ items:
   source:
     remote:
       path: LP/LP/NewPosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: .ctor
     path: NewPosition.cs
@@ -639,7 +639,7 @@ items:
   source:
     remote:
       path: LP/LP/NewPosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: buttonExit2_Click
     path: NewPosition.cs
@@ -678,7 +678,7 @@ items:
   source:
     remote:
       path: LP/LP/NewPosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: buttonBack_Click
     path: NewPosition.cs
@@ -717,7 +717,7 @@ items:
   source:
     remote:
       path: LP/LP/NewPosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: NewPosition_Load
     path: NewPosition.cs
@@ -756,7 +756,7 @@ items:
   source:
     remote:
       path: LP/LP/NewPosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Add_Click
     path: NewPosition.cs
@@ -795,7 +795,7 @@ items:
   source:
     remote:
       path: LP/LP/NewPosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: IsPosExists
     path: NewPosition.cs
@@ -830,7 +830,7 @@ items:
   source:
     remote:
       path: LP/LP/NewPosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Articule_KeyPress
     path: NewPosition.cs
@@ -869,7 +869,7 @@ items:
   source:
     remote:
       path: LP/LP/NewPosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Nalichie_KeyPress
     path: NewPosition.cs
@@ -908,7 +908,7 @@ items:
   source:
     remote:
       path: LP/LP/NewPosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Price_KeyPress
     path: NewPosition.cs
@@ -947,7 +947,7 @@ items:
   source:
     remote:
       path: LP/LP/NewPosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: PriceO_KeyPress
     path: NewPosition.cs
@@ -986,7 +986,7 @@ items:
   source:
     remote:
       path: LP/LP/NewPosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Type_Enter
     path: NewPosition.cs
@@ -1025,7 +1025,7 @@ items:
   source:
     remote:
       path: LP/LP/NewPosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Articule_Enter
     path: NewPosition.cs
@@ -1064,7 +1064,7 @@ items:
   source:
     remote:
       path: LP/LP/NewPosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: NameP_Enter
     path: NewPosition.cs
@@ -1103,7 +1103,7 @@ items:
   source:
     remote:
       path: LP/LP/NewPosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Nalichie_Enter
     path: NewPosition.cs
@@ -1142,7 +1142,7 @@ items:
   source:
     remote:
       path: LP/LP/NewPosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Price_Enter
     path: NewPosition.cs
@@ -1181,7 +1181,7 @@ items:
   source:
     remote:
       path: LP/LP/NewPosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: PriceO_Enter
     path: NewPosition.cs
@@ -1220,7 +1220,7 @@ items:
   source:
     remote:
       path: LP/LP/NewPosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Type_Leave
     path: NewPosition.cs
@@ -1259,7 +1259,7 @@ items:
   source:
     remote:
       path: LP/LP/NewPosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Articule_Leave
     path: NewPosition.cs
@@ -1298,7 +1298,7 @@ items:
   source:
     remote:
       path: LP/LP/NewPosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: NameP_Leave
     path: NewPosition.cs
@@ -1337,7 +1337,7 @@ items:
   source:
     remote:
       path: LP/LP/NewPosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Nalichie_Leave
     path: NewPosition.cs
@@ -1376,7 +1376,7 @@ items:
   source:
     remote:
       path: LP/LP/NewPosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Price_Leave
     path: NewPosition.cs
@@ -1415,7 +1415,7 @@ items:
   source:
     remote:
       path: LP/LP/NewPosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: PriceO_Leave
     path: NewPosition.cs
@@ -1454,7 +1454,7 @@ items:
   source:
     remote:
       path: LP/LP/NewPosition.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Dispose
     path: NewPosition.Designer.cs

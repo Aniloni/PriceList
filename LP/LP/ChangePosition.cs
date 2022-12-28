@@ -63,18 +63,12 @@ namespace LP
         /// <param name="e"></param>
         public void Add_Click(object sender, EventArgs e) 
         {
-            string type = Type.Text;
             string articule = Articule.Text;
             string nameP = NameP.Text;
             string nalichie = Nalichie.Text;
             string price = Price.Text;
             string priceO = PriceO.Text;
 
-            if (type == "Тип мебели")
-            {
-                MessageBox.Show("Введите тип мебели");
-                return;
-            }
 
             if (articule == "Артикул")
             {
@@ -109,9 +103,8 @@ namespace LP
             if (!IsPosExists())
                 return;
 
-            SqlCommand command = new SqlCommand("UPDATE Pricelist SET [Тип мебели] = @uT, [Название] = @uN, [Наличие] = @uNal, [Цена в розницу] = @uP, [Цена оптом] = @uPo WHERE [Артикул] = @uA", con.connection);
+            SqlCommand command = new SqlCommand("UPDATE Pricelist SET [Название] = @uN, [Наличие] = @uNal, [Цена в розницу] = @uP, [Цена оптом] = @uPo WHERE [Артикул] = @uA", con.connection);
 
-            command.Parameters.AddWithValue("uT", Type.Text);
             command.Parameters.AddWithValue("uA", Articule.Text);
             command.Parameters.AddWithValue("uN", NameP.Text);
             command.Parameters.AddWithValue("uNal", Nalichie.Text);

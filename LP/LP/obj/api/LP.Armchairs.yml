@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: LP/LP/Armchairs.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Armchairs
     path: Armchairs.Designer.cs
@@ -586,7 +586,7 @@ items:
   source:
     remote:
       path: LP/LP/Armchairs.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: .ctor
     path: Armchairs.cs
@@ -618,11 +618,11 @@ items:
   source:
     remote:
       path: LP/LP/Armchairs.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Armchairs_Load
     path: Armchairs.cs
-    startLine: 25
+    startLine: 24
   assemblies:
   - LP
   namespace: LP
@@ -657,11 +657,11 @@ items:
   source:
     remote:
       path: LP/LP/Armchairs.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: button1_Click
     path: Armchairs.cs
-    startLine: 50
+    startLine: 48
   assemblies:
   - LP
   namespace: LP
@@ -696,7 +696,7 @@ items:
   source:
     remote:
       path: LP/LP/Armchairs.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Dispose
     path: Armchairs.Designer.cs

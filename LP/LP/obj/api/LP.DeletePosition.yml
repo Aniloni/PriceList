@@ -25,7 +25,7 @@ items:
   source:
     remote:
       path: LP/LP/DeletePosition.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: DeletePosition
     path: DeletePosition.Designer.cs
@@ -592,7 +592,7 @@ items:
   source:
     remote:
       path: LP/LP/DeletePosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: .ctor
     path: DeletePosition.cs
@@ -624,7 +624,7 @@ items:
   source:
     remote:
       path: LP/LP/DeletePosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: buttonExit2_Click
     path: DeletePosition.cs
@@ -663,7 +663,7 @@ items:
   source:
     remote:
       path: LP/LP/DeletePosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: button1_Click
     path: DeletePosition.cs
@@ -702,7 +702,7 @@ items:
   source:
     remote:
       path: LP/LP/DeletePosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: DeletePosition_Load
     path: DeletePosition.cs
@@ -741,7 +741,7 @@ items:
   source:
     remote:
       path: LP/LP/DeletePosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: delete_Click
     path: DeletePosition.cs
@@ -780,7 +780,7 @@ items:
   source:
     remote:
       path: LP/LP/DeletePosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: IsPosExists
     path: DeletePosition.cs
@@ -815,7 +815,7 @@ items:
   source:
     remote:
       path: LP/LP/DeletePosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Articule_KeyPress
     path: DeletePosition.cs
@@ -854,7 +854,7 @@ items:
   source:
     remote:
       path: LP/LP/DeletePosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Articule_Enter
     path: DeletePosition.cs
@@ -893,7 +893,7 @@ items:
   source:
     remote:
       path: LP/LP/DeletePosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Articule_Leave
     path: DeletePosition.cs
@@ -932,7 +932,7 @@ items:
   source:
     remote:
       path: LP/LP/DeletePosition.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Dispose
     path: DeletePosition.Designer.cs

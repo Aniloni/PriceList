@@ -25,7 +25,7 @@ items:
   source:
     remote:
       path: LP/LP/Registration.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Registration
     path: Registration.Designer.cs
@@ -592,7 +592,7 @@ items:
   source:
     remote:
       path: LP/LP/Registration.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: .ctor
     path: Registration.cs
@@ -624,7 +624,7 @@ items:
   source:
     remote:
       path: LP/LP/Registration.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: button1_Click
     path: Registration.cs
@@ -663,7 +663,7 @@ items:
   source:
     remote:
       path: LP/LP/Registration.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Registration_Load
     path: Registration.cs
@@ -702,7 +702,7 @@ items:
   source:
     remote:
       path: LP/LP/Registration.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: button2_Click
     path: Registration.cs
@@ -741,7 +741,7 @@ items:
   source:
     remote:
       path: LP/LP/Registration.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: IsIdExists
     path: Registration.cs
@@ -776,7 +776,7 @@ items:
   source:
     remote:
       path: LP/LP/Registration.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: textBox1_Enter
     path: Registration.cs
@@ -815,7 +815,7 @@ items:
   source:
     remote:
       path: LP/LP/Registration.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: textBox2_Enter
     path: Registration.cs
@@ -854,7 +854,7 @@ items:
   source:
     remote:
       path: LP/LP/Registration.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: textBox1_Leave
     path: Registration.cs
@@ -893,7 +893,7 @@ items:
   source:
     remote:
       path: LP/LP/Registration.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: textBox2_Leave
     path: Registration.cs
@@ -932,7 +932,7 @@ items:
   source:
     remote:
       path: LP/LP/Registration.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Dispose
     path: Registration.Designer.cs

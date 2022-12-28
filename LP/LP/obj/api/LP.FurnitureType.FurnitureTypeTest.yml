@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: LP/LP/FurnitureType.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: FurnitureTypeTest
     path: FurnitureType.cs
@@ -609,7 +609,7 @@ items:
   source:
     remote:
       path: LP/LP/FurnitureType.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Testbutton12Color
     path: FurnitureType.cs
@@ -664,7 +664,7 @@ items:
   source:
     remote:
       path: LP/LP/FurnitureType.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Testbutton4Color
     path: FurnitureType.cs
@@ -719,7 +719,7 @@ items:
   source:
     remote:
       path: LP/LP/FurnitureType.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Testbutton8Color
     path: FurnitureType.cs
@@ -774,7 +774,7 @@ items:
   source:
     remote:
       path: LP/LP/FurnitureType.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: TestChangeColor
     path: FurnitureType.cs

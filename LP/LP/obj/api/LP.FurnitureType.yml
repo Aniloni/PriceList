@@ -29,7 +29,7 @@ items:
   source:
     remote:
       path: LP/LP/FurnitureType.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: FurnitureType
     path: FurnitureType.Designer.cs
@@ -598,7 +598,7 @@ items:
   source:
     remote:
       path: LP/LP/FurnitureType.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: .ctor
     path: FurnitureType.cs
@@ -630,7 +630,7 @@ items:
   source:
     remote:
       path: LP/LP/FurnitureType.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: button1_Click
     path: FurnitureType.cs
@@ -669,7 +669,7 @@ items:
   source:
     remote:
       path: LP/LP/FurnitureType.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: buttonExit_Click
     path: FurnitureType.cs
@@ -708,7 +708,7 @@ items:
   source:
     remote:
       path: LP/LP/FurnitureType.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: button9_Click
     path: FurnitureType.cs
@@ -747,7 +747,7 @@ items:
   source:
     remote:
       path: LP/LP/FurnitureType.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: button10_Click
     path: FurnitureType.cs
@@ -786,7 +786,7 @@ items:
   source:
     remote:
       path: LP/LP/FurnitureType.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: button3_Click
     path: FurnitureType.cs
@@ -825,7 +825,7 @@ items:
   source:
     remote:
       path: LP/LP/FurnitureType.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: button2_Click
     path: FurnitureType.cs
@@ -864,7 +864,7 @@ items:
   source:
     remote:
       path: LP/LP/FurnitureType.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: button8_Click
     path: FurnitureType.cs
@@ -903,7 +903,7 @@ items:
   source:
     remote:
       path: LP/LP/FurnitureType.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: button4_Click
     path: FurnitureType.cs
@@ -942,7 +942,7 @@ items:
   source:
     remote:
       path: LP/LP/FurnitureType.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: button11_Click
     path: FurnitureType.cs
@@ -981,7 +981,7 @@ items:
   source:
     remote:
       path: LP/LP/FurnitureType.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: button12_Click
     path: FurnitureType.cs
@@ -1020,7 +1020,7 @@ items:
   source:
     remote:
       path: LP/LP/FurnitureType.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: delete_Click
     path: FurnitureType.cs
@@ -1059,7 +1059,7 @@ items:
   source:
     remote:
       path: LP/LP/FurnitureType.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Change_Click
     path: FurnitureType.cs
@@ -1098,7 +1098,7 @@ items:
   source:
     remote:
       path: LP/LP/FurnitureType.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Dispose
     path: FurnitureType.Designer.cs

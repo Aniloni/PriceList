@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: LP/LP/Chairs.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Chairs
     path: Chairs.Designer.cs
@@ -586,7 +586,7 @@ items:
   source:
     remote:
       path: LP/LP/Chairs.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: .ctor
     path: Chairs.cs
@@ -618,7 +618,7 @@ items:
   source:
     remote:
       path: LP/LP/Chairs.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Chair_Load
     path: Chairs.cs
@@ -657,7 +657,7 @@ items:
   source:
     remote:
       path: LP/LP/Chairs.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: button1_Click
     path: Chairs.cs
@@ -696,7 +696,7 @@ items:
   source:
     remote:
       path: LP/LP/Chairs.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Dispose
     path: Chairs.Designer.cs

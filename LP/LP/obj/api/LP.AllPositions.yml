@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: LP/LP/AllPositions.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: AllPositions
     path: AllPositions.Designer.cs
@@ -586,7 +586,7 @@ items:
   source:
     remote:
       path: LP/LP/AllPositions.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: .ctor
     path: AllPositions.cs
@@ -618,7 +618,7 @@ items:
   source:
     remote:
       path: LP/LP/AllPositions.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: AllPositions_Load
     path: AllPositions.cs
@@ -657,7 +657,7 @@ items:
   source:
     remote:
       path: LP/LP/AllPositions.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: button1_Click
     path: AllPositions.cs
@@ -696,7 +696,7 @@ items:
   source:
     remote:
       path: LP/LP/AllPositions.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Dispose
     path: AllPositions.Designer.cs

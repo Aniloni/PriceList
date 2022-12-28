@@ -15,7 +15,7 @@ items:
   source:
     remote:
       path: LP/LP/DatabaseDataSet.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: PricelistRowChangeEventHandler
     path: DatabaseDataSet.Designer.cs

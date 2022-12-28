@@ -29,7 +29,7 @@ items:
   source:
     remote:
       path: LP/LP/DatabaseDataSet.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: UsersTableAdapter
     path: DatabaseDataSet.Designer.cs
@@ -104,7 +104,7 @@ items:
   source:
     remote:
       path: LP/LP/DatabaseDataSet.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: .ctor
     path: DatabaseDataSet.Designer.cs
@@ -134,7 +134,7 @@ items:
   source:
     remote:
       path: LP/LP/DatabaseDataSet.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Adapter
     path: DatabaseDataSet.Designer.cs
@@ -169,7 +169,7 @@ items:
   source:
     remote:
       path: LP/LP/DatabaseDataSet.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: CommandCollection
     path: DatabaseDataSet.Designer.cs
@@ -204,7 +204,7 @@ items:
   source:
     remote:
       path: LP/LP/DatabaseDataSet.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: ClearBeforeFill
     path: DatabaseDataSet.Designer.cs
@@ -239,7 +239,7 @@ items:
   source:
     remote:
       path: LP/LP/DatabaseDataSet.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Fill
     path: DatabaseDataSet.Designer.cs
@@ -276,7 +276,7 @@ items:
   source:
     remote:
       path: LP/LP/DatabaseDataSet.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: GetData
     path: DatabaseDataSet.Designer.cs
@@ -310,7 +310,7 @@ items:
   source:
     remote:
       path: LP/LP/DatabaseDataSet.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Update
     path: DatabaseDataSet.Designer.cs
@@ -347,7 +347,7 @@ items:
   source:
     remote:
       path: LP/LP/DatabaseDataSet.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Update
     path: DatabaseDataSet.Designer.cs
@@ -384,7 +384,7 @@ items:
   source:
     remote:
       path: LP/LP/DatabaseDataSet.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Update
     path: DatabaseDataSet.Designer.cs
@@ -421,7 +421,7 @@ items:
   source:
     remote:
       path: LP/LP/DatabaseDataSet.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Update
     path: DatabaseDataSet.Designer.cs
@@ -461,7 +461,7 @@ items:
   source:
     remote:
       path: LP/LP/DatabaseDataSet.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Delete
     path: DatabaseDataSet.Designer.cs
@@ -500,7 +500,7 @@ items:
   source:
     remote:
       path: LP/LP/DatabaseDataSet.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Insert
     path: DatabaseDataSet.Designer.cs
@@ -539,7 +539,7 @@ items:
   source:
     remote:
       path: LP/LP/DatabaseDataSet.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Update
     path: DatabaseDataSet.Designer.cs
@@ -582,7 +582,7 @@ items:
   source:
     remote:
       path: LP/LP/DatabaseDataSet.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Update
     path: DatabaseDataSet.Designer.cs

@@ -38,7 +38,7 @@ items:
   source:
     remote:
       path: LP/LP/ChangePosition.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: ChangePosition
     path: ChangePosition.Designer.cs
@@ -605,7 +605,7 @@ items:
   source:
     remote:
       path: LP/LP/ChangePosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: .ctor
     path: ChangePosition.cs
@@ -637,7 +637,7 @@ items:
   source:
     remote:
       path: LP/LP/ChangePosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: buttonExit2_Click
     path: ChangePosition.cs
@@ -676,7 +676,7 @@ items:
   source:
     remote:
       path: LP/LP/ChangePosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: buttonBack_Click
     path: ChangePosition.cs
@@ -715,7 +715,7 @@ items:
   source:
     remote:
       path: LP/LP/ChangePosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: ChangePosition_Load
     path: ChangePosition.cs
@@ -754,7 +754,7 @@ items:
   source:
     remote:
       path: LP/LP/ChangePosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Add_Click
     path: ChangePosition.cs
@@ -793,11 +793,11 @@ items:
   source:
     remote:
       path: LP/LP/ChangePosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: IsPosExists
     path: ChangePosition.cs
-    startLine: 131
+    startLine: 124
   assemblies:
   - LP
   namespace: LP
@@ -828,11 +828,11 @@ items:
   source:
     remote:
       path: LP/LP/ChangePosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Articule_KeyPress
     path: ChangePosition.cs
-    startLine: 162
+    startLine: 155
   assemblies:
   - LP
   namespace: LP
@@ -867,11 +867,11 @@ items:
   source:
     remote:
       path: LP/LP/ChangePosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Nalichie_KeyPress
     path: ChangePosition.cs
-    startLine: 176
+    startLine: 169
   assemblies:
   - LP
   namespace: LP
@@ -906,11 +906,11 @@ items:
   source:
     remote:
       path: LP/LP/ChangePosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Price_KeyPress
     path: ChangePosition.cs
-    startLine: 190
+    startLine: 183
   assemblies:
   - LP
   namespace: LP
@@ -945,11 +945,11 @@ items:
   source:
     remote:
       path: LP/LP/ChangePosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: PriceO_KeyPress
     path: ChangePosition.cs
-    startLine: 204
+    startLine: 197
   assemblies:
   - LP
   namespace: LP
@@ -984,11 +984,11 @@ items:
   source:
     remote:
       path: LP/LP/ChangePosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Type_Enter
     path: ChangePosition.cs
-    startLine: 218
+    startLine: 211
   assemblies:
   - LP
   namespace: LP
@@ -1023,11 +1023,11 @@ items:
   source:
     remote:
       path: LP/LP/ChangePosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Articule_Enter
     path: ChangePosition.cs
-    startLine: 229
+    startLine: 222
   assemblies:
   - LP
   namespace: LP
@@ -1062,11 +1062,11 @@ items:
   source:
     remote:
       path: LP/LP/ChangePosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: NameP_Enter
     path: ChangePosition.cs
-    startLine: 239
+    startLine: 232
   assemblies:
   - LP
   namespace: LP
@@ -1101,11 +1101,11 @@ items:
   source:
     remote:
       path: LP/LP/ChangePosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Nalichie_Enter
     path: ChangePosition.cs
-    startLine: 250
+    startLine: 243
   assemblies:
   - LP
   namespace: LP
@@ -1140,11 +1140,11 @@ items:
   source:
     remote:
       path: LP/LP/ChangePosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Price_Enter
     path: ChangePosition.cs
-    startLine: 261
+    startLine: 254
   assemblies:
   - LP
   namespace: LP
@@ -1179,11 +1179,11 @@ items:
   source:
     remote:
       path: LP/LP/ChangePosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: PriceO_Enter
     path: ChangePosition.cs
-    startLine: 272
+    startLine: 265
   assemblies:
   - LP
   namespace: LP
@@ -1218,11 +1218,11 @@ items:
   source:
     remote:
       path: LP/LP/ChangePosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Type_Leave
     path: ChangePosition.cs
-    startLine: 283
+    startLine: 276
   assemblies:
   - LP
   namespace: LP
@@ -1257,11 +1257,11 @@ items:
   source:
     remote:
       path: LP/LP/ChangePosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Articule_Leave
     path: ChangePosition.cs
-    startLine: 294
+    startLine: 287
   assemblies:
   - LP
   namespace: LP
@@ -1296,11 +1296,11 @@ items:
   source:
     remote:
       path: LP/LP/ChangePosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: NameP_Leave
     path: ChangePosition.cs
-    startLine: 305
+    startLine: 298
   assemblies:
   - LP
   namespace: LP
@@ -1335,11 +1335,11 @@ items:
   source:
     remote:
       path: LP/LP/ChangePosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Nalichie_Leave
     path: ChangePosition.cs
-    startLine: 316
+    startLine: 309
   assemblies:
   - LP
   namespace: LP
@@ -1374,11 +1374,11 @@ items:
   source:
     remote:
       path: LP/LP/ChangePosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Price_Leave
     path: ChangePosition.cs
-    startLine: 327
+    startLine: 320
   assemblies:
   - LP
   namespace: LP
@@ -1413,11 +1413,11 @@ items:
   source:
     remote:
       path: LP/LP/ChangePosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: PriceO_Leave
     path: ChangePosition.cs
-    startLine: 338
+    startLine: 331
   assemblies:
   - LP
   namespace: LP
@@ -1452,7 +1452,7 @@ items:
   source:
     remote:
       path: LP/LP/ChangePosition.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Dispose
     path: ChangePosition.Designer.cs

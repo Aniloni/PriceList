@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: LP/LP/Beds.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Beds
     path: Beds.Designer.cs
@@ -586,7 +586,7 @@ items:
   source:
     remote:
       path: LP/LP/Beds.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: .ctor
     path: Beds.cs
@@ -618,7 +618,7 @@ items:
   source:
     remote:
       path: LP/LP/Beds.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Beds_Load
     path: Beds.cs
@@ -657,7 +657,7 @@ items:
   source:
     remote:
       path: LP/LP/Beds.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: button1_Click
     path: Beds.cs
@@ -696,7 +696,7 @@ items:
   source:
     remote:
       path: LP/LP/Beds.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Dispose
     path: Beds.Designer.cs

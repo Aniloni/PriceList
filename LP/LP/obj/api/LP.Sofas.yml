@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: LP/LP/Sofas.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Sofas
     path: Sofas.Designer.cs
@@ -588,7 +588,7 @@ items:
   source:
     remote:
       path: LP/LP/Sofas.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: .ctor
     path: Sofas.cs
@@ -620,7 +620,7 @@ items:
   source:
     remote:
       path: LP/LP/Sofas.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Sofas_Load
     path: Sofas.cs
@@ -659,7 +659,7 @@ items:
   source:
     remote:
       path: LP/LP/Sofas.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: button1_Click
     path: Sofas.cs
@@ -698,7 +698,7 @@ items:
   source:
     remote:
       path: LP/LP/Sofas.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Dispose
     path: Sofas.Designer.cs

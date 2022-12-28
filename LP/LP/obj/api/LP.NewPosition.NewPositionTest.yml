@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: LP/LP/NewPosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: NewPositionTest
     path: NewPosition.cs
@@ -618,7 +618,7 @@ items:
   source:
     remote:
       path: LP/LP/NewPosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: TestTypeColor
     path: NewPosition.cs
@@ -673,7 +673,7 @@ items:
   source:
     remote:
       path: LP/LP/NewPosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: TestbuttonBackColor
     path: NewPosition.cs
@@ -728,7 +728,7 @@ items:
   source:
     remote:
       path: LP/LP/NewPosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: TestArticuleColor
     path: NewPosition.cs
@@ -783,7 +783,7 @@ items:
   source:
     remote:
       path: LP/LP/NewPosition.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: TestNamePColor
     path: NewPosition.cs

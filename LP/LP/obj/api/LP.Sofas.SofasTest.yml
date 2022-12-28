@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: LP/LP/Sofas.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: SofasTest
     path: Sofas.cs
@@ -599,7 +599,7 @@ items:
   source:
     remote:
       path: LP/LP/Sofas.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: TestPanel1Params
     path: Sofas.cs
@@ -659,7 +659,7 @@ items:
   source:
     remote:
       path: LP/LP/Sofas.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: SofasLoadColor
     path: Sofas.cs
@@ -714,7 +714,7 @@ items:
   source:
     remote:
       path: LP/LP/Sofas.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Testbutton1Color
     path: Sofas.cs
@@ -769,7 +769,7 @@ items:
   source:
     remote:
       path: LP/LP/Sofas.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: Testbutton1Params
     path: Sofas.cs

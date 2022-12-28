@@ -10,7 +10,7 @@ namespace LP
         /// <summary>
         /// Поле типа SqlConnection, использующееся для подключения к базе данных
         /// </summary>
-        public SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vasil\OneDrive\Desktop\Документы\VS\PriceList\LP\LP\Database.mdf"); 
+        public SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vasil\OneDrive\Desktop\Documents\VS\PriceList\LP\LP\Database.mdf"); 
 
         /// <summary>
         /// Метод, открывающий подключение к базе данных

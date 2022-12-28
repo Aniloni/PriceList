@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: LP/LP/DatabaseDataSet.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: UpdateOrderOption
     path: DatabaseDataSet.Designer.cs
@@ -50,7 +50,7 @@ items:
   source:
     remote:
       path: LP/LP/DatabaseDataSet.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: InsertUpdateDelete
     path: DatabaseDataSet.Designer.cs
@@ -82,7 +82,7 @@ items:
   source:
     remote:
       path: LP/LP/DatabaseDataSet.Designer.cs
-      branch: develop
+      branch: main
       repo: https://github.com/Aniloni/PriceList.git
     id: UpdateInsertDelete
     path: DatabaseDataSet.Designer.cs
